@@ -4,7 +4,7 @@
 }
 
 
-.text-conainer{
+.text-conainer {
     margin-top: 80px;
     width: 100%;
     padding: 20px 0px;
@@ -77,6 +77,18 @@
     padding: 10px 20px;
     font-size: 16px;
     background-color: #040404;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+
+.button:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #374151;
     color: white;
     border: none;
     border-radius: 5px;
