@@ -144,7 +144,7 @@ const Puzzle1 = () => {
         <h2 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h2>
         <p className="welcome-text">
           Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
-          This is more than just a game—it's your journey to sharpen your mind, test your skills, and celebrate every small victory.
+          This is more than just a game sit's your journey to sharpen your mind, test your skills, and celebrate every small victory.
         </p>
         <ul className="welcome-list">
           <li>🔍 Every piece counts: Take your time, explore the possibilities, and watch how everything falls into place.</li>
@@ -186,13 +186,13 @@ const Puzzle1 = () => {
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.jpeg' alt='free online jigsaw planet puzzle game' />
             </Link>
-            <Link href="/jigsaw-planet1">
+            <Link href="/jigsawplanet1">
               <img className='game-image' src='./images/Puzzle2.jpeg' alt='jigsawplanet interactive puzzle' />
             </Link>
-            <Link href="/puzzle3">
+            <Link href="/jigsawplanet2">
               <img className='game-image' src='./images/Puzzle3.jpeg' alt='free jigsaw planet game' />
             </Link>
-            <Link href="/jigsaw-planet">
+            <Link href="/jigsawplanet13.">
               <img className='game-image' src='./images/Puzzle5.jpeg' alt='play jigsaw planet puzzle online' />
             </Link>
           </div>

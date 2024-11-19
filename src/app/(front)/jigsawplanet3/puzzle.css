@@ -4,11 +4,13 @@
 }
 
 
-.text-conainer{
+.text-conainer {
     margin-top: 80px;
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .level-color {
