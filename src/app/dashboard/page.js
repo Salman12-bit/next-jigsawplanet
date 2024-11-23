@@ -24,11 +24,11 @@ const Dashboard = () => {
     if (file) {
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "bagwise");
+      formData.append("upload_preset", "bagname");
 
       try {
         const cloudinaryResponse = await fetch(
-          `https://api.cloudinary.com/v1_1/di6r722sv/image/upload`,
+          `https://api.cloudinary.com/v1_1/dz7m8luug/image/upload`,
           {
             method: "POST",
             body: formData,
