@@ -7,11 +7,11 @@ export default async function middleware(req, event) {
     const userRole = token?.role || null;
 
     const protectedRoutes = [
-        "/contact",
-        "/jigsaw-planet",
-        "/freezenova",
+        // "/contact",
+        // "/jigsaw-planet",
+        // "/freezenova",
         "/gametheme",
-        "/"
+        // "/"
     ];
 
     const url = req.nextUrl.clone();
@@ -40,5 +40,11 @@ export default async function middleware(req, event) {
 }
 
 export const config = {
-    matcher: ["/dashboard/:path*", "/login", "/register", "/contact", "/jigsaw-planet", "/freezenova", "/gametheme", "/"],
+    matcher: ["/dashboard/:path*", "/login", "/register","/gametheme", ],
 };
+
+
+
+// export const config = {
+//     matcher: ["/dashboard/:path*", "/login", "/register", "/contact", "/jigsaw-planet", "/freezenova", "/gametheme", "/"],
+// };
