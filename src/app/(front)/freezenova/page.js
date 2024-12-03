@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import "./freeze.css"
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -167,42 +168,137 @@ const Game = () => {
             <h3 className="instruction-step">Conclusion:</h3>
             <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
           </div>
-          <div className='game-image-container'>
+          <div className="game-image-container">
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova1.jpeg' alt='Freezenova game on jigsaw planet' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova1.jpeg"
+                alt="Freezenova game on jigsaw planet"
+                width={240} // Replace with the actual width
+                height={192} // Replace with the actual height
+                priority // Ensures this critical image loads quickly
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova2.jpeg' alt='Jigsaw planet puzzle - Freezenova' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova2.jpeg"
+                alt="Jigsaw planet puzzle - Freezenova"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova3.jpeg' alt='Free jigsaw planet game' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova3.jpeg"
+                alt="Free jigsaw planet game"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova4.jpeg' alt='Jigsaw puzzle on jigsaw planet' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova4.jpeg"
+                alt="Jigsaw puzzle on jigsaw planet"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova5.jpeg' alt='Free puzzle game on jigsaw planet' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova5.jpeg"
+                alt="Free puzzle game on jigsaw planet"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova6.jpeg' alt='Freezenova puzzle on jigsaw planet' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova6.jpeg"
+                alt="Freezenova puzzle on jigsaw planet"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova7.jpeg' alt='Play free puzzles on jigsaw planet' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova7.jpeg"
+                alt="Play free puzzles on jigsaw planet"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova8.jpeg' alt='Jigsaw planet puzzle - Freezenova' />
+              <Image
+                className="game-image"
+                src="/images/Freezenova8.jpeg"
+                alt="Jigsaw planet puzzle - Freezenova"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.jpeg' alt='Jigsaw planet adventure' />
+              <Image
+                className="game-image"
+                src="/images/Puzzle1.jpeg"
+                alt="Jigsaw planet adventure"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/jigsaw-planet1">
-              <img className='game-image' src='./images/Puzzle2.jpeg' alt='Play puzzles on jigsaw planet' />
+              <Image
+                className="game-image"
+                src="/images/Puzzle2.jpeg"
+                alt="Play puzzles on jigsaw planet"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/puzzle3">
-              <img className='game-image' src='./images/Puzzle3.jpeg' alt='Explore jigsaw planet puzzles' />
+              <Image
+                className="game-image"
+                src="/images/Puzzle3.jpeg"
+                alt="Explore jigsaw planet puzzles"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
+
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle5.jpeg' alt='Online jigsaw planet game' />
+              <Image
+                className="game-image"
+                src="/images/Puzzle5.jpeg"
+                alt="Online jigsaw planet game"
+                width={240}
+                height={192}
+                loading="lazy"
+              />
             </Link>
           </div>
 

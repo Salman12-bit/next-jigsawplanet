@@ -60,7 +60,8 @@ export default function Home() {
             <div className="post" key={post._id}>
               <div className="imgContainer">
                 <Link href={`/${post._id}`} key={post._id}>
-                  <img className="img" src={post.file} alt={post.title} />
+                  <img className="img" src={post.file} alt={post.title} 
+                  loading="lazy"/>
                 </Link>
                 <h2 className="postTitle">{post.title}</h2>
               </div>

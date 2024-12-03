@@ -9,12 +9,11 @@
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
 }
 
 .level-color {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .planet-container {
@@ -185,8 +184,6 @@
 
 .game-image {
     border-radius: 8px;
-    height: 192px;
-    width: 240px;
     margin: 10px;
     object-fit: cover;
 }

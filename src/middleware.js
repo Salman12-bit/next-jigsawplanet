@@ -10,7 +10,7 @@ export default async function middleware(req, event) {
         // "/contact",
         // "/jigsaw-planet",
         // "/freezenova",
-        "/gametheme",
+        // "/gametheme",
         // "/"
     ];
 
@@ -40,7 +40,7 @@ export default async function middleware(req, event) {
 }
 
 export const config = {
-    matcher: ["/dashboard/:path*", "/login", "/register","/gametheme", ],
+    matcher: ["/dashboard/:path*", "/login", "/register", ],
 };
 
 
