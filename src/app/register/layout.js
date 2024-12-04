@@ -4,10 +4,10 @@ export const metadata = {
     openGraph: {
         title: "Jigsaw Planet register",
         description: "Register in to access jigsaw planet and start your puzzle journey.",
-        url: "https://example.com/register",
+        url: "https://jigsawplanet.us/register",
         images: [
             {
-                url: "https://example.com/images/jigsaw-planet-register.jpg",
+                url: "https://jigsawplanet.us/images/jigsaw-planet-register.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Register to jigsaw planet and start your puzzle journey",

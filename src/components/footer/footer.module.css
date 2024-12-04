@@ -4,20 +4,20 @@
   background-image: url('/village.jpg'); 
   background-size: cover; 
   background-position: center;
-  text-align: center;
 }
 
 .footerContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   max-width: 1200px;
+  text-align: center;
+
 }
 
 .footerSection {
   flex: 1;
   min-width: 250px;
   margin: 10px;
+  text-align: center;
 }
 
 .footerSection h3 {
@@ -30,7 +30,7 @@
 }
 
 .footerSection a:hover {
-  color: #ffffff; 
+  color: #462626; 
   text-decoration: underline; 
 }
 

@@ -88,17 +88,21 @@ const Game = () => {
   };
 
   return (
-    <div className='text-conainer' style={{
+    <main className='text-conainer' style={{
       backgroundImage: 'url("/village.jpg")',
       backgroundSize: "cover",
       backgroundPosition: "center",
       padding: "20px"
     }}>
-      <div className='jigsaw-container' >
+      <div className='des'>Level One</div>
+      <header>
+        <h1 className='info-player'>Player {currentPlayer}'s Turn</h1>
+      </header>
+      <section className='jigsaw-container' >
         <div className='row'>
           <GameContainer className='image' >
-            <div className='des'>Level One</div>
-            <h2 className='info-player'>Player {currentPlayer}'s Turn</h2>
+
+
             <div>
               <Board>
                 {tiles.map((player, index) => (
@@ -119,32 +123,32 @@ const Game = () => {
             {player1Wins && (
               <div className='level'>
                 <button className='button1'>
-                  <Link href="/game1">Next Level</Link>
+                  <Link href="/">Next Level</Link>
                 </button>
               </div>
             )}
           </GameContainer>
         </div>
-      </div>
-      <div className="welcome-container">
-        <h2 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h2>
+      </section>
+      <section className="welcome-container">
+        <h2 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge for every weeks! 🧩</h2>
         <p className="welcome-text">
           Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
-          This is more than just a game—it's your journey to sharpen your mind, test your skills, and celebrate every small victory.
+          This is more than just a game—it's your journey to sharpen your mind, test your skills that increase your thinking, and celebrate every small victory.
         </p>
         <ul className="welcome-list">
-          <li>🔍 Every piece counts: Take your time, explore the possibilities, and watch how everything falls into place.</li>
-          <li>🧠 Sharpen your mind: Solve puzzles to grow stronger, one piece at a time.</li>
-          <li>🎯 Embrace the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it!"</li>
+          <li>🔍 Every piece counts: Take your time, explore the possibilities that increase your patience, and watch how everything falls into place.</li>
+          <li>🧠 Sharpen your mind: Solve puzzles to grow stronger, one piece at a time that you solve accuratly.</li>
+          <li>🎯 Embrace the challenge: Don’t give up if you give up your lose your thinking! The best moments are when everything clicks, and you can say, "I did it!"</li>
         </ul>
         <p className="welcome-text">
-          Keep pushing forward, trust your instincts, and most of all—enjoy the journey. You’ve got the mind of a champion, and every puzzle you conquer is a victory worth celebrating! Get ready to piece it all together! 🎉
+          Keep pushing forward, trust your instincts, and most of all—enjoy the journey. You’ve got the mind of a champion this thinking never lose you, and every puzzle you conquer is a victory worth celebrating! Get ready to piece it all together! 🎉
         </p>
-      </div>
-      <div className="game-instructions-container">
+      </section>
+      <section className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
+            <h2 className="instructions-title">🧩 How to Play Free Jigsaw Planet Game 🧩</h2>
             <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
             <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
             <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
@@ -303,8 +307,8 @@ const Game = () => {
           </div>
 
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

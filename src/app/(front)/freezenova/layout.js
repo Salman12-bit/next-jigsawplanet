@@ -4,10 +4,10 @@ export const metadata = {
     openGraph: {
         title: "Freezenova Game - Play Online",
         description: "Join the adventure with Freezenova on jigsaw planet. Experience engaging gameplay and exciting challenges.",
-        url: "https://example.com/freezenova-game",
+        url: "https://jigsawplanet.us/freezenova-game",
         images: [
             {
-                url: "https://example.com/images/freezenova-game.jpg",
+                url: "https://jigsawplanet.us/images/freezenova-game.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Play freeze-nova Game online on jigsawplanet",

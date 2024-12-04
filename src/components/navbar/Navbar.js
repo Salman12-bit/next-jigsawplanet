@@ -1,20 +1,21 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./navbar.module.css";
-import { useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter(); // Initialize router for navigation
-  const { data: session, status } = useSession();
-  console.log("🚀 ~ Navbar ~ session:", session);
+  const { data: session } = useSession();
 
+  // Logout function
   const logout = async () => {
-    localStorage.removeItem("key"); // Clear only the specific item
-    await signOut();
-    router.push("/login"); // Navigate to login page
+    localStorage.removeItem("key"); // Clear specific item from local storage
+    await signOut({
+      callbackUrl: "https://jigsawplanet.us/login", // Redirect to production login page
+    });
+    window.location.href = "https://jigsawplanet.us/login"; // Hard refresh to production login page
   };
 
   // Toggle mobile menu
@@ -51,17 +52,6 @@ const Navbar = () => {
             Gaming Theme
           </Link>
 
-          {/* Conditionally render based on role */}
-          {/* {session?.user?.role === "isAdmin" && (
-            <>
-              <Link href="/userprofile" className={styles.navItem}>
-                Change Role
-              </Link>
-              <Link href="/dashboard" className={styles.navItem}>
-                Dashboard
-              </Link>
-            </>
-          )} */}
           {session?.user?.role === "admin" && (
             <>
               <Link href="/userprofile" className={styles.navItem}>

@@ -12,6 +12,7 @@
 
 .info-player {
     margin-bottom: 30px !important;
+    text-align: center;
 }
 
 .btn {
@@ -29,6 +30,7 @@
     font-size: larger;
     font-style: italic;
     margin: 8px;
+    text-align: center;
 }
 
 .button1 {

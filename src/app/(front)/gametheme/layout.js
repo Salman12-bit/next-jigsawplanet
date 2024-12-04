@@ -4,10 +4,10 @@ export const metadata = {
     openGraph: {
         title: "Game Theme  - jigsaw planet",
         description: "Discover and select game theme  to personalize your jigsawplanet experience. From classic styles to modern designs, find the perfect look for your game.",
-        url: "https://example.com/game-theme",
+        url: "https://jigsawplanet.us/game-theme",
         images: [
             {
-                url: "https://example.com/images/theme-thumbnail.jpg",
+                url: "https://jigsawplanet.us/images/theme-thumbnail.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Explore game theme on jigsaw planet to personalize your game",
