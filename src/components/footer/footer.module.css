@@ -1,7 +1,7 @@
 .footer {
   color: rgb(0, 0, 0);
   padding: 20px 0;
-  background-image: url('/village.jpg'); 
+  background-color: rgba(190, 184, 184, 0.2);
   background-size: cover; 
   background-position: center;
 }
@@ -25,7 +25,7 @@
 }
 
 .footerSection p, .footerSection a {
-  color: #000000;
+  color: #4b4848; 
   text-decoration: none;
 }
 
@@ -37,6 +37,7 @@
 .footerBottom {
   text-align: center;
   padding: 10px 0;
+  color: #4b4848; 
   
 }
 

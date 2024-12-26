@@ -89,9 +89,6 @@ const Game = () => {
 
   return (
     <main className='text-conainer' style={{
-      backgroundImage: 'url("/village.jpg")',
-      backgroundSize: "cover",
-      backgroundPosition: "center",
       padding: "20px"
     }}>
       <div className='des'>Level One</div>
@@ -178,9 +175,9 @@ const Game = () => {
                 className="game-image"
                 src="/images/Freezenova1.jpeg"
                 alt="Freezenova game on jigsaw planet"
-                width={240} // Replace with the actual width
-                height={192} // Replace with the actual height
-                priority // Ensures this critical image loads quickly
+                width={240}
+                height={192} 
+                priority 
               />
             </Link>
 
@@ -265,7 +262,7 @@ const Game = () => {
               <Image
                 className="game-image"
                 src="/images/Puzzle1.jpeg"
-                alt="Jigsaw planet adventure"
+                alt="Play Jigsaw Planet Adventure Puzzle Online for Free "
                 width={240}
                 height={192}
                 loading="lazy"

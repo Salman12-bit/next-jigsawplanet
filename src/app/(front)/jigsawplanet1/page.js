@@ -18,7 +18,7 @@ const containerStyle1 = {
 
 const Board1 = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 90px);
   grid-gap: 10px;
 `;
 
@@ -107,9 +107,6 @@ const Puzzle1 = () => {
 
   return (
     <main className='text-conainer' style={{
-      backgroundImage: 'url("/village.jpg")',
-      backgroundSize: "cover",
-      backgroundPosition: "center",
       padding: "20px"
     }}>
       <header>

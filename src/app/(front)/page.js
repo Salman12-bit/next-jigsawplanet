@@ -60,13 +60,13 @@ export default function Home() {
             <div className="post" key={post._id}>
               <div className="imgContainer">
                 <Link href={`/${post._id}`} key={post._id}>
-                  <img className="img" src={post.file} alt={post.title} 
-                  loading="lazy"/>
+                  <img className="img" src={post.file} alt={post.title}
+                    loading="lazy" />
                 </Link>
-                <h2 className="postTitle">{post.title}</h2>
               </div>
-
+               <Link href="/jigsaw-planet" className="button1"> Play Game</Link>
               <div className="postContentContainer">
+                <h1 className="postTitle">{post.title}</h1>
                 <p className="postContent">{post.content.slice(0, 12)}...</p>
                 <h3 className="postScore">Score: {post.score}</h3>
                 {session && session.user?.role === "admin" && (

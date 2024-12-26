@@ -1,20 +1,21 @@
 export const metadata = {
-    title: "Freezenova Game - Play Online on free jigsaw planet",
-    description: "Dive into the thrilling freezenova game on jigsaw planet. Enjoy action-packed gameplay, puzzles, and challenges!",
+    title: "Play Freezenova Game Online | Jigsaw Planet Puzzles",
+    description: "Enjoy the thrilling Freezenova game on Jigsaw Planet. Solve interactive puzzles, enhance cognitive skills, and embrace the ultimate challenge. Play now!",
     openGraph: {
-        title: "Freezenova Game - Play Online",
-        description: "Join the adventure with Freezenova on jigsaw planet. Experience engaging gameplay and exciting challenges.",
-        url: "https://jigsawplanet.us/freezenova-game",
-        images: [
-            {
-                url: "https://jigsawplanet.us/images/freezenova-game.jpg",
-                width: 1200,
-                height: 630,
-                alt: "Play freeze-nova Game online on jigsawplanet",
-            },
-        ],
+      title: "Freezenova Game Online | Jigsaw Puzzles & Challenges",
+      description: "Dive into the Freezenova adventure with Jigsaw Planet. Play free puzzles, sharpen your mind, and conquer exciting challenges today!",
+      url: "https://jigsawplanet.us/freezenova-game",
+      images: [
+        {
+          url: "https://jigsawplanet.us/images/freezenova-game.jpg",
+          width: 600,
+          height: 400,
+          alt: "Freezenova puzzle game on Jigsaw Planet",
+        },
+      ],
     },
-};
+  };
+  
 
 export default function Layout({ children }) {
     return <>{children}</>;

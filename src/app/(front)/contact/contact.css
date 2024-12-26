@@ -1,5 +1,4 @@
 .imgformat {
-  background-image: url('/village.jpg');
   background-size: cover;
   background-position: center;
   margin-top: 70px;
@@ -7,8 +6,6 @@
   padding: 20px 0px;
   margin-bottom: 17px;
   margin-right: 10px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
 }
 
 .title {
@@ -59,11 +56,12 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bbb;
-  border: 3px solid #bbb;
+  color: #000000;
+  border: 1px solid #000000;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
+  border-radius: 10px;
 }
 
 .textarea {
@@ -71,9 +69,10 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bbb;
-  border: 3px solid #bbb;
+  color: #000000;
+  border: 1px solid #000000;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
+  border-radius: 10px;
 }

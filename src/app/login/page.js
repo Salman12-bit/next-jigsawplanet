@@ -58,9 +58,9 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <p className="intro-text">
-          "Join the adventure! Log in to unlock your gaming potential and dive into thrilling challenges
+          Join the adventure Log in to unlock your gaming potential and dive into thrilling challenges
           that test your skills. New here? Register now and start your journey—where every level conquered
-          brings you closer to being the ultimate champion!"
+          brings you closer to being the ultimate champion
         </p>
         <h2 className="subtitle">Sign-In Here</h2>
 
