@@ -6,7 +6,6 @@
     /* background-color: rgba(40, 39, 39, 0.2); */
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 80px;
     width: 100%;
     margin-bottom: 17px;
 }
@@ -97,8 +96,8 @@
     margin-top: 8px;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .freetheme-container{
         margin-top: 230px;
     }
-}
+} */

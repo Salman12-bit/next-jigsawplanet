@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: post.title,
         description: post.desc,
-        url: `https://jigsawplanet.us/${post.title}`,
+        url: `https://jigsawplanet.us/${params.id}`,
         images: [
           {
             url: post.file,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
         ],
       },
       alternates: {
-        canonical: `https://jigsawplanet.us/${post.title}`,
+        canonical: `https://jigsawplanet.us/${params.id}`,
       },
       additionalMetadata: {
         datePublished: post.datePublished,
@@ -45,13 +45,13 @@ export async function generateMetadata({ params }) {
     };
   } catch (error) {
     console.error("Error generating metadata:", error);
-    // return {
-    //   title: "Post Not Found",
-    //   description: "This post could not be found.",
-    //   alternates: {
-    //     canonical: `https://jigsawplanet.us/404`,
-    //   },
-    // };
+    return {
+      title: "Post Not Found",
+      description: "This post could not be found.",
+      alternates: {
+        canonical: `https://jigsawplanet.us/404`,
+      },
+    };
   }
 }
 
