@@ -145,36 +145,36 @@ const Game = () => {
       <section className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">🧩 How to Play Free Jigsaw Planet Game 🧩</h2>
-            <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
-            <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
+            <h2 className="instructions-title">🧩 How to Play Free Freeze Nova Game 🧩</h2>
+            <p className="instructions-description">Free Freeze Nova games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Freeze Nova come in various forms, with unique content from traditional paper Freeze Nova to sophisticated digital games. The Freeze Nova guide will walk you through the basic principles of playing different types of freezenova games, offering tips and strategies to enhance your experience.</p>
+            <h3 className="instruction-step">1. Different Types of Freeze Nova Free:</h3>
+            <p className="instructions-description">Freezenova games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each jigsaw planet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <p className="instructions-description">Each Freeze Nova puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
               <li>In this game players have 3 chances.</li>
-              <li>If 3 jigsaw planet puzzle game cards are matched to each other.</li>
+              <li>If 3 or 4 Freeze Nova puzzle game boxes are matched vertically</li>
               <li>Player wins this game.</li>
-              <li>Otherwise, Restart the jigsaw planet game again and try to match again 3 cards.</li>
+              <li>Otherwise, Refreach the Freeze Nova game page again and try to match again 3 to 4 box.</li>
             </ul>
             <h3 className="instruction-step">3. Set up Your Space:</h3>
-            <p className="instructions-description">For physical jigsaw puzzle, ensure you have a comfortable and well-lit workspace. For digital jigsawplanet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
+            <p className="instructions-description">For physical freeze nova, ensure you have a comfortable and well-lit workspace. For digital freezenova, adjust your device's brightness and volume settings to suit your environment and mind.</p>
             <h2 className="tips-title">Tips for Success</h2>
             <ul className="instructions-list">
-              <li>Stay Calm: Jigsawplanet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
+              <li>Stay Calm: Freeze Nova puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the better you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
             <h3 className="instruction-step">Conclusion:</h3>
-            <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
+            <p className="instructions-description">Freeze Nova games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your freezenova-solving skills and enjoy the satisfying feeling of cracking even the toughest freezenova. So, choose your game, set up your space, and dive into the fascinating world of Freeze Nova!</p>
           </div>
           <div className="game-image-container">
             <Link href="/freezenova">
               <Image
                 className="game-image"
                 src="/images/Freezenova1.jpeg"
-                alt="Freezenova game on jigsaw planet"
+                alt="Free Freezenova game on jigsaw planet"
                 width={240}
                 height={192} 
                 priority 

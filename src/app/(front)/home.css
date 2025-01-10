@@ -40,6 +40,7 @@
   margin-left: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
+  text-align: center;
 }
 
 .postTitle {
@@ -74,10 +75,9 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+  margin-left: 10px;
+  margin-bottom: 10px;
 
-.delete:hover {
-  background-color: #c9302c;
 }
 
 
@@ -150,13 +150,8 @@
   }
 
   .button1 {
-    max-width: 30%;
-    padding: 5px;
-    background-color: black;
-    color: white;
     margin-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
+    text-align: center;
   }
 }
 
@@ -165,7 +160,7 @@
   .post {
     width: 100%;
     flex-direction: column;
-
+    margin-top: 230px;
   }
 
   .imgContainer {
@@ -203,12 +198,7 @@
   }
 
   .button1 {
-    max-width: 47%;
-    padding: 5px;
-    background-color: black;
-    color: white;
     margin-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
+    text-align: center;
   }
 }

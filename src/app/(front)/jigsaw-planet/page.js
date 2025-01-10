@@ -18,7 +18,7 @@ const containerStyle1 = {
 
 const Board1 = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 90px);
+  grid-template-columns: repeat(3, 85px);
   grid-gap: 10px;
 `;
 
@@ -151,7 +151,7 @@ const Puzzle1 = () => {
         <ul className="welcome-list">
           <li>🔍 Every piece counts: Take your time, explore the possibilities, and watch how everything falls into place.</li>
           <li>🧠 Sharpen your mind: Solve puzzles to grow stronger, one piece at a time.</li>
-          <li>🎯 Embrace the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it!"</li>
+          <li>🎯 Face the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it complete!"</li>
         </ul>
         <p className="welcome-text">
           Keep pushing forward, trust your instincts, and most of all—enjoy the journey. You’ve got the mind of a champion, and every puzzle you conquer is a victory worth celebrating! Get ready to piece it all together! 🎉

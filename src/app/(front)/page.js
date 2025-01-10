@@ -64,7 +64,7 @@ export default function Home() {
                     loading="lazy" />
                 </Link>
               </div>
-               <Link href="/jigsaw-planet" className="button1"> Play Game</Link>
+               <Link href="/jigsaw-planet" className="button1">Play Game</Link>
               <div className="postContentContainer">
                 <h1 className="postTitle">{post.title}</h1>
                 <p className="postContent">{post.content.slice(0, 12)}...</p>

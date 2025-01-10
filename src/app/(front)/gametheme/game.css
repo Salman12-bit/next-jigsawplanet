@@ -16,7 +16,7 @@
     gap: 16px;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    
+
 }
 
 /* Adjust columns for different screen sizes */
@@ -95,4 +95,10 @@
     cursor: pointer;
     text-decoration: underline;
     margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+    .freetheme-container{
+        margin-top: 230px;
+    }
 }

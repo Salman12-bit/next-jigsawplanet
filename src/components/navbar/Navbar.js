@@ -51,7 +51,6 @@ const Navbar = () => {
           <Link href="/gametheme" className={styles.navItem}>
             Gaming Theme
           </Link>
-
           {session?.user?.role === "admin" && (
             <>
               <Link href="/userprofile" className={styles.navItem}>

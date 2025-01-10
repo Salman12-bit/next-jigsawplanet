@@ -2,7 +2,7 @@
   color: rgb(0, 0, 0);
   padding: 20px 0;
   background-color: rgba(190, 184, 184, 0.2);
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 }
 
@@ -24,26 +24,38 @@
   margin-bottom: 10px;
 }
 
-.footerSection p, .footerSection a {
-  color: #4b4848; 
+.footerSection p,
+.footerSection a {
+  color: #4b4848;
   text-decoration: none;
 }
 
 .footerSection a:hover {
-  color: #462626; 
-  text-decoration: underline; 
+  color: #462626;
+  text-decoration: underline;
 }
 
 .footerBottom {
   text-align: center;
   padding: 10px 0;
-  color: #4b4848; 
-  
+  color: #4b4848;
+
 }
 
 @media (max-width: 600px) {
   .footerContainer {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+}
+
+.gameImage {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-left: 5px;
+}
+
+.gameImage:hover {
+  transform: scale(1.05);
 }

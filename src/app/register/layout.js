@@ -7,7 +7,7 @@ export const metadata = {
         url: "https://jigsawplanet.us/register",
         images: [
             {
-                url: "https://jigsawplanet.us/images/jigsaw-planet-register.jpg",
+                url: "https://jigsawplanet.us/images/Puzzlle.jpeg",
                 width: 1200,
                 height: 630,
                 alt: "Register to jigsaw planet and start your puzzle journey",
