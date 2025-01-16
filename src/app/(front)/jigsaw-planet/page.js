@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import './puzzle.css';
 import Link from 'next/link'
 import Card from '@/app/Card/page';
-import Image from 'next/image';
 
 const containerStyle1 = {
   display: 'flex',
@@ -18,8 +17,8 @@ const containerStyle1 = {
 
 const Board1 = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 85px);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 90px);
+  grid-gap: 8px;
 `;
 
 const initialCards = [
@@ -106,18 +105,14 @@ const Puzzle1 = () => {
   };
 
   return (
-    <main className='text-conainer' style={{
+    <div className='text-conainer' style={{
       padding: "20px"
     }}>
-      <header>
-        <h1 className="level-color">Match The Pairs - Level {level}</h1>
-      </header>
-
-      <section className='planet-container'>
+      <div className='planet-container'>
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-
+              <h3 className='level-color'>Match The Pairs Level {level}</h3>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,8 +136,8 @@ const Puzzle1 = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="welcome-container">
+      </div>
+      <div className="welcome-container">
         <h2 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h2>
         <p className="welcome-text">
           Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
@@ -151,98 +146,56 @@ const Puzzle1 = () => {
         <ul className="welcome-list">
           <li>🔍 Every piece counts: Take your time, explore the possibilities, and watch how everything falls into place.</li>
           <li>🧠 Sharpen your mind: Solve puzzles to grow stronger, one piece at a time.</li>
-          <li>🎯 Face the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it complete!"</li>
+          <li>🎯 Embrace the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it!"</li>
         </ul>
         <p className="welcome-text">
           Keep pushing forward, trust your instincts, and most of all—enjoy the journey. You’ve got the mind of a champion, and every puzzle you conquer is a victory worth celebrating! Get ready to piece it all together! 🎉
         </p>
-      </section>
-      <section className="game-instructions-container">
+      </div>
+      <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
             <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
-            <p className="instructions-description">
-              Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, and enjoy some leisure time.
-              Jigsaw planet games come in various forms, from traditional paper puzzles to sophisticated digital versions.
-              This guide will walk you through playing different types of jigsaw planet games, offering tips to enhance your experience.
-            </p>
+            <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
             <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
-            <p className="instructions-description">
-              Jigsaw planet games come in many varieties, each with unique mechanics and objectives.
-            </p>
+            <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">
-              Each jigsaw planet puzzle has specific rules and objectives. Read the instructions carefully before starting.
-            </p>
+            <p className="instructions-description">Each jigsaw planet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
-              <li>In this game, players have 3 chances.</li>
-              <li>Match 3 jigsaw puzzle game cards to win.</li>
-              <li>If you fail, restart the game and try again.</li>
+              <li>In this game players have 3 chances.</li>
+              <li>If 3 jigsaw planet puzzle game cards are matched to each other.</li>
+              <li>Player wins this game.</li>
+              <li>Otherwise, Restart the jigsaw planet game again and try to match again 3 cards.</li>
             </ul>
             <h3 className="instruction-step">3. Set up Your Space:</h3>
-            <p className="instructions-description">
-              For physical puzzles, ensure a comfortable workspace. For digital games, adjust your device's brightness and sound settings.
-            </p>
+            <p className="instructions-description">For physical jigsaw puzzle, ensure you have a comfortable and well-lit workspace. For digital jigsawplanet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
             <h2 className="tips-title">Tips for Success</h2>
             <ul className="instructions-list">
-              <li>Stay Calm: Enjoy the game, and take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the better you'll become.</li>
-              <li>Learn from Mistakes: Try different approaches when things don't work.</li>
-              <li>Challenge Yourself: Increase difficulty gradually to keep improving.</li>
+              <li>Stay Calm: Jigsawplanet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
+              <li>Practice Regularly: The more you play, the better you get.</li>
+              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
+              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
             <h3 className="instruction-step">Conclusion:</h3>
-            <p className="instructions-description">
-              Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun.
-              By understanding the rules, using effective strategies, and practicing regularly,
-              you can enhance your skills and enjoy the satisfaction of solving puzzles. Dive into the fascinating world of jigsaw puzzles today!
-            </p>
+            <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
-              <Image
-                className="game-image"
-                src="/images/Puzzle1.jpeg"
-                alt="Play free online jigsaw puzzle game on Jigsaw Planet"
-                width={240}
-                height={192}
-                loading="lazy"
-              />
+              <img className='game-image' src='./images/Puzzle1.jpeg' alt='free online jigsaw planet puzzle game' />
             </Link>
             <Link href="/jigsawplanet1">
-              <Image
-                className="game-image"
-                src="/images/Puzzle2.jpeg"
-                alt="Interactive jigsaw puzzles for free on Jigsaw Planet"
-                width={240}
-                height={192}
-                loading="lazy"
-              />
+              <img className='game-image' src='./images/Puzzle2.jpeg' alt='jigsawplanet interactive puzzle' />
             </Link>
             <Link href="/jigsawplanet2">
-              <Image
-                className="game-image"
-                src="/images/Puzzle3.jpeg"
-                alt="Challenging jigsaw puzzles to test your skills"
-                width={240}
-                height={192}
-                loading="lazy"
-              />
+              <img className='game-image' src='./images/Puzzle3.jpeg' alt='free jigsaw planet game' />
             </Link>
-            <Link href="/jigsawplanet3">
-              <Image
-                className="game-image"
-                src="/images/Puzzle5.jpeg"
-                alt="Advanced jigsaw puzzles for enthusiasts"
-                width={240}
-                height={192}
-                loading="lazy"
-              />
+            <Link href="/jigsawplanet13.">
+              <img className='game-image' src='./images/Puzzle5.jpeg' alt='play jigsaw planet puzzle online' />
             </Link>
           </div>
         </div>
-      </section>
-
-    </main>
+      </div>
+    </div>
   );
 };
 

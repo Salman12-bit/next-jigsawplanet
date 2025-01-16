@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: post.title,
         description: post.desc,
-        url: `https://jigsawplanet.us/${params.id}`,
+        url: `https://jigsawplanet.us/post/${params.id}`,
         images: [
           {
             url: post.file,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
         ],
       },
       alternates: {
-        canonical: `https://jigsawplanet.us/${params.id}`,
+        canonical: `https://jigsawplanet.us/post/${params.id}`,
       },
       additionalMetadata: {
         datePublished: post.datePublished,
@@ -79,7 +79,7 @@ const BlogPost = async ({ params }) => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://jigsawplanet.us/${params.id}`,
+      "@id": `https://jigsawplanet.us/post/${params.id}`,
     },
     "image": {
       "@type": "ImageObject",
@@ -99,12 +99,13 @@ const BlogPost = async ({ params }) => {
             <img
               src={post.file}
               alt="Author Avatar"
-              width={1200}
-              height={500}
+              width={700}
+              height={400}
               className="avatar"
             />
           </div>
-          <p className="content">{post.content}</p>
+          <div className="content" dangerouslySetInnerHTML={{ __html: post.content }}></div>
+
         </div>
       </div>
     </div>

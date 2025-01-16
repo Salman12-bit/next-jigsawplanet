@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    /* background-color: rgba(40, 39, 39, 0.2); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -96,8 +95,8 @@
     margin-top: 8px;
 }
 
-/* @media (max-width: 480px) {
-    .freetheme-container{
-        margin-top: 230px;
+@media (max-width: 480px) {
+    .imgformat{
+      margin-top: 10px;
     }
-} */
+  }

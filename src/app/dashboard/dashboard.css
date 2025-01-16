@@ -4,7 +4,6 @@
   align-items: center;
   background-size: cover;
   background-position: center;
-  margin-top: 80px;
   padding: 30px;
   margin-bottom: 20px;
   border-top-right-radius: 100px;
@@ -14,6 +13,7 @@
 .dashboard-box {
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 2rem;
   width: 100%;
   max-width: 70rem;

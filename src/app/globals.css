@@ -11,5 +11,20 @@ body {
 } */
 
 
+.ql-container.ql-snow {
+  border: none !important;
+  background-color: rgb(58, 59, 59) !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  color: white !important;
+  min-height: 300px !important;
+}
 
+.ql-toolbar.ql-snow {
+  border: none !important;
 
+  color: white !important;
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  background-color: white !important;
+}

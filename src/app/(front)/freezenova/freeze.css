@@ -1,4 +1,4 @@
-.text-conainer {
+.text-conainer{
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
@@ -136,8 +136,8 @@
     object-fit: cover;
 }
 
-/* @media (max-width: 480px) {
-    .text-conainer {
-        margin-top: 230px;
+@media (max-width: 480px) {
+    .imgformat{
+      margin-top: 10px;
     }
-} */
+  }
