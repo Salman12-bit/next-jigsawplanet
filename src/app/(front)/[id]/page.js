@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: post.title,
         description: post.desc,
-        url: `https://jigsawplanet.us/post/${params.id}`,
+        url: `https://jigsawplanet.us/${params.id}`,
         images: [
           {
             url: post.file,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
         ],
       },
       alternates: {
-        canonical: `https://jigsawplanet.us/post/${params.id}`,
+        canonical: `https://jigsawplanet.us/${params.id}`,
       },
       additionalMetadata: {
         datePublished: post.datePublished,
@@ -79,7 +79,7 @@ const BlogPost = async ({ params }) => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://jigsawplanet.us/post/${params.id}`,
+      "@id": `https://jigsawplanet.us/${params.id}`,
     },
     "image": {
       "@type": "ImageObject",
