@@ -139,7 +139,7 @@
     background-color: #eee;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .overlay {
