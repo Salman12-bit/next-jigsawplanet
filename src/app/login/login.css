@@ -9,7 +9,7 @@
 }
 
 .login-box {
-  background-color: rgba(190, 184, 184, 0.2);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
   padding: 20px;
   border-radius: 10px;
   max-width: 430px; 
@@ -20,20 +20,20 @@
 
 .intro-text {
   text-align: justify;
-  color: #4b4848;
+  color: #d1cece;
   margin-bottom: 20px;
 }
 
 .title {
   font-size: 2rem;
   font-weight: bold;
-  color: #060606;
+  color: #d1cece;
   margin-bottom: 10px;
 }
 
 .subtitle {
   font-size: 1.25rem;
-  color: #4b4848;
+  color: #d1cece;
   margin-bottom: 20px;
 }
 
@@ -45,29 +45,29 @@
 
 .form-label {
   text-align: left;
-  color: #4b4848;
+  color: #d1cece;
   font-weight: bold;
   margin-bottom: 1px;
 }
 
 .input {
   padding: 12px;
-  width: 100%; /* Full width for input */
+  width: 100%; 
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  background-color: #333;
-  color: #fff;
+  background-color: #f0ebeb;
+  color: #d1cece;
   transition: background-color 0.9s ease;
 }
 
 .input:focus {
   background-color: rgba(255, 255, 255, 0.2); 
-  color: #403a3a;
+  color: #d1cece;
 }
 
 .input::placeholder {
-  color: #aaa;
+  color: #d1cece;
 }
 
 .password-wrapper {
@@ -86,13 +86,13 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: #ccc;
+  color: #d1cece;
   font-size: 1.1rem;
 }
 
 .button {
-  background-color: #007bff;
-  color: #fff;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
+  color: #d1cece;
   padding: 12px;
   border: none;
   border-radius: 5px;
@@ -110,7 +110,7 @@
 }
 
 .link {
-  color: #007bff;
+  color: #d1cece;
   text-decoration: none;
 }
 
@@ -119,14 +119,14 @@
 }
 
 .error {
-  color: #d9534f;
+  color: #d1cece;
   font-size: 0.9rem;
 }
 
 
 
 .text-white {
-  color: #4b4848; 
+  color: #d1cece;
   margin-top: 10px;
   font-style: italic;
   

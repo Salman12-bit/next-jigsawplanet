@@ -2,36 +2,36 @@ let Blogsdb = [
     {
         id: 1,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsaw Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Jigsaw planet free",
         description:
             "Jigsaw planet games come in many varieties, each with unique mechanics and objectives.",
         category: "Jigsaw Game . Fun and Entertainment",
-        image: "./images/Puzzle1.jpeg",
+        image: "./images/nightshift.webp",
     },
     {
         id: 2,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from Puzzle Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Jigsawplanet Game",
         description:
             "Free Jigsaw planet come in many varieties, each with unique mechanics and objectives.",
         category: "Puzzle Game . Fun and Entertainment",
         image:
-            "./images/Puzzle2.jpeg",
+            "./images/beautifulplace.webp",
     },
     {
         id: 3,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from Jigsaw planet Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Jigsawplanet",
         description:
@@ -43,9 +43,9 @@ let Blogsdb = [
     {
         id: 4,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsaw Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Jigsaw puzzle",
         description:
@@ -57,9 +57,9 @@ let Blogsdb = [
     {
         id: 5,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from freeze nova free Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freeze nova Game",
         description:
@@ -71,9 +71,9 @@ let Blogsdb = [
     {
         id: 6,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from freezenova Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:
@@ -85,9 +85,9 @@ let Blogsdb = [
     {
         id: 7,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsawplanet Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:
@@ -99,9 +99,9 @@ let Blogsdb = [
     {
         id: 8,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsaw company Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:
@@ -113,9 +113,9 @@ let Blogsdb = [
     {
         id: 9,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsawplanet free"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:
@@ -127,9 +127,9 @@ let Blogsdb = [
     {
         id: 10,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from free jigsaw planet Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:
@@ -141,9 +141,9 @@ let Blogsdb = [
     {
         id: 11,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsaw planet Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:
@@ -155,9 +155,9 @@ let Blogsdb = [
     {
         id: 12,
         Details: {
-            Author: "Salman Blogger",
+            Author: "Puzzles Plan",
             Released: "July 2024",
-            Credits: "Images from jigsawplant Game"
+            Credits: "Images from puzzlesplan website"
         },
         title: "Freezenova Game",
         description:

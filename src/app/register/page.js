@@ -9,7 +9,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const Register = () => {
   const [error, setError] = useState(null);
-  const [showPassword, setShowPassword] = useState(false); // State for password visibility
+  const [showPassword, setShowPassword] = useState(false); 
   const router = useRouter();
 
   const handleSubmit = async (e) => {
@@ -43,7 +43,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <div className="register-box">
-        <h1 className="title">Create an Account</h1>
+        <h1 className="title">Create you own Account</h1>
         <form onSubmit={handleSubmit} className="form">
           <label className="form-label">First Name</label>
           <input type="text" placeholder="First-name" required className="input" />
@@ -76,7 +76,7 @@ const Register = () => {
         </form>
         <div className="text-center mt-4">
           <p className="text-white">Already have an account?
-            <Link href="/login" className="text-white"> Sign In</Link>
+            <Link href="/login" className="text-white"> Log In</Link>
           </p>
         </div>
       </div>

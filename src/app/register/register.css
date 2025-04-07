@@ -1,4 +1,3 @@
-/* register.css */
 
 .register-container {
   display: flex;
@@ -12,7 +11,7 @@
 }
 
 .register-box {
-  background-color: rgba(40, 39, 39, 0.2);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
   padding: 20px;
   border-radius: 10px;
   max-width: 450px;
@@ -24,7 +23,7 @@
 .title {
   font-size: 2rem;
   font-weight: bold;
-  color: #0a0909;
+  color: #d1cece;
   margin-bottom: 10px;
 }
 
@@ -35,7 +34,7 @@
 }
 
 .form-label {
-  color: #000000;
+  color: #d1cece;
   text-align: left;
 }
 
@@ -46,12 +45,12 @@
   border-radius: 5px;
   font-size: 1rem;
   background-color: #333;
-  color: #fff;
+  color: #d1cece;
   transition: background-color 0.3s ease;
 }
 
 .input:focus {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(235, 226, 226, 0.2);
 }
 
 .password-wrapper {
@@ -70,12 +69,12 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: #ccc;
+  color: #d1cece;
 }
 
 .button {
-  background-color: #007bff;
-  color: #fff;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+  color: #d1cece;
   padding: 12px;
   border: none;
   border-radius: 5px;
@@ -88,17 +87,17 @@
 }
 
 .text-center {
-  color: #ddd;
+  color: #d1cece;
   margin-top: 20px;
 }
 
 .or {
-  color: #ddd;
+  color: #d1cece;
   margin: 20px 0;
 }
 
 .link {
-  color: #007bff;
+  color: #d1cece;
   text-decoration: none;
 }
 
@@ -107,13 +106,13 @@
 }
 
 .error {
-  color: #d9534f;
+  color: #d1cece;
   font-size: 0.9rem;
 }
 
 
 .text-white {
-  color: rgb(0, 0, 0); 
+  color: #d1cece;
   margin-top: 10px;
   font-style: italic;
   

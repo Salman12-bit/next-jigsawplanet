@@ -1,24 +1,78 @@
+import React from 'react';
+
 export const metadata = {
-    title: "Home - Free Online Jigsaw Puzzles For You",
-    description: "Welcome to jigsaw planet - the ultimate platform for puzzle lovers! Explore, play, and enjoy our vast selection of online jigsaw puzzles.",
-    openGraph: {
-        title: "Home - Free Online Jigsaw Puzzles For You",
-        description: "Discover a world of puzzles on jigsawplanet! Start solving and sharing puzzles today, and join a community of puzzle enthusiasts.",
-        url: "https://jigsawplanet.us/",
-        images: [
-            {
-                url: "https://jigsawplanet.us/images/Puzzlle.jpeg",
-                width: 1200,
-                height: 630,
-                alt: "Explore and play puzzles on jigsaw planet",
-            },
-        ],
-    },
-    alternates: {
-        canonical: "https://jigsawplanet.us",  
-    },
+  title: "Explore JigsawPlanet: Free Online Puzzles for Fun",
+  keywords: "jicsaw planet, online piece,jigsaw",
+  description:
+    "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
+  openGraph: {
+    title: "Explore JigsawPlanet: Free Online Puzzles for Fun",
+    description:
+      "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
+    url: "https://puzzlesplan.com/",
+    images: [
+      {
+        url: "https://puzzlesplan.com/images/puzzlesplan.webp",
+        width: 1200,
+        height: 630,
+        alt: "Explore and play puzzles on PuzzlesPlan",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://puzzlesplan.com",
+  },
 };
 
 export default function Layout({ children }) {
-    return <>{children}</>;
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Explore JigsawPlanet: Free Online Puzzles for Fun",
+    "url": "https://puzzlesplan.com",
+    "description":
+      "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuzzlesPlan",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
+        "width": 500,
+        "height": 500
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
+      "width": 1200,
+      "height": 630
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntity": {
+      "@type": "OnlineGame",
+      "name": "Free Online Jigsaw Puzzle Game",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "playMode": "Single Player",
+      "url": "https://puzzlesplan.com"
+    }
+  };
+
+  return (
+    <>
+      {children}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+    </>
+  );
 }

@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://jigsawplanet.us/</loc>
+    <loc>https://puzzlesplan.com/</loc>
     <lastmod>2024-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Static Pages -->
-  <url>
+  <!-- <url>
     <loc>https://jigsawplanet.us/contact</loc>
     <lastmod>2024-10-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -21,22 +21,11 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jigsawplanet.us/freezenova</loc>
-    <lastmod>2024-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://jigsawplanet.us/gametheme</loc>
     <lastmod>2024-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://jigsawplanet.us/6740291f0e9fcd3bc93b319e</loc>
-    <lastmod>2024-11-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-   </url>
+  </url> -->
+ 
 
 </urlset>

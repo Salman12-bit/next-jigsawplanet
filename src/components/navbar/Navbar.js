@@ -9,16 +9,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session } = useSession();
 
-  // Logout function
+ 
   const logout = async () => {
-    localStorage.removeItem("key"); // Clear specific item from local storage
+    localStorage.removeItem("key"); 
     await signOut({
-      callbackUrl: "https://jigsawplanet.us/login", // Redirect to production login page
+      callbackUrl: "https://puzzlesplan.com/login", 
     });
-    window.location.href = "https://jigsawplanet.us/login"; // Hard refresh to production login page
+    window.location.href = "https://puzzlesplan.com/login"; 
   };
 
-  // Toggle mobile menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -27,7 +26,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.navLogo}>
-          jigsawplanet
+          PuzzlesPlan
         </Link>
         <button className={styles.hamburger} onClick={toggleMenu}>
           <span className={styles.bar}></span>
@@ -39,22 +38,22 @@ const Navbar = () => {
           <Link href="/" className={styles.navItem}>
             Home
           </Link>
-          <Link href="/contact" className={styles.navItem}>
-            Contact
+          <Link href="/elementpuzzle" className={styles.navItem}>
+            Element Puzzle
           </Link>
-          <Link href="/jigsaw-planet" className={styles.navItem}>
-            Puzzle | Game
+          <Link href="/puzzle-abc" className={styles.navItem}>
+            Alphabet Puzzle
           </Link>
-          <Link href="/freezenova" className={styles.navItem}>
-            Freeze | Nova
+          <Link href="/numberpuzzle" className={styles.navItem}>
+            Number Puzzle
           </Link>
-          <Link href="/gametheme" className={styles.navItem}>
-            Gaming Theme
+          <Link href="/themegallery" className={styles.navItem}>
+            Theme Gallery
           </Link>
           {session?.user?.role === "admin" && (
             <>
-              <Link href="/userprofile" className={styles.navItem}>
-                Change Role
+              <Link href="/userrole" className={styles.navItem}>
+                User Role
               </Link>
               <Link href="/dashboard" className={styles.navItem}>
                 Dashboard

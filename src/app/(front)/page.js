@@ -13,12 +13,12 @@ export default function Home() {
 
   const puzzleGames = [
     {
-      "image": "/images/Puzzle1.jpeg",
-      link: '/puzzle-1'
+      "image": "/images/nightshift.webp",
+      link: '/jigsaw-night'
     },
     {
-      "image": "/download.jpeg",
-      link: '/puzzle-2'
+      "image": "/images/beautifulplace.webp",
+      link: '/place-jigsaw'
 
     },
 
@@ -73,18 +73,12 @@ export default function Home() {
         {
           puzzleGames.map((item, index) => (
             <div key={index} className="puzzle-game-card">
+               <Link href={item.link}>
               <img
                 src={item.image}
                 alt={`Puzzle ${index + 1}`}
                 className="puzzle-game-image"
               />
-
-              <h3 className="puzzle-game-title">Puzzle Game</h3>
-              <p>
-                Click on the button below to start playing game
-              </p>
-              <Link href={item.link}>
-                <button className="puzzle-game-button">Play Now</button>
               </Link>
             </div>
           )

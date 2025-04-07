@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: post.title,
         description: post.desc,
-        url: `https://jigsawplanet.us/${params.id}`,
+        url: `https://puzzlesplan.com/${params.id}`,
         images: [
           {
             url: post.file,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
         ],
       },
       alternates: {
-        canonical: `https://jigsawplanet.us/${params.id}`,
+        canonical: `https://puzzlesplan.com/${params.id}`,
       },
       additionalMetadata: {
         datePublished: post.datePublished,
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }) {
       title: "Post Not Found",
       description: "This post could not be found.",
       alternates: {
-        canonical: `https://jigsawplanet.us/404`,
+        canonical: `https://puzzlesplan.com/404`,
       },
     };
   }
@@ -67,19 +67,19 @@ const BlogPost = async ({ params }) => {
     "dateModified": post.dateModified, 
     "author": {
       "@type": "Person",
-      "name": post.author || "Jigsaw Planet",
+      "name": post.author || "puzzlesplan",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Jigsaw Planet",
+      "name": "puzzlesplan",
       "logo": {
         "@type": "ImageObject",
-        "url": `https://jigsawplanet.us/${post.file}`,
+        "url": `https://puzzlesplan.com/${post.file}`,
       },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://jigsawplanet.us/${params.id}`,
+      "@id": `https://puzzlesplan.com/${params.id}`,
     },
     "image": {
       "@type": "ImageObject",

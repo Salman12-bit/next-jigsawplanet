@@ -91,13 +91,13 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div className="dashboard-box">
         <div className="left-section motivational-text">
-          <h3>Welcome to Your Blogging Journey!</h3>
+          <h3>Welcome to Your Gaming Journey!</h3>
           <p>Hey there, future storyteller! 🌟</p>
           <p>
-            Whether it's your first post or your hundredth, every time you
-            write, you have the power to inspire, inform, and connect with
-            people all over the world. This space is yours to share your voice,
-            passions, and unique perspective.
+            Whether it's your first post or your hundredth, every time you write, you have
+            the opportunity to inspire, educate, and connect with people of worldwide. This is
+            your space to express your voice, share your passions, and offer your unique
+            perspective.
           </p>
           <ul>
             <li>✍️ Every great blog starts with a single post.</li>

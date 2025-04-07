@@ -1,0 +1,74 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.register-box {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d1cece;
+    margin-bottom: 10px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-label {
+    color: #d1cece;
+    text-align: left;
+}
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #d1cece;
+    transition: background-color 0.3s ease;
+}
+.input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.password-wrapper {
+    position: relative;
+}
+.password-input {
+    padding-right: 40px;
+}
+.button {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+    color: #d1cece;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.or {
+    color: #d1cece;
+    margin: 20px 0;
+}
+.error {
+    color: #d1cece;
+    font-size: 0.9rem;
+}
+

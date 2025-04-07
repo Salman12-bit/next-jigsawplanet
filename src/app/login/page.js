@@ -58,11 +58,12 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <p className="intro-text">
-          Join the adventure Log in to unlock your gaming potential and dive into thrilling challenges
-          that test your skills. New here? Register now and start your journey—where every level conquered
-          brings you closer to being the ultimate champion
+        Join the adventure! Log in to unleash your gaming potential and 
+        take on exciting challenges that put your skills to the test. 
+        New here? Sign up now and begin your journey—every level you 
+        conquer brings you one step closer to becoming the ultimate champion!
         </p>
-        <h2 className="subtitle">Sign-In Here</h2>
+        <h2 className="subtitle">Log-In Here</h2>
 
         <form onSubmit={handleSubmit} className="form">
           <label className="form-label">Email</label>
@@ -91,7 +92,7 @@ const Login = () => {
           <p className="text-white">
             Don't have an account?
             <br />
-            <Link href="/register" className="text-white">Sign Up</Link> /
+            <Link href="/register" className="text-white">Register</Link> /
             <Link href="/forgetpass" className="text-white">Forget Password</Link>
           </p>
         </div>

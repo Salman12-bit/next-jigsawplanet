@@ -4,7 +4,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /checkout/
 
-Sitemap: https://jigsawplanet.us/sitemap.xml
+Sitemap: https://puzzlesplan.com/sitemap.xml
 
 
 

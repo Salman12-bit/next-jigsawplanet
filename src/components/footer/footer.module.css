@@ -1,61 +1,113 @@
 .footer {
-  color: rgb(0, 0, 0);
-  padding: 20px 0;
-  background-color: rgba(231, 231, 231, 0.861);
-  background-size: cover;
-  background-position: center;
+  color: rgb(250, 250, 250);
+  padding: 50px 0;
+  background-color: rgba(24, 24, 24, 0.95);
+  text-align: center;
 }
 
 .footerContainer {
   display: flex;
+  justify-content: space-between;
   max-width: 1200px;
-  text-align: center;
-
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
-.footerSection {
+.footerLeft, .footerMiddle, .footerRight {
   flex: 1;
-  min-width: 250px;
+  min-width: 280px;
   margin: 10px;
   text-align: center;
 }
 
-.footerSection h3 {
-  margin-bottom: 10px;
+/* Contact Info */
+.contact {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 5px 0;
 }
 
-.footerSection p,
-.footerSection a {
-  color: #4b4848;
+.contact a {
+  color: #ff9800;
   text-decoration: none;
 }
 
-.footerSection a:hover {
-  color: #462626;
+.contact a:hover {
   text-decoration: underline;
 }
 
-.footerBottom {
-  text-align: center;
-  padding: 10px 0;
-  color: #4b4848;
-
+.socialIconsRow {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 
-@media (max-width: 600px) {
+.socialIcon {
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
+
+.footerLink {
+  display: block;
+  color: #f3f2f2;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletterForm input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  outline: none;
+}
+
+.newsletterForm button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ff9800;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.newsletterForm button:hover {
+  background-color: #e68900;
+}
+
+.footerBottom {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  color: #faf5f5;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
   .footerContainer {
     flex-direction: column;
     align-items: center;
   }
-}
-
-.gameImage {
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  margin-left: 5px;
-}
-
-.gameImage:hover {
-  transform: scale(1.05);
 }

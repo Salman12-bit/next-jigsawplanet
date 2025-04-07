@@ -1,0 +1,76 @@
+.imgformat {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px 0px;
+  margin-bottom: 17px;
+  margin-right: 10px;
+}
+
+.title-text {
+  font-size: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.content-text{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
+.image {
+  object-fit: contain;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+
+  to {
+    transform: translateY(0px) scale(1.03);
+  }
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+
+}
+
+.input-text {
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  border: 1px solid #000000;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.textarea {
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #000000;
+  border: 1px solid #000000;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+}
