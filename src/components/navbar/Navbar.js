@@ -38,10 +38,10 @@ const Navbar = () => {
           <Link href="/" className={styles.navItem}>
             Home
           </Link>
-          <Link href="/elementpuzzle" className={styles.navItem}>
+          <Link href="/blockspuzzle" className={styles.navItem}>
             Element Puzzle
           </Link>
-          <Link href="/puzzle-abc" className={styles.navItem}>
+          <Link href="/alphabetpuzzle" className={styles.navItem}>
             Alphabet Puzzle
           </Link>
           <Link href="/numberpuzzle" className={styles.navItem}>
