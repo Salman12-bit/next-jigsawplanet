@@ -1,14 +1,14 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
-  keywords: "puzzle planet, jigsaw planet puzzle, game",
+  title: "Number Puzzle: Fun Math Game to Train Your Brain",
+  keywords: "numberpuzzle,block number puzzle",
   description:
-    "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+    "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
   openGraph: {
-    title: "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
+    title: "Number Puzzle: Fun Math Game to Train Your Brain",
     description:
-      "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+      "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
     url: "https://puzzlesplan.com/numberpuzzle",
     images: [
       {
@@ -28,9 +28,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
+    "name": "Number Puzzle: Fun Math Game to Train Your Brain",
     "description":
-      "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+      "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
     "url": "https://puzzlesplan.com/numberpuzzle",
     "mainEntity": {
       "@type": "OnlineGame",
@@ -56,12 +56,6 @@ export default function Layout({ children }) {
           "height": 500,
         },
       }
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-      "width": 1200,
-      "height": 630,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

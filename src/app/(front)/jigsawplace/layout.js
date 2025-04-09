@@ -1,18 +1,18 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
-  keywords: "puzzle planet, jigsaw planet puzzle, game",
+  title: " Jigsaw Planet: Play Free Online Jigsaw Puzzles",
+  keywords: "childrens jigsaw costume,jigsaw puzzle planet",
   description:
-    "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+    "Explore Jigsaw Planet for thousands of free jigsaw puzzles. Relax, play, and challenge your brain with fun puzzles for all skill levels!",
   openGraph: {
-    title: "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
+    title: " Jigsaw Planet: Play Free Online Jigsaw Puzzles",
     description:
-      "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
-    url: "https://puzzlesplan.com/jigsaw-night",
+      "Explore Jigsaw Planet for thousands of free jigsaw puzzles. Relax, play, and challenge your brain with fun puzzles for all skill levels!",
+    url: "https://puzzlesplan.com/jigsawplace",
     images: [
       {
-        url: "https://puzzlesplan.com/images/nightshift.webp",
+        url: "https://puzzlesplan.com/images/beautifulplace.webp",
         width: 1200,
         height: 630,
         alt: "Play puzzle planet on PuzzlesPlan",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/jigsaw-night",
+    canonical: "https://puzzlesplan.com/jigsawplace",
   },
 };
 
@@ -28,10 +28,10 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
+    "name": " Jigsaw Planet: Play Free Online Jigsaw Puzzles",
     "description":
-      "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
-    "url": "https://puzzlesplan.com/jigsaw-night",
+      "Explore Jigsaw Planet for thousands of free jigsaw puzzles. Relax, play, and challenge your brain with fun puzzles for all skill levels!",
+    "url": "https://puzzlesplan.com/jigsawplace",
     "mainEntity": {
       "@type": "OnlineGame",
       "name": "puzzle planet",
@@ -39,10 +39,10 @@ export default function Layout({ children }) {
       "applicationCategory": "Game",
       "operatingSystem": "Web Browser",
       "playMode": "Double Player",
-      "url": "https://puzzlesplan.com/jigsaw-night",
+      "url": "https://puzzlesplan.com/jigsawplace",
       "image": {
         "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/nightshift.webp",
+        "url": "https://puzzlesplan.com/images/beautifulplace.webp",
         "width": 1200,
         "height": 630,
       },
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
         "name": "PuzzlesPlan",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/nightshift.webp",
+          "url": "https://puzzlesplan.com/images/beautifulplace.webp",
           "width": 500,
           "height": 500,
         },
@@ -59,13 +59,13 @@ export default function Layout({ children }) {
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://puzzlesplan.com/images/nightshift.webp",
+      "url": "https://puzzlesplan.com/images/beautifulplace.webp",
       "width": 1200,
       "height": 630,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/jigsaw-night"
+      "@id": "https://puzzlesplan.com/jigsawplace"
     }
   };
 

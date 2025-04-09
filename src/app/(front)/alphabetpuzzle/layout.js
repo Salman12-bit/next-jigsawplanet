@@ -9,7 +9,7 @@ export const metadata = {
     title: "Alphabet Puzzle: Fun Learning for Kids & Toddlers",
     description:
       "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
-    url: "https://puzzlesplan.com/puzzle-abc",
+    url: "https://puzzlesplan.com/alphabetpuzzle",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/puzzle-abc",
+    canonical: "https://puzzlesplan.com/alphabetpuzzle",
   },
 };
 
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
     "name": "Alphabet Puzzle: Fun Learning for Kids & Toddlers",
     "description":
       "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
-    "url": "https://puzzlesplan.com/puzzle-abc",
+    "url": "https://puzzlesplan.com/alphabetpuzzle",
     "publisher": {
       "@type": "Organization",
       "name": "PuzzlesPlan",
@@ -42,15 +42,9 @@ export default function Layout({ children }) {
         "height": 500,
       },
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-      "width": 1200,
-      "height": 630,
-    },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/puzzle-abc",
+      "@id": "https://puzzlesplan.com/alphabetpuzzle",
     },
   };
 

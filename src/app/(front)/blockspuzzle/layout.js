@@ -1,15 +1,15 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore Alphabet Puzzles: Unlock Your Word Skills",
+  title: "Blocks Puzzle: Fun Brain Game for All Ages",
   keywords: "alphabet slider puzzle, alphabet sliders, puzzles",
   description:
-    "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
+    " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
   openGraph: {
-    title: "Explore Alphabet Puzzles: Unlock Your Word Skills",
+    title: "Blocks Puzzle: Fun Brain Game for All Ages",
     description:
-      "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
-    url: "https://puzzlesplan.com/elementpuzzle",
+      " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
+    url: "https://puzzlesplan.com/blockspuzzle",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/elementpuzzle",
+    canonical: "https://puzzlesplan.com/blockspuzzle",
   },
 };
 
@@ -28,18 +28,18 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Explore Alphabet Puzzles: Unlock Your Word Skills",
+    "name": "Blocks Puzzle: Fun Brain Game for All Ages",
     "description":
-      "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
-    "url": "https://puzzlesplan.com/elementpuzzle",
+      " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
+    "url": "https://puzzlesplan.com/blockspuzzle",
     "mainEntity": {
       "@type": "OnlineGame",
-      "name": "Explore Alphabet Puzzles: Unlock Your Word Skills",
+      "name": "Blocks Puzzle: Fun Brain Game for All Ages",
       "genre": "Action, Puzzle",
       "applicationCategory": "Game",
       "operatingSystem": "Web Browser",
       "playMode": "Single Player",
-      "url": "https://puzzlesplan.com/elementpuzzle",
+      "url": "https://puzzlesplan.com/blockspuzzle",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
@@ -57,15 +57,9 @@ export default function Layout({ children }) {
         },
       }
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-      "width": 1200,
-      "height": 630,
-    },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/elementpuzzle"
+      "@id": "https://puzzlesplan.com/blockspuzzle"
     }
   };
 

@@ -1,4 +1,4 @@
-// components/ProtectedComp.js
+
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -9,7 +9,7 @@ const ProtectedComp = ({ children }) => {
 
     useEffect(() => {
         if (!auth) {
-            router.push('/login'); // Redirect to login if not authenticated
+            router.push('/login'); 
         }
     }, [auth, router]);
 

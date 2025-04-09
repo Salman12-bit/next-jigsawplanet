@@ -14,11 +14,11 @@ export default function Home() {
   const puzzleGames = [
     {
       "image": "/images/nightshift.webp",
-      link: '/jigsaw-night'
+      link: '/jigsawnight'
     },
     {
       "image": "/images/beautifulplace.webp",
-      link: '/place-jigsaw'
+      link: '/jigsawplace'
 
     },
 
