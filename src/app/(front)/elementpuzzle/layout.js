@@ -9,7 +9,7 @@ export const metadata = {
     title: "Blocks Puzzle: Fun Brain Game for All Ages",
     description:
       " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
-    url: "https://puzzlesplan.com/blockspuzzle",
+    url: "https://puzzlesplan.com/elementpuzzle",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/blockspuzzle",
+    canonical: "https://puzzlesplan.com/elementpuzzle",
   },
 };
 
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
     "name": "Blocks Puzzle: Fun Brain Game for All Ages",
     "description":
       " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
-    "url": "https://puzzlesplan.com/blockspuzzle",
+    "url": "https://puzzlesplan.com/elementpuzzle",
     "mainEntity": {
       "@type": "OnlineGame",
       "name": "Blocks Puzzle: Fun Brain Game for All Ages",
@@ -39,7 +39,7 @@ export default function Layout({ children }) {
       "applicationCategory": "Game",
       "operatingSystem": "Web Browser",
       "playMode": "Single Player",
-      "url": "https://puzzlesplan.com/blockspuzzle",
+      "url": "https://puzzlesplan.com/elementpuzzle",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
@@ -59,7 +59,7 @@ export default function Layout({ children }) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/blockspuzzle"
+      "@id": "https://puzzlesplan.com/elementpuzzle"
     }
   };
 
