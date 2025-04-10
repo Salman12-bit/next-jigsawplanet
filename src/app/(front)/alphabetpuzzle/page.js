@@ -142,7 +142,7 @@ const Puzzle1 = () => {
           </div>
         </div>
       </div>
-      
+
       <div className={`welcome-container ${fadeIn ? "fade-in" : ""}`}>
         <div className="welcome-box left">
           <h2 className="welcome-subtitle">💡 Why Puzzles?</h2>
@@ -168,44 +168,49 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
-            <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
-            <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
-            <h4 className="instruction-step">2. Understand the Rules:</h4>
-            <p className="instructions-description">Each jigsaw planet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <h2 className="instructions-title">How to Play Free ABC Puzzle Game – A Complete Beginner’s Guide</h2>
+
+            <p className="instructions-description">
+              The <strong>ABC Puzzle Game</strong> is a fun, interactive, and brain-boosting activity that helps sharpen your mind, improve memory, and enhance problem-solving skills. Whether you're playing a physical version or enjoying the <strong>ABC Puzzle Game online for free</strong>, this engaging game offers a perfect balance of challenge and relaxation. In this step-by-step guide, you’ll learn how to play the ABC Puzzle Game, understand its rules, and pick up expert tips to win more often.
+            </p>
+
+            <h3 className="instruction-step">1. Explore Different Types of ABC Puzzle Games</h3>
+            <p className="instructions-description">
+              The ABC Puzzle Game comes in many forms, including physical puzzles, mobile apps, and <strong>online puzzle games</strong>. Each version offers unique gameplay mechanics and visuals, keeping the experience fresh and exciting.
+            </p>
+
+            <h4 className="instruction-step">2. Learn the Game Rules</h4>
+            <p className="instructions-description">
+              Understanding the rules of the ABC Puzzle Game is key to winning. Before you begin, take a moment to read through the game instructions. Here’s how it works:
+            </p>
             <ul className="instructions-list">
-              <li>In this game players have 3 chances.</li>
-              <li>If 3 jigsaw planet puzzle game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, Restart the jigsaw planet game again and try to match again 3 cards.</li>
+              <li>Each player gets 3 chances per game round.</li>
+              <li>Match 3 ABC Puzzle Game cards correctly to win the game.</li>
+              <li>If the match fails, restart the game and try again.</li>
             </ul>
-            <h5 className="instruction-step">3. Set up Your Space:</h5>
-            <p className="instructions-description">For physical jigsaw puzzle, ensure you have a comfortable and well-lit workspace. For digital jigsawplanet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h6 className="tips-title">Tips for Success</h6>
+
+            <h5 className="instruction-step">3. Set Up for a Better Gaming Experience</h5>
+            <p className="instructions-description">
+              Whether you’re playing the ABC Puzzle Game on your phone, tablet, or using a traditional board, make sure your environment is set up for comfort:
+              <ul>
+                <li>Use a clean, flat surface with good lighting for physical puzzles.</li>
+                <li>For digital play, adjust brightness and volume settings to create a focused atmosphere.</li>
+              </ul>
+            </p>
+
+            <h6 className="tips-title">Top Tips to Win at ABC Puzzle Game</h6>
             <ul className="instructions-list">
-              <li>Stay Calm: Jigsawplanet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the better you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
+              <li><strong>Stay Focused:</strong> Take your time and analyze each puzzle piece carefully.</li>
+              <li><strong>Practice Makes Perfect:</strong> Regular practice will boost your skills over time.</li>
+              <li><strong>Learn from Mistakes:</strong> Missed a match? Think about what went wrong and improve your strategy.</li>
+              <li><strong>Increase Difficulty Gradually:</strong> Challenge yourself with harder puzzles as you improve.</li>
             </ul>
-            <p className="instruction-step">Conclusion:</p>
-            <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
+
+            <p className="instruction-step">Conclusion</p>
+            <p className="instructions-description">
+              The <strong>ABC Puzzle Game</strong> is more than just a way to pass the time – it's a powerful tool for boosting brainpower and having fun. With a clear understanding of the rules and some smart strategies, you'll be matching puzzle cards like a pro in no time. Whether you're new to puzzle games or a seasoned player, the ABC Puzzle Game offers endless hours of entertainment. <strong>Start playing now and enjoy one of the best free puzzle games online!</strong>
+            </p>
           </div>
-          {/* <div className="game-image-container">
-            <Link href="/puzzle-abc">
-              <img className='game-image' src='./images/Puzzle1.jpeg' alt='free online jigsaw planet puzzle game' />
-            </Link>
-            <Link href="/puzzle-abc">
-              <img className='game-image' src='./images/Puzzle2.jpeg' alt='jigsawplanet interactive puzzle' />
-            </Link>
-            <Link href="/puzzle-abc">
-              <img className='game-image' src='./images/Puzzle3.jpeg' alt='free jigsaw planet game' />
-            </Link>
-            <Link href="/puzzle-abc">
-              <img className='game-image' src='./images/Puzzle5.jpeg' alt='play jigsaw planet puzzle online' />
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>
