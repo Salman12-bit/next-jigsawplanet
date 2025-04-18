@@ -22,11 +22,11 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'A' }, { id: 2, value: 'A' },
-  { id: 3, value: 'F' }, { id: 4, value: 'A' },
-  { id: 5, value: 'E' }, { id: 6, value: 'E' },
-  { id: 7, value: 'A' }, { id: 8, value: 'F' },
-  { id: 9, value: 'B' },
+  { id: 1, value: 'C' }, { id: 2, value: 'A' },
+  { id: 3, value: 'F' }, { id: 4, value: 'C' },
+  { id: 5, value: 'C' }, { id: 6, value: 'E' },
+  { id: 7, value: 'E' }, { id: 8, value: 'F' },
+  { id: 9, value: 'C' },
 ];
 
 const Puzzle1 = () => {
@@ -35,7 +35,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(1);
+  const [level, setLevel] = useState(2);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/woodenalphabet">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -142,73 +142,52 @@ const Puzzle1 = () => {
           </div>
         </div>
       </div>
-
-      <div className={`welcome-container ${fadeIn ? "fade-in" : ""}`}>
-        <div className="welcome-box left">
-          <h2 className="welcome-subtitle">💡 Why Puzzles?</h2>
-          <p>Puzzles enhance creativity, problem-solving, and patience. Every piece matters!</p>
-        </div>
-        <div className="welcome-box center">
-          <h1 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h1>
-          <p className="welcome-text">
-            Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
-            This is more than just a game—it's your journey to sharpen your mind, test your skills, and celebrate every small victory.
-          </p>
-          <ul className="welcome-list">
-            <li>🔍 Every piece counts: Take your time and explore the possibilities.</li>
-            <li>🧠 Sharpen your mind: Solve puzzles to grow stronger.</li>
-            <li>🎯 Embrace the challenge: Enjoy the thrill of completing each puzzle!</li>
-          </ul>
-        </div>
-        <div className="welcome-box right">
-          <h2 className="welcome-subtitle">🏆 Your Challenge</h2>
-          <p>Are you ready to test your skills? Get started and unlock new levels of fun!</p>
-        </div>
-      </div>
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free ABC Puzzle Game – A Complete Beginner’s Guide</h2>
+            <h2 className="instructions-title">How to Play Free Wood Alphabet Puzzle – A Complete Beginner’s Guide</h2>
 
             <p className="instructions-description">
-              The <strong>ABC Puzzle Game</strong> is a fun, interactive, and brain-boosting activity that helps sharpen your mind, improve memory, and enhance problem-solving skills. Whether you're playing a physical version or enjoying the <strong>ABC Puzzle Game online for free</strong>, this engaging game offers a perfect balance of challenge and relaxation. In this step-by-step guide, you’ll learn how to play the ABC Puzzle Game, understand its rules, and pick up expert tips to win more often.
+              The <strong>Wood Alphabet Puzzle</strong> is a classic educational toy designed to help children learn letters, improve hand-eye coordination, and develop fine motor skills. Whether you're using a traditional wooden puzzle set or a modern digital version, this interactive activity combines fun and learning in the best way. In this easy guide, you’ll discover how to play with the Wood Alphabet Puzzle, learn the rules, and pick up helpful tips to make the most of every session.
             </p>
 
-            <h3 className="instruction-step">1. Explore Different Types of ABC Puzzle Games</h3>
+            <h3 className="instruction-step">1. Explore Different Types of Wood Alphabet Puzzles</h3>
             <p className="instructions-description">
-              The ABC Puzzle Game comes in many forms, including physical puzzles, mobile apps, and <strong>online puzzle games</strong>. Each version offers unique gameplay mechanics and visuals, keeping the experience fresh and exciting.
+              Wood alphabet puzzles come in many styles—from simple letter cutouts to advanced sets that include pictures, sounds, or spelling challenges. Some are flat board puzzles, while others are 3D blocks or Montessori-style toys. Choose the version that suits your child’s age and learning level.
             </p>
 
-            <h4 className="instruction-step">2. Learn the Game Rules</h4>
+            <h4 className="instruction-step">2. Learn the Puzzle Rules</h4>
             <p className="instructions-description">
-              Understanding the rules of the ABC Puzzle Game is key to winning. Before you begin, take a moment to read through the game instructions. Here’s how it works:
+              While wood alphabet puzzles are intuitive and beginner-friendly, understanding the basic rules and goals makes the activity more rewarding. Here's how it works:
             </p>
             <ul className="instructions-list">
-              <li>Each player gets 3 chances per game round.</li>
-              <li>Match 3 ABC Puzzle Game cards correctly to win the game.</li>
-              <li>If the match fails, restart the game and try again.</li>
+              <li>Match each wooden letter to its corresponding cutout or image.</li>
+              <li>Help your child pronounce the letter and associate it with a letter.</li>
+              <li>If the letter doesn’t fit, rotate it gently and try again.</li>
+              <li>Repeat until the full alphabet is matched correctly.</li>
             </ul>
 
-            <h5 className="instruction-step">3. Set Up for a Better Gaming Experience</h5>
+            <h5 className="instruction-step">3. Set Up for a Better Puzzle Experience</h5>
             <p className="instructions-description">
-              Whether you’re playing the ABC Puzzle Game on your phone, tablet, or using a traditional board, make sure your environment is set up for comfort:
+              Create a comfortable and distraction-free space for learning and play:
               <ul>
-                <li>Use a clean, flat surface with good lighting for physical puzzles.</li>
-                <li>For digital play, adjust brightness and volume settings to create a focused atmosphere.</li>
+                <li>Use a flat, child-friendly surface like a play table or mat.</li>
+                <li>Ensure the area has good lighting and a quiet atmosphere.</li>
+                <li>Keep all puzzle pieces in one place to avoid losing letters.</li>
               </ul>
             </p>
 
-            <h6 className="tips-title">Top Tips to Win at ABC Puzzle Game</h6>
+            <h6 className="tips-title">Top Tips for Teaching with Wood Alphabet Puzzle</h6>
             <ul className="instructions-list">
-              <li><strong>Stay Focused:</strong> Take your time and analyze each puzzle piece carefully.</li>
-              <li><strong>Practice Makes Perfect:</strong> Regular practice will boost your skills over time.</li>
-              <li><strong>Learn from Mistakes:</strong> Missed a match? Think about what went wrong and improve your strategy.</li>
-              <li><strong>Increase Difficulty Gradually:</strong> Challenge yourself with harder puzzles as you improve.</li>
+              <li><strong>Start with a Few Letters:</strong> Introduce 3–5 letters at a time to avoid overwhelming young learners.</li>
+              <li><strong>Make It Interactive:</strong> Say each letter aloud and use fun examples (like animal names or toys).</li>
+              <li><strong>Repeat Often:</strong> Daily play helps reinforce letter recognition and phonics.</li>
+              <li><strong>Use Positive Encouragement:</strong> Praise effort, not just accuracy, to build confidence.</li>
             </ul>
 
             <p className="instruction-step">Conclusion</p>
             <p className="instructions-description">
-              The <strong>ABC Puzzle Game</strong> is more than just a way to pass the time – it's a powerful tool for boosting brainpower and having fun. With a clear understanding of the rules and some smart strategies, you'll be matching puzzle cards like a pro in no time. Whether you're new to puzzle games or a seasoned player, the ABC Puzzle Game offers endless hours of entertainment. <strong>Start playing now and enjoy one of the best free puzzle games online!</strong>
+              The <strong>Wood Alphabet Puzzle</strong> is a wonderful hands-on learning tool that supports early childhood development through play. It's fun, engaging, and educational—perfect for toddlers, preschoolers, and kindergarteners. Whether you’re a parent, teacher, or caregiver, using this puzzle is a great way to introduce the alphabet in an interactive and memorable way. <strong>Start exploring the alphabet today with a high-quality wood alphabet puzzle – where learning meets play!</strong>
             </p>
           </div>
         </div>

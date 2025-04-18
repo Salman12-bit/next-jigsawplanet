@@ -1,0 +1,126 @@
+.puzzle-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.start-button,
+.complete-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.start-button:hover,
+.complete-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.complete-button {
+    background-color: #dc3545;
+}
+
+.complete-button:hover {
+    background-color: #c82333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: max-content;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.block.filled {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.block.filled:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+.block.empty {
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Number Puzzle: Fun Math Game to Train Your Brain",
+  title: "Number Puzzle Fun Math Game to Train Your Brain",
   keywords: "numberpuzzle,block number puzzle",
   description:
     "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
   openGraph: {
-    title: "Number Puzzle: Fun Math Game to Train Your Brain",
+    title: "Number Puzzle Fun Math Game to Train Your Brain",
     description:
       "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
     url: "https://puzzlesplan.com/numberpuzzle",
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Number Puzzle: Fun Math Game to Train Your Brain",
+    "name": "Number Puzzle Fun Math Game to Train Your Brain",
     "description":
       "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
     "url": "https://puzzlesplan.com/numberpuzzle",

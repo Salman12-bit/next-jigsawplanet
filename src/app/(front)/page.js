@@ -21,6 +21,11 @@ export default function Home() {
       link: '/jigsawplace'
 
     },
+    {
+      "image": "/images/darkhistory.webp",
+      link: '/jigsawdark'
+
+    },
 
   ]
 

@@ -1,26 +1,26 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Blocks Puzzle Fun Brain Game for All Ages",
-  keywords: "alphabet slider puzzle, alphabet sliders, puzzles",
+  title: "Puzzle Numbers Fun Games to Boost Your Brainpower",
+  keywords: "puzzle number games,numbers puzzle",
   description:
-    " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
+    "Enjoy puzzle numbers that challenge your logic and sharpen your mind! Great for all ages to build focus, memory, and problem-solving skills.",
   openGraph: {
-    title: "Blocks Puzzle Fun Brain Game for All Ages",
+    title: "Puzzle Numbers Fun Games to Boost Your Brainpower",
     description:
-      " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
-    url: "https://puzzlesplan.com/blockspuzzle",
+      "Enjoy puzzle numbers that challenge your logic and sharpen your mind! Great for all ages to build focus, memory, and problem-solving skills.",
+    url: "https://puzzlesplan.com/puzzlenumbers",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play alphabet slider puzzle game on PuzzlesPlan",
+        alt: "Play puzzle number games on PuzzlesPlan",
       },
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/blockspuzzle",
+    canonical: "https://puzzlesplan.com/puzzlenumbers",
   },
 };
 
@@ -28,18 +28,18 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Blocks Puzzle Fun Brain Game for All Ages",
+    "name": "Puzzle Numbers Fun Games to Boost Your Brainpower",
     "description":
-      " Enjoy the blocks puzzle game that sharpens your mind! Fit the pieces, solve the challenge, and have hours of relaxing, brain-boosting fun.",
-    "url": "https://puzzlesplan.com/blockspuzzle",
+      "Enjoy puzzle numbers that challenge your logic and sharpen your mind! Great for all ages to build focus, memory, and problem-solving skills.",
+    "url": "https://puzzlesplan.com/puzzlenumbers",
     "mainEntity": {
       "@type": "OnlineGame",
-      "name": "Blocks Puzzle Fun Brain Game for All Ages",
-      "genre": "Action, Puzzle",
+      "name": "Number Puzzle Game",
+      "genre": "Puzzle, Number Game",
       "applicationCategory": "Game",
       "operatingSystem": "Web Browser",
       "playMode": "Single Player",
-      "url": "https://puzzlesplan.com/blockspuzzle",
+      "url": "https://puzzlesplan.com/puzzlenumbers",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
@@ -59,7 +59,7 @@ export default function Layout({ children }) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/blockspuzzle"
+      "@id": "https://puzzlesplan.com/puzzlenumbers"
     }
   };
 

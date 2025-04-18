@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link'
 import './elment.css';
 
 const ElementBlockPuzzle = () => {
@@ -12,7 +11,7 @@ const ElementBlockPuzzle = () => {
   const [draggingBlock, setDraggingBlock] = useState(null);
 
   const gridSize = 8;
-  const elements = ['🔥', '💧', '🌍', '🌬️'];
+  const elements = ['🌞', '🌙', '⭐', '🌌'];
 
   const initializeGrid = () => {
     let newGrid;
@@ -118,24 +117,24 @@ const ElementBlockPuzzle = () => {
 
   useEffect(() => {
     let savedLeaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
-    savedLeaderboard = savedLeaderboard.slice(0, 5);
+    savedLeaderboard = savedLeaderboard.slice(0, 5); 
     setLeaderboard(savedLeaderboard);
   }, []);
-
+  
   const completeGame = () => {
     setIsGameActive(false);
-
+  
     const newLeaderboard = [...leaderboard, { score, date: new Date().toLocaleString() }];
-    newLeaderboard.sort((a, b) => b.score - a.score);
-
-    const top5Leaderboard = newLeaderboard.slice(0, 5);
+    newLeaderboard.sort((a, b) => b.score - a.score); 
+  
+    const top5Leaderboard = newLeaderboard.slice(0, 5); 
     setLeaderboard(top5Leaderboard);
     localStorage.setItem('leaderboard', JSON.stringify(top5Leaderboard));
   };
-
+   
   return (
     <div className="puzzle-container">
-      <h1>Element Block Puzzle Level 1</h1>
+      <h1>Element Block Puzzle Level 2</h1>
       <p className="score">Score: {score}</p>
       {!isGameActive && <button className="start-button" onClick={startGame}>Start Game</button>}
       {isGameActive && <button className="complete-button" onClick={completeGame}>Complete Game</button>}
@@ -157,9 +156,6 @@ const ElementBlockPuzzle = () => {
           </div>
         ))}
       </div>
-      <Link href="/blockgame">
-        <button className="complete-button" >Next Level</button>
-      </Link>
       <h2 className='leaderboardcolor'>Leaderboard</h2>
       <ul className='board'>
         {leaderboard.map((entry, index) => (

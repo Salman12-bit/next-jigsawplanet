@@ -1,12 +1,12 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Alphabet Puzzle: Fun Learning for Kids & Toddlers",
+  title: "Alphabet Puzzle Fun Learning for Kids & Toddlers",
   keywords: "abc puzzle game,alphabet slider,alphabet",
   description:
     "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
   openGraph: {
-    title: "Alphabet Puzzle: Fun Learning for Kids & Toddlers",
+    title: "Alphabet Puzzle Fun Learning for Kids & Toddlers",
     description:
       "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
     url: "https://puzzlesplan.com/alphabetpuzzle",
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Alphabet Puzzle: Fun Learning for Kids & Toddlers",
+    "name": "Alphabet Puzzle Fun Learning for Kids & Toddlers",
     "description":
       "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
     "url": "https://puzzlesplan.com/alphabetpuzzle",

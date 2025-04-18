@@ -1,12 +1,12 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore JigsawPlanet: Free Online Puzzles for Fun",
+  title: "Explore JigsawPlanet Free Online Puzzles for Fun",
   keywords: "jicsaw planet, online piece,jigsaw",
   description:
     "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
   openGraph: {
-    title: "Explore JigsawPlanet: Free Online Puzzles for Fun",
+    title: "Explore JigsawPlanet Free Online Puzzles for Fun",
     description:
       "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
     url: "https://puzzlesplan.com/",
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Explore JigsawPlanet: Free Online Puzzles for Fun",
+    "name": "Explore JigsawPlanet Free Online Puzzles for Fun",
     "url": "https://puzzlesplan.com",
     "description":
       "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
