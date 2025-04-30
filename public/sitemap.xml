@@ -90,5 +90,30 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+   <url>
+    <loc>https://puzzlesplan.com/game-jigsaw</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://puzzlesplan.com/wooden-puzzle</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://puzzlesplan.com/woodblock</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://puzzlesplan.com/number-game</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 
 </urlset>
