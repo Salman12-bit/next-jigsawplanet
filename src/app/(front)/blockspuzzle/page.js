@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import './elment.css';
 
 const ElementBlockPuzzle = () => {
@@ -10,9 +10,12 @@ const ElementBlockPuzzle = () => {
   const [isGameActive, setIsGameActive] = useState(false);
   const [leaderboard, setLeaderboard] = useState([]);
   const [draggingBlock, setDraggingBlock] = useState(null);
+  const [gameCompleted, setGameCompleted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const gridSize = 8;
   const elements = ['🔥', '💧', '🌍', '🌬️'];
+  const requiredScore = 220; 
 
   const initializeGrid = () => {
     let newGrid;
@@ -47,6 +50,8 @@ const ElementBlockPuzzle = () => {
     initializeGrid();
     setScore(0);
     setIsGameActive(true);
+    setGameCompleted(false);
+    setErrorMessage("");
   };
 
   const handleDrop = (e, targetRow, targetCol) => {
@@ -116,29 +121,35 @@ const ElementBlockPuzzle = () => {
     }
   };
 
-  useEffect(() => {
-    let savedLeaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
-    savedLeaderboard = savedLeaderboard.slice(0, 5);
-    setLeaderboard(savedLeaderboard);
-  }, []);
-
   const completeGame = () => {
-    setIsGameActive(false);
+    if (score >= requiredScore) {
+      setIsGameActive(false);
+      setGameCompleted(true);
+      setErrorMessage("");
 
-    const newLeaderboard = [...leaderboard, { score, date: new Date().toLocaleString() }];
-    newLeaderboard.sort((a, b) => b.score - a.score);
+      const newLeaderboard = [...leaderboard, { score, date: new Date().toLocaleString() }];
+      newLeaderboard.sort((a, b) => b.score - a.score);
 
-    const top5Leaderboard = newLeaderboard.slice(0, 5);
-    setLeaderboard(top5Leaderboard);
-    localStorage.setItem('leaderboard', JSON.stringify(top5Leaderboard));
+      const top5Leaderboard = newLeaderboard.slice(0, 5);
+      setLeaderboard(top5Leaderboard);
+      localStorage.setItem('leaderboard', JSON.stringify(top5Leaderboard));
+    } else {
+      setErrorMessage(`You must score at least ${requiredScore} points to complete the game!`);
+    }
   };
 
   return (
     <div className="puzzle-container">
       <h1>Element Block Puzzle Level 1</h1>
       <p className="score">Score: {score}</p>
-      {!isGameActive && <button className="start-button" onClick={startGame}>Start Game</button>}
-      {isGameActive && <button className="complete-button" onClick={completeGame}>Complete Game</button>}
+      {!isGameActive && !gameCompleted && (
+        <button className="start-button" onClick={startGame}>Start Game</button>
+      )}
+      {isGameActive && (
+        <button className="complete-button" onClick={completeGame}>Complete Game</button>
+      )}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
+      
       <div className="grid">
         {grid.map((row, rowIndex) => (
           <div key={rowIndex} className="row">
@@ -157,13 +168,15 @@ const ElementBlockPuzzle = () => {
           </div>
         ))}
       </div>
-      <Link href="/blockgame">
-        <button className="complete-button" >Next Level</button>
-      </Link>
-      <h2 className='leaderboardcolor'>Leaderboard</h2>
-      <ul className='board'>
+      {gameCompleted && (
+        <Link href="/blockgame">
+          <button className="next-level-button">Next Level</button>
+        </Link>
+      )}
+      <h2 className="leaderboardcolor">Leaderboard</h2>
+      <ul className="board">
         {leaderboard.map((entry, index) => (
-          <li className='scoreofboard' key={index}>{entry.score} points on {entry.date}</li>
+          <li className="scoreofboard" key={index}>{entry.score} points on {entry.date}</li>
         ))}
       </ul>
     </div>

@@ -15,7 +15,7 @@ const ElementBlockPuzzle = () => {
 
   const gridSize = 8;
   const elements = ['🌞', '🌙', '⭐', '🌌'];
-  const requiredScore = 230; 
+  const requiredScore = 240; 
 
   const initializeGrid = () => {
     let newGrid;
@@ -175,7 +175,7 @@ const ElementBlockPuzzle = () => {
       </div>
 
       {gameCompleted && (
-        <Link href="/woodblock">
+        <Link href="/">
           <button className="next-level-button">Next Level</button>
         </Link>
       )}

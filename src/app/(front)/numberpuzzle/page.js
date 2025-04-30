@@ -1,8 +1,6 @@
-"use client"
+"use client";
 
-
-
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import styled, { keyframes } from "styled-components";
 
@@ -23,7 +21,7 @@ const Container = styled.div`
   font-family: Arial, sans-serif;
 `;
 
-const Grid = styled.div`
+const TilesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -33,9 +31,9 @@ const Grid = styled.div`
 
 const Tile = styled.div`
   width: 100%;
-  padding-top: 100%; 
+  padding-top: 100%;
   position: relative;
-  background-color:rgb(53, 56, 56);
+  background-color: rgb(53, 56, 56);
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -44,7 +42,7 @@ const Tile = styled.div`
   animation: ${slideAnimation} 0.3s ease;
 
   &:hover {
-    background-color:rgb(158, 160, 161);
+    background-color: rgb(158, 160, 161);
   }
 
   & > span {
@@ -62,11 +60,11 @@ const Button = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color:rgb(74, 75, 75);
+  background-color: rgb(74, 75, 75);
   color: white;
 
   &:hover {
-    background-color:rgb(149, 152, 153);
+    background-color: rgb(149, 152, 153);
   }
 `;
 
@@ -102,7 +100,6 @@ const Leaderboard = styled.div`
   }
 `;
 
-
 const PuzzleGame = () => {
   const [tiles, setTiles] = useState([]);
   const [isSolved, setIsSolved] = useState(false);
@@ -116,7 +113,6 @@ const PuzzleGame = () => {
     shuffleTiles();
   }, []);
 
-
   useEffect(() => {
     let interval;
     if (isRunning) {
@@ -127,9 +123,10 @@ const PuzzleGame = () => {
     return () => clearInterval(interval);
   }, [isRunning]);
 
-
   const moveTile = (index) => {
     if (isSolved) return;
+    if (!isRunning) setIsRunning(true);
+
     const emptyIndex = tiles.indexOf(null);
     const diff = Math.abs(index - emptyIndex);
     if (diff === 1 || diff === 3) {
@@ -140,7 +137,6 @@ const PuzzleGame = () => {
     }
   };
 
-
   const updateLeaderboard = () => {
     setLeaderboard((prev) => {
       const newEntry = { time, moves: moveCount };
@@ -148,20 +144,17 @@ const PuzzleGame = () => {
     });
   };
 
-
   const checkSolved = () => {
     const solved = JSON.stringify(tiles) === JSON.stringify([1, 2, 3, 4, 5, 6, 7, 8, null]);
     if (solved) {
       setIsSolved(true);
       setIsRunning(false);
       setMessage("🎉 Congratulations! You solved the puzzle! 🎉");
-
       updateLeaderboard();
     } else {
       setMessage("❌ Try again! The puzzle is not correct.");
     }
   };
-
 
   const shuffleTiles = () => {
     let shuffled;
@@ -184,31 +177,33 @@ const PuzzleGame = () => {
     setMessage("");
     setMoveCount(0);
     setTime(0);
-    setIsRunning(true);
+    setIsRunning(false); // ✅ Don't start timer here
   };
 
   return (
     <Container>
-      <Grid>
+      <TilesGrid>
         {tiles.map((tile, index) => (
           <Tile key={index} onClick={() => moveTile(index)}>
             <span>{tile}</span>
           </Tile>
         ))}
-      </Grid>
+      </TilesGrid>
+
       <Info>
-        <p>Time: {time} seconds</p>
-        <p>Moves: {moveCount}</p>
+        <p>⏱️ Time: {time} seconds</p>
+        <p>🧮 Moves: {moveCount}</p>
         <p>{message}</p>
       </Info>
       <Button onClick={checkSolved}>I Have Completed</Button>
       <Button onClick={shuffleTiles}>Shuffle</Button>
-      <Link href="/puzzlenumbers">
-        <Button >Next Level</Button>
-      </Link>
-
+      {isSolved && (
+        <Link href="/puzzlenumbers">
+          <Button>Next Level</Button>
+        </Link>
+      )}
       <Leaderboard>
-        <h3>Leaderboard</h3>
+        <h3>🏆 Leaderboard</h3>
         <ul>
           {leaderboard.map((entry, index) => (
             <li key={index}><span>Time: {entry.time}s</span><span>Moves: {entry.moves}</span></li>

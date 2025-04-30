@@ -23,10 +23,10 @@ const Board1 = styled.div`
 
 const initialCards = [
   { id: 1, value: 'C' }, { id: 2, value: 'A' },
-  { id: 3, value: 'F' }, { id: 4, value: 'C' },
-  { id: 5, value: 'C' }, { id: 6, value: 'E' },
-  { id: 7, value: 'E' }, { id: 8, value: 'F' },
-  { id: 9, value: 'C' },
+  { id: 3, value: 'F' }, { id: 4, value: 'E' },
+  { id: 5, value: 'E' }, { id: 6, value: 'S' },
+  { id: 7, value: 'A' }, { id: 8, value: 'F' },
+  { id: 9, value: 'E' },
 ];
 
 const Puzzle1 = () => {
@@ -35,7 +35,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(2);
+  const [level, setLevel] = useState(3);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/wooden-puzzle">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -145,51 +145,49 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Wood Alphabet Puzzle – A Complete Beginner’s Guide</h2>
-
+            <h2 className="instructions-title">How to Play Free Alphabet Sound Puzzle – A Complete Beginner’s Guide</h2>
             <p className="instructions-description">
-              The <strong>Wood Alphabet Puzzle</strong> is a classic educational toy designed to help children learn letters, improve hand-eye coordination, and develop fine motor skills. Whether you're using a traditional wooden puzzle set or a modern digital version, this interactive activity combines fun and learning in the best way. In this easy guide, you’ll discover how to play with the Wood Alphabet Puzzle, learn the rules, and pick up helpful tips to make the most of every session.
+              The <strong>Alphabet Sound Puzzle</strong> is an exciting educational toy designed to help children learn letters and their sounds, improve listening skills, and develop early phonics awareness. Whether you're using a traditional physical puzzle with sound effects or a modern digital version, this interactive activity blends learning and play beautifully. In this easy guide, you’ll discover how to play with the Alphabet Sound Puzzle, understand the rules, and pick up helpful tips to make the most of every learning session.
             </p>
-
-            <h3 className="instruction-step">1. Explore Different Types of Wood Alphabet Puzzles</h3>
+            <h3 className="instruction-step">1. Explore Different Types of Alphabet Sound Puzzles</h3>
             <p className="instructions-description">
-              Wood alphabet puzzles come in many styles—from simple letter cutouts to advanced sets that include pictures, sounds, or spelling challenges. Some are flat board puzzles, while others are 3D blocks or Montessori-style toys. Choose the version that suits your child’s age and learning level.
+              Alphabet sound puzzles come in various styles—from simple sound-activated letter boards to advanced versions with full-word pronunciation and games. Some puzzles play a letter's sound when a piece is placed correctly, while others might include songs or word associations. Choose the version that fits your child’s age, interests, and learning goals.
             </p>
-
             <h4 className="instruction-step">2. Learn the Puzzle Rules</h4>
             <p className="instructions-description">
-              While wood alphabet puzzles are intuitive and beginner-friendly, understanding the basic rules and goals makes the activity more rewarding. Here's how it works:
+              Alphabet sound puzzles are intuitive and beginner-friendly, but understanding the basic rules and goals can make playtime even more beneficial. Here’s how it works:
             </p>
             <ul className="instructions-list">
-              <li>Match each wooden letter to its corresponding cutout or image.</li>
-              <li>Help your child pronounce the letter and associate it with a letter.</li>
-              <li>If the letter doesn’t fit, rotate it gently and try again.</li>
-              <li>Repeat until the full alphabet is matched correctly.</li>
+              <li>Match each letter piece to its corresponding slot or picture on the board.</li>
+              <li>When the piece fits correctly, the puzzle plays the letter’s name or phonetic sound.</li>
+              <li>Encourage your child to repeat the sound aloud to reinforce phonics skills.</li>
+              <li>Continue matching all the letters while practicing pronunciation and recognition.</li>
             </ul>
 
             <h5 className="instruction-step">3. Set Up for a Better Puzzle Experience</h5>
             <p className="instructions-description">
-              Create a comfortable and distraction-free space for learning and play:
+              Create a fun and supportive environment for learning:
               <ul>
-                <li>Use a flat, child-friendly surface like a play table or mat.</li>
-                <li>Ensure the area has good lighting and a quiet atmosphere.</li>
-                <li>Keep all puzzle pieces in one place to avoid losing letters.</li>
+                <li>Use a stable, flat surface like a play table or a clean floor area.</li>
+                <li>Ensure the space is well-lit and free from too many distractions.</li>
+                <li>Keep all puzzle pieces organized and within easy reach to maintain focus.</li>
               </ul>
             </p>
 
-            <h6 className="tips-title">Top Tips for Teaching with Wood Alphabet Puzzle</h6>
+            <h6 className="tips-title">Top Tips for Teaching with Alphabet Sound Puzzle</h6>
             <ul className="instructions-list">
-              <li><strong>Start with a Few Letters:</strong> Introduce 3–5 letters at a time to avoid overwhelming young learners.</li>
-              <li><strong>Make It Interactive:</strong> Say each letter aloud and use fun examples (like animal names or toys).</li>
-              <li><strong>Repeat Often:</strong> Daily play helps reinforce letter recognition and phonics.</li>
-              <li><strong>Use Positive Encouragement:</strong> Praise effort, not just accuracy, to build confidence.</li>
+              <li><strong>Start Small:</strong> Introduce a few letters at a time, focusing on their sounds, before expanding to the whole alphabet.</li>
+              <li><strong>Make It Fun:</strong> Use real-life examples (like “A is for Apple” or “B is for Ball”) when practicing sounds.</li>
+              <li><strong>Repeat and Reinforce:</strong> Regular play helps children remember letters and sounds more quickly.</li>
+              <li><strong>Celebrate Effort:</strong> Offer lots of positive encouragement to keep children motivated and confident.</li>
             </ul>
 
             <p className="instruction-step">Conclusion</p>
             <p className="instructions-description">
-              The <strong>Wood Alphabet Puzzle</strong> is a wonderful hands-on learning tool that supports early childhood development through play. It's fun, engaging, and educational—perfect for toddlers, preschoolers, and kindergarteners. Whether you’re a parent, teacher, or caregiver, using this puzzle is a great way to introduce the alphabet in an interactive and memorable way. <strong>Start exploring the alphabet today with a high-quality wood alphabet puzzle – where learning meets play!</strong>
+              The <strong>Alphabet Sound Puzzle</strong> is a fantastic tool for introducing children to phonics in a playful, hands-on way. It’s interactive, educational, and perfect for toddlers, preschoolers, and early learners. Whether you’re a parent, teacher, or caregiver, this puzzle helps children connect letters with their sounds, building a strong foundation for reading and language skills. <strong>Start your child’s phonics adventure today with a fun and engaging Alphabet Sound Puzzle – where learning comes alive through sound!</strong>
             </p>
           </div>
+
         </div>
       </div>
     </div>

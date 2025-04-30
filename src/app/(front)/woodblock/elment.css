@@ -1,7 +1,7 @@
 .puzzle-container {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -89,7 +89,7 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.board {
+.board{
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -99,7 +99,7 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.scoreofboard {
+.scoreofboard{
     font-size: 1rem;
     color: #f1ecec;
     padding: 10px;
@@ -113,14 +113,14 @@ h2 {
     transform: scale(1.02);
 }
 
-.leaderboardcolor {
+.leaderboardcolor{
     color: white;
 }
 
 
 @media (max-width: 768px) {
     .grid {
-        grid-template-columns: repeat(8, minmax(30px, 1fr));
+        grid-template-columns: repeat(8, minmax(30px, 1fr)); 
         gap: 3px;
         padding: 10px;
     }

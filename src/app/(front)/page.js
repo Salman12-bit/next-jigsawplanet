@@ -19,12 +19,14 @@ export default function Home() {
     {
       "image": "/images/beautifulplace.webp",
       link: '/jigsawplace'
-
     },
     {
       "image": "/images/darkhistory.webp",
       link: '/jigsawdark'
-
+    },
+    {
+      "image": "/images/jigsawsnow.webp",
+      link: '/game-jigsaw'
     },
 
   ]
