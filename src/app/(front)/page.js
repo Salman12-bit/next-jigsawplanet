@@ -30,7 +30,7 @@ export default function Home() {
     },
     {
       "image": "/images/jigsawengine.webp",
-      link: '/jıgsaw-planet'
+      link: '/jigsaw-planet'
     },
 
   ]

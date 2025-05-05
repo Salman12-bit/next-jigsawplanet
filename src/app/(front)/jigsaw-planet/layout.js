@@ -1,15 +1,15 @@
 import React from 'react';
 
 export const metadata = {
-  title: "jıgsaw planet Explore, Solve & Share Online Puzzles",
+  title: "jogsaw puzzles Explore, Solve & Share Online Puzzles",
   keywords: "interactive puzzles,jigsaw planet puzzle",
   description:
-    "Visit jıgsaw planet to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
+    "Visit jogsaw puzzles to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
   openGraph: {
-    title: "jıgsaw planet Explore, Solve & Share Online Puzzles",
+    title: "jogsaw puzzles Explore, Solve & Share Online Puzzles",
     description:
-      "Visit jıgsaw planet to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
-    url: "https://puzzlesplan.com/jıgsaw-planet",
+      "Visit jogsaw puzzles to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
+    url: "https://puzzlesplan.com/jigsaw-planet",
     images: [
       {
         url: "https://puzzlesplan.com/images/jigsawengine.webp",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/jıgsaw-planet",
+    canonical: "https://puzzlesplan.com/jigsaw-planet",
   },
 };
 
@@ -28,10 +28,10 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "jıgsaw planet Explore, Solve & Share Online Puzzles",
+    "name": "jogsaw puzzles Explore, Solve & Share Online Puzzles",
     "description":
-      "Visit jıgsaw planet to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
-    "url": "https://puzzlesplan.com/jıgsaw-planet",
+      "Visit jogsaw puzzles to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
+    "url": "https://puzzlesplan.com/jigsaw-planet",
     "mainEntity": {
       "@type": "OnlineGame",
       "name": "puzel",
@@ -39,7 +39,7 @@ export default function Layout({ children }) {
       "applicationCategory": "Game",
       "operatingSystem": "Web Browser",
       "playMode": "Double Player",
-      "url": "https://puzzlesplan.com/jıgsaw-planet",
+      "url": "https://puzzlesplan.com/jigsaw-planet",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/jigsawengine.webp",
@@ -59,7 +59,7 @@ export default function Layout({ children }) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/jıgsaw-planet"
+      "@id": "https://puzzlesplan.com/jigsaw-planet"
     }
   };
 
