@@ -22,11 +22,11 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'C' }, { id: 2, value: 'A' },
-  { id: 3, value: 'F' }, { id: 4, value: 'E' },
-  { id: 5, value: 'E' }, { id: 6, value: 'S' },
+  { id: 1, value: 'C' }, { id: 2, value: 'B' },
+  { id: 3, value: 'B' }, { id: 4, value: 'E' },
+  { id: 5, value: 'E' }, { id: 6, value: 'B' },
   { id: 7, value: 'A' }, { id: 8, value: 'F' },
-  { id: 9, value: 'E' },
+  { id: 9, value: 'B' },
 ];
 
 const Puzzle1 = () => {
@@ -35,7 +35,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(3);
+  const [level, setLevel] = useState(4);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/abc-puzzle">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -145,48 +145,59 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Alphabet Sound Puzzle – A Complete Beginner’s Guide</h2>
+            <h2 className="instructions-title">How to Play ABC Puzzles</h2>
             <p className="instructions-description">
-              The <strong>Alphabet Sound Puzzle</strong> is an exciting educational toy designed to help children learn letters and their sounds, improve listening skills, and develop early phonics awareness. Whether you're using a traditional physical puzzle with sound effects or a modern digital version, this interactive activity blends learning and play beautifully. In this easy guide, you’ll discover how to play with the Alphabet Sound Puzzle, understand the rules, and pick up helpful tips to make the most of every learning session.
+              <strong>ABC Puzzles</strong> are fun and educational activities designed to help young children learn the alphabet, build letter recognition skills, and develop early literacy in a playful way. Whether you’re using wooden puzzles, foam letters, or interactive digital versions, ABC puzzles are perfect for toddlers and preschoolers. This guide will show you how to play with ABC puzzles, explain the rules, and offer helpful tips to get the most out of each learning session.
             </p>
-            <h3 className="instruction-step">1. Explore Different Types of Alphabet Sound Puzzles</h3>
+
+            <h3 className="instruction-step">1. Discover Different Types of ABC Puzzles</h3>
             <p className="instructions-description">
-              Alphabet sound puzzles come in various styles—from simple sound-activated letter boards to advanced versions with full-word pronunciation and games. Some puzzles play a letter's sound when a piece is placed correctly, while others might include songs or word associations. Choose the version that fits your child’s age, interests, and learning goals.
+              ABC puzzles come in many forms to suit different learning styles and age groups:
+              <ul>
+                <li><strong>Wooden Letter Boards:</strong> Durable puzzles with individual slots for each letter.</li>
+                <li><strong>Foam or Magnetic Letters:</strong> Great for sticking on boards, fridges, or bathtubs.</li>
+                <li><strong>Interactive Digital Puzzles:</strong> Touch-based or app-based puzzles with visual and sound feedback.</li>
+                <li><strong>Themed Puzzles:</strong> ABC puzzles with animals, food, or colors to link letters with real-world objects.</li>
+              </ul>
+              Choose a style that matches your child’s developmental level and interests.
             </p>
-            <h4 className="instruction-step">2. Learn the Puzzle Rules</h4>
+
+            <h4 className="instruction-step">2. Learn the Puzzle Basics</h4>
             <p className="instructions-description">
-              Alphabet sound puzzles are intuitive and beginner-friendly, but understanding the basic rules and goals can make playtime even more beneficial. Here’s how it works:
+              ABC puzzles are easy to understand and great for learning through play. Here’s how to play:
             </p>
             <ul className="instructions-list">
-              <li>Match each letter piece to its corresponding slot or picture on the board.</li>
-              <li>When the piece fits correctly, the puzzle plays the letter’s name or phonetic sound.</li>
-              <li>Encourage your child to repeat the sound aloud to reinforce phonics skills.</li>
-              <li>Continue matching all the letters while practicing pronunciation and recognition.</li>
+              <li>Let your child explore the letter pieces and the board freely at first.</li>
+              <li>Help them match each alphabet to its correct spot or picture outline.</li>
+              <li>Say the alphabet name aloud and encourage your child to repeat it.</li>
+              <li>Use associated alphabet to build early word recognition.</li>
             </ul>
 
-            <h5 className="instruction-step">3. Set Up for a Better Puzzle Experience</h5>
+            <h5 className="instruction-step">3. Create a Positive Puzzle Space</h5>
             <p className="instructions-description">
-              Create a fun and supportive environment for learning:
+              A comfortable setup helps children focus and enjoy the experience:
               <ul>
-                <li>Use a stable, flat surface like a play table or a clean floor area.</li>
-                <li>Ensure the space is well-lit and free from too many distractions.</li>
-                <li>Keep all puzzle pieces organized and within easy reach to maintain focus.</li>
+                <li>Play on a clean table, play mat, or rug where pieces won’t get lost.</li>
+                <li>Ensure good lighting so letters and pictures are easy to see.</li>
+                <li>Keep the full puzzle set in one place for easy access and cleanup.</li>
               </ul>
             </p>
 
-            <h6 className="tips-title">Top Tips for Teaching with Alphabet Sound Puzzle</h6>
+            <h6 className="tips-title">Helpful Tips for Teaching with ABC Puzzles</h6>
             <ul className="instructions-list">
-              <li><strong>Start Small:</strong> Introduce a few letters at a time, focusing on their sounds, before expanding to the whole alphabet.</li>
-              <li><strong>Make It Fun:</strong> Use real-life examples (like “A is for Apple” or “B is for Ball”) when practicing sounds.</li>
-              <li><strong>Repeat and Reinforce:</strong> Regular play helps children remember letters and sounds more quickly.</li>
-              <li><strong>Celebrate Effort:</strong> Offer lots of positive encouragement to keep children motivated and confident.</li>
+              <li><strong>Start with Name Letters:</strong> Begin with the letters in your child’s name for a personal connection.</li>
+              <li><strong>Use Songs and Rhymes:</strong> Sing the ABC song to reinforce the alphabet order.</li>
+              <li><strong>Practice Daily:</strong> Short, regular sessions help boost memory and recognition.</li>
+              <li><strong>Mix and Match:</strong> Combine puzzles with books, flashcards, or drawing for a full alphabet learning experience.</li>
+              <li><strong>Celebrate Progress:</strong> Praise every attempt and success to keep motivation high.</li>
             </ul>
 
             <p className="instruction-step">Conclusion</p>
             <p className="instructions-description">
-              The <strong>Alphabet Sound Puzzle</strong> is a fantastic tool for introducing children to phonics in a playful, hands-on way. It’s interactive, educational, and perfect for toddlers, preschoolers, and early learners. Whether you’re a parent, teacher, or caregiver, this puzzle helps children connect letters with their sounds, building a strong foundation for reading and language skills. <strong>Start your child’s phonics adventure today with a fun and engaging Alphabet Sound Puzzle – where learning comes alive through sound!</strong>
+              <strong>ABC Puzzles</strong> offer a simple yet powerful way to introduce young learners to letters and early reading skills. By making learning fun and interactive, these puzzles help children build confidence, vocabulary, and literacy foundations. Whether used at home or in the classroom, ABC puzzles are an excellent first step on the path to reading. <strong>Grab an ABC puzzle and let your child’s learning adventure begin today!</strong>
             </p>
           </div>
+
 
         </div>
       </div>

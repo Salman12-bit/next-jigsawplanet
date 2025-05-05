@@ -28,6 +28,10 @@ export default function Home() {
       "image": "/images/jigsawsnow.webp",
       link: '/game-jigsaw'
     },
+    {
+      "image": "/images/jigsawengine.webp",
+      link: '/jıgsaw-planet'
+    },
 
   ]
 
