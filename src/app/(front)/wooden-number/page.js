@@ -145,7 +145,7 @@ const PuzzleGame = () => {
   };
 
   const checkSolved = () => {
-    const solved = JSON.stringify(tiles) === JSON.stringify([18, 20, 22, 24, 26, 28, 30, 32, null]);
+    const solved = JSON.stringify(tiles) === JSON.stringify([21, 23, 25, 27, 29, 31, 33, 35, null]);
     if (solved) {
       setIsSolved(true);
       setIsRunning(false);
@@ -160,7 +160,7 @@ const PuzzleGame = () => {
     let shuffled;
     let isSolvable;
     do {
-      shuffled = [18, 20, 22, 24, 26, 28, 30, 32, null].sort(() => Math.random() - 0.5);
+      shuffled = [21, 23, 25, 27, 29, 31, 33, 35, null].sort(() => Math.random() - 0.5);
       let inversions = 0;
       for (let i = 0; i < shuffled.length; i++) {
         for (let j = i + 1; j < shuffled.length; j++) {
@@ -198,7 +198,7 @@ const PuzzleGame = () => {
       <Button onClick={checkSolved}>I Have Completed</Button>
       <Button onClick={shuffleTiles}>Shuffle</Button>
       {isSolved && (
-        <Link href="/wooden-number">
+        <Link href="/">
           <Button>Next Level</Button>
         </Link>
       )}

@@ -32,6 +32,10 @@ export default function Home() {
       "image": "/images/jigsawengine.webp",
       link: '/jigsaw-planet'
     },
+    {
+      "image": "/images/eiffeltower.webp",
+      link: '/older-puzzles'
+    },
 
   ]
 

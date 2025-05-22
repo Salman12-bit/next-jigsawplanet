@@ -22,11 +22,11 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'C' }, { id: 2, value: 'B' },
+  { id: 1, value: 'C' }, { id: 2, value: 'D' },
   { id: 3, value: 'B' }, { id: 4, value: 'E' },
-  { id: 5, value: 'E' }, { id: 6, value: 'B' },
+  { id: 5, value: 'E' }, { id: 6, value: 'D' },
   { id: 7, value: 'A' }, { id: 8, value: 'F' },
-  { id: 9, value: 'B' },
+  { id: 9, value: 'D' },
 ];
 
 const Puzzle1 = () => {
@@ -35,7 +35,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(4);
+  const [level, setLevel] = useState(5);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/puzzle-abc">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -145,56 +145,45 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play ABC Puzzles</h2>
+            <h2 className="instructions-title">How to Play Puzzle ABC Games</h2>
+
             <p className="instructions-description">
-              <strong>ABC Puzzles</strong> are fun and educational activities designed to help young children learn the alphabet, build letter recognition skills, and develop early literacy in a playful way. Whether you’re using wooden puzzles, foam letters, or interactive digital versions, ABC puzzles are perfect for toddlers and preschoolers. This guide will show you how to play with ABC puzzles, explain the rules, and offer helpful tips to get the most out of each learning session.
+              <strong>Puzzle ABC</strong> games are a fun and educational way to help children learn the alphabet. These games support early literacy by strengthening letter recognition and phonics skills in an interactive setting. Perfect for preschoolers and early learners, Puzzle ABC activities combine play and learning to build confidence in reading.
             </p>
 
-            <h3 className="instruction-step">1. Discover Different Types of ABC Puzzles</h3>
+            <h3 className="instruction-step">1. Learn the Puzzle Basics</h3>
             <p className="instructions-description">
-              ABC puzzles come in many forms to suit different learning styles and age groups:
-              <ul>
-                <li><strong>Wooden Letter Boards:</strong> Durable puzzles with individual slots for each letter.</li>
-                <li><strong>Foam or Magnetic Letters:</strong> Great for sticking on boards, fridges, or bathtubs.</li>
-                <li><strong>Interactive Digital Puzzles:</strong> Touch-based or app-based puzzles with visual and sound feedback.</li>
-                <li><strong>Themed Puzzles:</strong> ABC puzzles with animals, food, or colors to link letters with real-world objects.</li>
-              </ul>
-              Choose a style that matches your child’s developmental level and interests.
-            </p>
-
-            <h4 className="instruction-step">2. Learn the Puzzle Basics</h4>
-            <p className="instructions-description">
-              ABC puzzles are easy to understand and great for learning through play. Here’s how to play:
+              Puzzle ABC games are simple to play and highly effective. Here’s how to get started:
             </p>
             <ul className="instructions-list">
-              <li>Let your child explore the letter pieces and the board freely at first.</li>
-              <li>Help them match each alphabet to its correct spot or picture outline.</li>
-              <li>Say the alphabet name aloud and encourage your child to repeat it.</li>
-              <li>Use associated alphabet to build early word recognition.</li>
+              <li>Let your child explore each alphabet piece on their own first.</li>
+              <li>Help them match each letter to its correct position or outline.</li>
+              <li>Say the letter name aloud and ask your child to repeat it.</li>
+              <li>Use the letters to form simple words as they progress.</li>
             </ul>
 
-            <h5 className="instruction-step">3. Create a Positive Puzzle Space</h5>
+            <h4 className="instruction-step">2. Create a Positive Puzzle Space</h4>
             <p className="instructions-description">
-              A comfortable setup helps children focus and enjoy the experience:
-              <ul>
-                <li>Play on a clean table, play mat, or rug where pieces won’t get lost.</li>
-                <li>Ensure good lighting so letters and pictures are easy to see.</li>
-                <li>Keep the full puzzle set in one place for easy access and cleanup.</li>
-              </ul>
+              A well-prepared space helps kids focus and enjoy the experience:
             </p>
-
-            <h6 className="tips-title">Helpful Tips for Teaching with ABC Puzzles</h6>
             <ul className="instructions-list">
-              <li><strong>Start with Name Letters:</strong> Begin with the letters in your child’s name for a personal connection.</li>
-              <li><strong>Use Songs and Rhymes:</strong> Sing the ABC song to reinforce the alphabet order.</li>
-              <li><strong>Practice Daily:</strong> Short, regular sessions help boost memory and recognition.</li>
-              <li><strong>Mix and Match:</strong> Combine puzzles with books, flashcards, or drawing for a full alphabet learning experience.</li>
-              <li><strong>Celebrate Progress:</strong> Praise every attempt and success to keep motivation high.</li>
+              <li>Use a soft surface or mat to keep puzzle pieces from sliding.</li>
+              <li>Make sure the area is well-lit and free from distractions.</li>
+              <li>Keep all puzzle parts organized in one place for easy setup and cleanup.</li>
+            </ul>
+
+            <h5 className="tips-title">Helpful Tips for Puzzle ABC Learning</h5>
+            <ul className="instructions-list">
+              <li><strong>Start with Familiar Letters:</strong> Begin with the letters in your child’s name.</li>
+              <li><strong>Use the ABC Song:</strong> Reinforce letter order with music and rhymes.</li>
+              <li><strong>Keep Sessions Short:</strong> Focused, 10-minute sessions work best for young kids.</li>
+              <li><strong>Combine with Stories:</strong> Connect letters to words and books your child enjoys.</li>
+              <li><strong>Celebrate Progress:</strong> Encourage and praise their effort and learning.</li>
             </ul>
 
             <p className="instruction-step">Conclusion</p>
             <p className="instructions-description">
-              <strong>ABC Puzzles</strong> offer a simple yet powerful way to introduce young learners to letters and early reading skills. By making learning fun and interactive, these puzzles help children build confidence, vocabulary, and literacy foundations. Whether used at home or in the classroom, ABC puzzles are an excellent first step on the path to reading. <strong>Grab an ABC puzzle and let your child’s learning adventure begin today!</strong>
+              <strong>Puzzle ABC</strong> games are a great way to introduce letters and phonics in a playful, hands-on way. They help children develop essential literacy skills while keeping them engaged. Start your child's reading journey today with fun and simple Puzzle ABC play!
             </p>
           </div>
 
