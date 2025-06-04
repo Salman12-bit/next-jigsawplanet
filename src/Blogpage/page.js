@@ -1,173 +1,101 @@
 let Blogsdb = [
     {
         id: 1,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Jigsaw planet free",
+        Details: { Author: "Puzzles Plan",  Released: "June 2025",  Credits: "Images from puzzlesplan website"},
+        title: "Play Jigsaw Planet Free on Puzzlesplan",
         description:
-            "Jigsaw planet games come in many varieties, each with unique mechanics and objectives.",
-        category: "Jigsaw Game . Fun and Entertainment",
+            "Explore unique jigsaw planet games at puzzlesplan – your hub for fun and entertainment.",
+        category: "Puzzlesplan . Jigsaw Games . Fun",
         image: "./images/nightshift.webp",
     },
     {
         id: 2,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Jigsawplanet Game",
-        description:
-            "Free Jigsaw planet come in many varieties, each with unique mechanics and objectives.",
-        category: "Puzzle Game . Fun and Entertainment",
-        image:
-            "./images/beautifulplace.webp",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Top Jigsawplanet Game Picks on Puzzlesplan",
+        description: "Puzzlesplan offers free jigsawplanet puzzles with exciting gameplay and variety.",
+        category: "Puzzlesplan . Puzzle Games . Entertainment",
+        image: "./images/beautifulplace.webp",
     },
     {
         id: 3,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Jigsawplanet",
-        description:
-            "jigsaw planet free come in many varieties, each with unique mechanics and objectives.",
-        category: "Puzzle Game . Fun and Entertainment",
-        image:
-            "./images/darkhistory.webp",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Puzzlesplan Jigsawplanet Games Collection",
+        description: "Discover the best jigsawplanet games online at puzzlesplan, made for puzzle lovers.",
+        category: "Puzzlesplan . Puzzle Gaming . Fun",
+        image: "./images/darkhistory.webp",
     },
     {
         id: 4,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Jigsaw puzzle",
-        description:
-            "jigawplanet puzzles come in many varieties, each with unique mechanics and objectives.",
-        category: "Puzzle Game . Fun and Entertainment",
-        image:
-            "./images/jigsawsnow.webp",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Jigsaw Puzzle Fun with Puzzlesplan",
+        description: "Play top-rated jigsaw puzzles at puzzlesplan – where puzzle fun begins.",
+        category: "Puzzlesplan . Jigsaw . Fun Games",
+        image: "./images/jigsawsnow.webp",
     },
     {
         id: 5,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freeze nova Game",
-        description:
-            "Freezenova free come in many varieties, each with unique mechanics and objectives.",
-        category: "Freezenova Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova1.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Freeze Nova Puzzles at Puzzlesplan",
+        description: "Explore the best of Freezenova games, now featured on puzzlesplan.com.",
+        category: "Puzzlesplan . Freezenova Games . Entertainment",
+        image: "./images/jigsawengine.webp",
     },
     {
         id: 6,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "Jigsawplanet free games come in many varieties, each with unique mechanics and objectives.",
-        category: "Jigsaw free Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova2.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Free Puzzlesplan Jigsawplanet Games",
+        description: "Play free puzzles from jigsawplanet on puzzlesplan and challenge your brain.",
+        category: "Puzzlesplan . Free Games . Jigsawplanet",
+        image: "./images/eiffeltower.webp",
     },
     {
         id: 7,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "jigsaw planet games come in many varieties, each with unique mechanics and objectives.",
-        category: "Free jigsaw Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova3.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Play Free Jigsaw Games on Puzzlesplan",
+        description: "Enjoy interactive jigsaw games online with puzzlesplan’s fun puzzle collection.",
+        category: "Puzzlesplan . Free Jigsaw . Puzzle Games",
+        image: "./images/treeriver.webp",
     },
     {
         id: 8,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "Jigsawplanet free games come in many varieties, each with unique mechanics and objectives.",
-        category: "Jigsawplanet Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova4.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Jigsawplanet Challenges on Puzzlesplan",
+        description: "Join the puzzlesplan community and solve unique jigsawplanet puzzles today.",
+        category: "Puzzlesplan . Jigsawplanet Fun . Games",
+        image: "./images/Freezenova4.jpeg",
     },
     {
         id: 9,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "Freezenova games come in many varieties, each with unique mechanics and objectives.",
-        category: "Jigsaw Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova5.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Free Jigsaw Games by Puzzlesplan",
+        description: "Access a growing library of jigsaw games online, curated by puzzlesplan experts.",
+        category: "Puzzlesplan . Jigsaw Games . Free Puzzles",
+        image: "./images/Freezenova5.jpeg",
     },
     {
         id: 10,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "Freezenova games come in many varieties, each with unique mechanics and objectives.",
-        category: "Free jigsawplanet Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova6.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Puzzlesplan Presents Freezenova Games",
+        description: "Play the most engaging Freezenova jigsaw puzzles right on puzzlesplan.",
+        category: "Puzzlesplan . Freezenova . Puzzle Fun",
+        image: "./images/Freezenova6.jpeg",
     },
     {
         id: 11,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "Jigsaw free games come in many varieties, each with unique mechanics and objectives.",
-        category: "Jigsaw planet Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova7.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Explore Jigsaw Planet on Puzzlesplan",
+        description: "Join thousands playing puzzle games at puzzlesplan featuring jigsaw planet hits.",
+        category: "Puzzlesplan . Jigsawplanet . Game Hub",
+        image: "./images/Freezenova7.jpeg",
     },
     {
         id: 12,
-        Details: {
-            Author: "Puzzles Plan",
-            Released: "July 2024",
-            Credits: "Images from puzzlesplan website"
-        },
-        title: "Freezenova Game",
-        description:
-            "Jigsawplanet games come in many varieties, each with unique mechanics and objectives.",
-        category: "Free jigsawplanet Game . Fun and Entertainment",
-        image:
-            "./images/Freezenova8.jpeg",
+        Details: { Author: "Puzzles Plan", Released: "June 2025", Credits: "Images from puzzlesplan website" },
+        title: "Jigsaw Planet Games by Puzzlesplan",
+        description: "Solve relaxing and challenging jigsaw puzzles from puzzlesplan’s top selections.",
+        category: "Puzzlesplan . Jigsawplanet . Relax & Play",
+        image: "./images/Freezenova8.jpeg",
     },
-
-
 ];
 
 export default Blogsdb;

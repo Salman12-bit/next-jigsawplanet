@@ -14,8 +14,9 @@ const ElementBlockPuzzle = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const gridSize = 8;
-  const elements = ['🎨', '📚', '🎵', '🌍'];
-  const requiredScore = 230; 
+  const elements = ['🚀', '🧩', '🌋', '🕹️'];
+
+  const requiredScore = 225; 
 
   const initializeGrid = () => {
     let newGrid;
@@ -140,7 +141,7 @@ const ElementBlockPuzzle = () => {
 
   return (
     <div className="puzzle-container">
-      <h1>Element Block Puzzle Level 5</h1>
+      <h1>Element Block Puzzle Level 6</h1>
       <p className="score">Score: {score}</p>
       
       {!isGameActive && !gameCompleted && (
@@ -175,7 +176,7 @@ const ElementBlockPuzzle = () => {
       </div>
 
       {gameCompleted && (
-        <Link href="/puzzleblock">
+        <Link href="/">
           <button className="next-level-button">Next Level</button>
         </Link>
       )}

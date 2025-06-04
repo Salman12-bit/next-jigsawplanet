@@ -20,7 +20,6 @@ const Container = styled.div`
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
 `;
-
 const TilesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 100px);
@@ -29,7 +28,6 @@ const TilesGrid = styled.div`
   width: max-content;
   margin: 0 auto;
 `;
-
 const Tile = styled.div`
   width: 100%;
   padding-top: 100%;
@@ -146,7 +144,7 @@ const PuzzleGame = () => {
   };
 
   const checkSolved = () => {
-    const solved = JSON.stringify(tiles) === JSON.stringify([1, 3, 5, 7, 9, 11, 13, 15, null]);
+    const solved = JSON.stringify(tiles) === JSON.stringify([3, 7, 11, 13, 17, 21, 27, 33, null]);
     if (solved) {
       setIsSolved(true);
       setIsRunning(false);
@@ -161,7 +159,7 @@ const PuzzleGame = () => {
     let shuffled;
     let isSolvable;
     do {
-      shuffled = [1, 3, 5, 7, 9, 11, 13, 15, null].sort(() => Math.random() - 0.5);
+      shuffled = [3, 7, 11, 13, 17, 21, 27, 33, null].sort(() => Math.random() - 0.5);
       let inversions = 0;
       for (let i = 0; i < shuffled.length; i++) {
         for (let j = i + 1; j < shuffled.length; j++) {

@@ -36,6 +36,10 @@ export default function Home() {
       "image": "/images/eiffeltower.webp",
       link: '/older-puzzles'
     },
+    {
+      "image": "/images/treeriver.webp",
+      link: '/jisawplanet'
+    },
 
   ]
 

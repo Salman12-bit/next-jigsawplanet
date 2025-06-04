@@ -23,10 +23,11 @@ const Container = styled.div`
 
 const TilesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  width: 100%;
-  max-width: 320px;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  gap: 10px;
+  width: max-content;
+  margin: 0 auto;
 `;
 
 const Tile = styled.div`
@@ -198,7 +199,7 @@ const PuzzleGame = () => {
       <Button onClick={checkSolved}>I Have Completed</Button>
       <Button onClick={shuffleTiles}>Shuffle</Button>
       {isSolved && (
-        <Link href="/">
+        <Link href="/woodenpuzzle">
           <Button>Next Level</Button>
         </Link>
       )}
