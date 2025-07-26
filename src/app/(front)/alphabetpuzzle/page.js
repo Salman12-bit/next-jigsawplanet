@@ -146,7 +146,7 @@ const Puzzle1 = () => {
       <div className={`welcome-container ${fadeIn ? "fade-in" : ""}`}>
         <div className="welcome-box left">
           <h2 className="welcome-subtitle">💡 Why Puzzles?</h2>
-          <p>Puzzles enhance creativity, problem-solving, and patience. Every piece matters!</p>
+          <p>Puzzles enhance creativity, problem-solving, and patience. Every piece matters!  Left Box of the div</p>
         </div>
         <div className="welcome-box center">
           <h1 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h1>
