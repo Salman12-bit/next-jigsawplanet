@@ -40,6 +40,10 @@ export default function Home() {
       "image": "/images/treeriver.webp",
       link: '/jisawplanet'
     },
+    {
+      "image": "/images/treeriver.webp",
+      link: '/jisawplanet'
+    },
   ]
 
   const getData = async () => {
