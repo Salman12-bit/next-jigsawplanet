@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const metadata = {
-  title: "JigsawPlanet. Play Free Online Jigsaw Puzzles Now",
+  title: "JigsawPlanet Play Free Online Jigsaw Puzzles Now",
   keywords: "jigsaw,jp puzzle",
   description:
     "Explore JigsawPlanet and enjoy thousands of free jigsaw puzzles. Fun, relaxing, and perfect for puzzle lovers of every age!",

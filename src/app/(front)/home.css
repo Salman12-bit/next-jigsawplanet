@@ -20,6 +20,7 @@
   border: 1px solid #ccc;
   padding: 16px;
   border-radius: 8px;
+  margin-left: 10px;
 }
 
 .puzzle-game-image {
@@ -28,6 +29,7 @@
   height: 200px;
   border-radius: 8px;
 }
+
 .puzzle-game-button:hover {
   background-color: #005bb5;
 }
@@ -225,4 +227,95 @@
     margin-left: 10px;
     text-align: center;
   }
+}
+
+.article-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #222;
+  background-color: #fff;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.article-container h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.article-container h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+}
+
+.article-container h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.article-container p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.article-container ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style: disc;
+}
+
+.article-container ul li {
+  margin-bottom: 0.5rem;
+}
+
+.article-container a {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article-container a:hover {
+  text-decoration: underline;
+}
+
+.article-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.article-container th,
+.article-container td {
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.article-container th {
+  background-color: #f7fafc;
+  font-weight: bold;
+}
+
+.article-container code {
+  background-color: #edf2f7;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+.article-container strong {
+  color: #1a202c;
 }

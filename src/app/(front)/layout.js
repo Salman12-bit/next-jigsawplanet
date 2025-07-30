@@ -2,7 +2,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Explore JigsawPlanet Free Online Puzzles for Fun",
-  keywords: "jicsaw planet, online piece,jigsaw",
+  keywords: "jicsaw planet, online piece,jigsaw,online jigsaw puzzles, free jigsaw puzzle games, play puzzles online, digital puzzle games, brain games 2025, relaxing online games, mindfulness puzzles, educational jigsaw puzzles, interactive puzzle platform, puzzle games for kids and adults,",
   description:
     "Dive into JigsawPlanet and solve free jigsaw puzzles anytime! Enjoy relaxing, brain-boosting fun with thousands of puzzles to explore.",
   openGraph: {
