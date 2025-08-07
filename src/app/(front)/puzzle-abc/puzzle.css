@@ -148,3 +148,9 @@
     margin-top: 16px;
     font-size: 20px;
 }
+.game-board {
+    display: grid !important;
+    grid-template-columns: repeat(3, 90px) !important;
+    gap: 8px !important;
+    justify-content: center !important;
+}
