@@ -143,51 +143,27 @@ const Puzzle1 = () => {
         </div>
       </div>
       <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Puzzle ABC Games</h2>
-
-            <p className="instructions-description">
-              <strong>Puzzle ABC</strong> games are a fun and educational way to help children learn the alphabet. These games support early literacy by strengthening letter recognition and phonics skills in an interactive setting. Perfect for preschoolers and early learners, Puzzle ABC activities combine play and learning to build confidence in reading.
-            </p>
-
-            <h3 className="instruction-step">1. Learn the Puzzle Basics</h3>
-            <p className="instructions-description">
-              Puzzle ABC games are simple to play and highly effective. Here’s how to get started:
-            </p>
-            <ul className="instructions-list">
-              <li>Let your child explore each alphabet piece on their own first.</li>
-              <li>Help them match each letter to its correct position or outline.</li>
-              <li>Say the letter name aloud and ask your child to repeat it.</li>
-              <li>Use the letters to form simple words as they progress.</li>
-            </ul>
-
-            <h4 className="instruction-step">2. Create a Positive Puzzle Space</h4>
-            <p className="instructions-description">
-              A well-prepared space helps kids focus and enjoy the experience:
-            </p>
-            <ul className="instructions-list">
-              <li>Use a soft surface or mat to keep puzzle pieces from sliding.</li>
-              <li>Make sure the area is well-lit and free from distractions.</li>
-              <li>Keep all puzzle parts organized in one place for easy setup and cleanup.</li>
-            </ul>
-
-            <h5 className="tips-title">Helpful Tips for Puzzle ABC Learning</h5>
-            <ul className="instructions-list">
-              <li><strong>Start with Familiar Letters:</strong> Begin with the letters in your child’s name.</li>
-              <li><strong>Use the ABC Song:</strong> Reinforce letter order with music and rhymes.</li>
-              <li><strong>Keep Sessions Short:</strong> Focused, 10-minute sessions work best for young kids.</li>
-              <li><strong>Combine with Stories:</strong> Connect letters to words and books your child enjoys.</li>
-              <li><strong>Celebrate Progress:</strong> Encourage and praise their effort and learning.</li>
-            </ul>
-
-            <p className="instruction-step">Conclusion</p>
-            <p className="instructions-description">
-              <strong>Puzzle ABC</strong> games are a great way to introduce letters and phonics in a playful, hands-on way. They help children develop essential literacy skills while keeping them engaged. Start your child's reading journey today with fun and simple Puzzle ABC play!
-            </p>
-          </div>
-
-
+        <div className="game-instructions">
+          <h1 className="instructions-title">Puzzle ABC Games: Learning Letters Through Play</h1>
+          <p className="instructions-description">
+          Puzzle ABC games change alphabet learning into an adventure of problem-solving and creativity. Instead of rote memorization, learners are invited to explore letters as part of engaging challenges — opening cards, forming sequences, and solving visual arrangements. This hands-on interaction strengthens both literacy skills and cognitive thinking, changing the alphabet into a puzzle that’s as satisfying as it is educational.
+          </p>
+          <h2 className="instruction-step">Enhancing Literacy With Strategic Play</h2>
+          <p className="instructions-description">
+          Don't like flashcards or repetitive drills, Puzzle ABC games motivate learners to approach letters as part of a structured game. Matching, sequencing, and sorting every piece in a specific time helps children to recognize letters and their order while refining attention and focus. By treating the alphabet like a game board, learners actively participate in the process, completing puzzles — seeing letters not as abstract symbols, but as tools that form the foundation of words and communication for young children.
+          </p>
+          <h3 className="instruction-step">Building Visual Sequencing Skills</h3>
+          <p className="instructions-description">
+          Sequencing is necessary for reading fluency and everyday problem-solving that children face. Puzzle ABC naturally strengthens this skill by giving instructions to the players to arrange letters in which order, spot progressions, or scan for missing pieces. These exercises enhance left-to-right tracking, spatial organization, and visual memory — all of which help early literacy and give motivation to the learners for the structured thinking needed in future academic tasks.
+          </p>
+          <h4 className="instruction-step">Developing Pattern Recognition Through Letters</h4>
+          <p className="instructions-description">
+          Patterns are everywhere in language, from vowel-consonant groupings to repeated letter shapes. Puzzle ABC fosters pattern recognition by inviting learners to notice relationships between letters — whether identifying vowels or completing thematic grids. Players can recognize these patterns. These patterns not only accelerate reading development but also boost the analytical mindset necessary for problem-solving.
+          </p>
+          <h5 className="instruction-step">Balancing Structure With Imagination</h5>
+          <p className="instructions-description">
+          While puzzle abc games promote accuracy and logic, they also leave room for playful exploration. Children may experiment with innovative arrangements or set their own rules, blending design with free-form discovery. This balance develops interest in young learners and a sense of achievement that is beneficial in both early learning and lifelong problem-solving skills.
+          </p>
         </div>
       </div>
     </div>

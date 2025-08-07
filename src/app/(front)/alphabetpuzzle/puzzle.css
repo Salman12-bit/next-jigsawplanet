@@ -89,17 +89,16 @@
 
 .welcome-container {
     display: flex;
-    justify-content: space-between;
     align-items: stretch;
     width: 100%;
     padding: 20px;
     gap: 20px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    flex-wrap: wrap; /* Ensures elements adjust dynamically */
+    flex-wrap: wrap; 
+    text-align: justify;
 }
 
-/* Fade-in effect */
 .fade-in {
     opacity: 1;
 }
@@ -114,7 +113,6 @@
     color: black;
 }
 
-/* Title and Subtitle Styling */
 .welcome-title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -130,6 +128,7 @@
 .welcome-text {
     font-size: 1.125rem;
     margin-bottom: 16px;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {

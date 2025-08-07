@@ -143,51 +143,27 @@ const Puzzle1 = () => {
         </div>
       </div>
       <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Alphabet Sound Puzzle – A Complete Beginner’s Guide</h2>
-            <p className="instructions-description">
-              The <strong>Alphabet Sound Puzzle</strong> is an exciting educational toy designed to help children learn letters and their sounds, improve listening skills, and develop early phonics awareness. Whether you're using a traditional physical puzzle with sound effects or a modern digital version, this interactive activity blends learning and play beautifully. In this easy guide, you’ll discover how to play with the Alphabet Sound Puzzle, understand the rules, and pick up helpful tips to make the most of every learning session.
-            </p>
-            <h3 className="instruction-step">1. Explore Different Types of Alphabet Sound Puzzles</h3>
-            <p className="instructions-description">
-              Alphabet sound puzzles come in various styles—from simple sound-activated letter boards to advanced versions with full-word pronunciation and games. Some puzzles play a letter's sound when a piece is placed correctly, while others might include songs or word associations. Choose the version that fits your child’s age, interests, and learning goals.
-            </p>
-            <h4 className="instruction-step">2. Learn the Puzzle Rules</h4>
-            <p className="instructions-description">
-              Alphabet sound puzzles are intuitive and beginner-friendly, but understanding the basic rules and goals can make playtime even more beneficial. Here’s how it works:
-            </p>
-            <ul className="instructions-list">
-              <li>Match each letter piece to its corresponding slot or picture on the board.</li>
-              <li>When the piece fits correctly, the puzzle plays the letter’s name or phonetic sound.</li>
-              <li>Encourage your child to repeat the sound aloud to reinforce phonics skills.</li>
-              <li>Continue matching all the letters while practicing pronunciation and recognition.</li>
-            </ul>
-
-            <h5 className="instruction-step">3. Set Up for a Better Puzzle Experience</h5>
-            <p className="instructions-description">
-              Create a fun and supportive environment for learning:
-              <ul>
-                <li>Use a stable, flat surface like a play table or a clean floor area.</li>
-                <li>Ensure the space is well-lit and free from too many distractions.</li>
-                <li>Keep all puzzle pieces organized and within easy reach to maintain focus.</li>
-              </ul>
-            </p>
-
-            <h6 className="tips-title">Top Tips for Teaching with Alphabet Sound Puzzle</h6>
-            <ul className="instructions-list">
-              <li><strong>Start Small:</strong> Introduce a few letters at a time, focusing on their sounds, before expanding to the whole alphabet.</li>
-              <li><strong>Make It Fun:</strong> Use real-life examples (like “A is for Apple” or “B is for Ball”) when practicing sounds.</li>
-              <li><strong>Repeat and Reinforce:</strong> Regular play helps children remember letters and sounds more quickly.</li>
-              <li><strong>Celebrate Effort:</strong> Offer lots of positive encouragement to keep children motivated and confident.</li>
-            </ul>
-
-            <p className="instruction-step">Conclusion</p>
-            <p className="instructions-description">
-              The <strong>Alphabet Sound Puzzle</strong> is a fantastic tool for introducing children to phonics in a playful, hands-on way. It’s interactive, educational, and perfect for toddlers, preschoolers, and early learners. Whether you’re a parent, teacher, or caregiver, this puzzle helps children connect letters with their sounds, building a strong foundation for reading and language skills. <strong>Start your child’s phonics adventure today with a fun and engaging Alphabet Sound Puzzle – where learning comes alive through sound!</strong>
-            </p>
-          </div>
-
+        <div className="game-instructions">
+          <h1 className="instructions-title">Alphabet Sound Puzzle</h1>
+          <p className="instructions-description">
+          In early years, alphabet sound puzzles introduce a meaningful way to connect letters with their corresponding phonetic sounds. Designed to support early reading development, this tool brings sound and symbol together in a way that’s both tangible and interactive. Every card typically represents a letter and is matched with a related sound, permitting learners to shape solid sound-related and visual links. As a result, this format has become a valuable resource in language acquisition and early phonics instruction.
+          </p>
+          <h2 className="instruction-step">Sound Association Through Letter Interaction</h2>
+          <p className="instructions-description">
+            Understanding the link between letters and their sounds is a core milestone in literacy. This learning tool supports this association by creating opportunities to match letters to audio or phonetic prompts. Each letter represents more than just a shape on a board — it changes into a gateway for pronunciation, recognition, and early learning skills. When a learner listens to a sound and connects it to the right letter, the letter set becomes a useful code or a memorable mental image.
+          </p>
+          <h3 className="instruction-step">Building Phonemic Awareness at an Early Stage</h3>
+          <p className="instructions-description">
+            Phonemic awareness is the ability to hear and manipulate individual sounds in spoken words. Alphabet puzzles help this basic literacy skill by allowing children to isolate letter sounds and relate them directly to visual representations of those sounds. This tactile coordination deepens understanding of how words are formed and broken down. It’s a designed, low-pressure format that improves early reading readiness by connecting physical pieces with phonological awareness in a developmentally proper way.
+          </p>
+          <h4 className="instruction-step">A Multisensory Experience for Language Development</h4>
+          <p className="instructions-description">
+            The more senses involved in the learning process, the more likely information is to stick. The alphabet sound puzzle combines tactile exploration and visual identification into a single experience. Learners can hear the sound, see the alphabetic letters, and physically move the card into place or open — reinforcing comprehension from multiple angles. This multisensory support is helpful for early learners, young children with language delays, or those who benefit  from varied approaches to concept maintenance.
+          </p>
+          <h5 className="instruction-step">Practical Applications in Literacy Environments</h5>
+          <p className="instructions-description">
+            In both classroom and home environments, these puzzles help as practical learning tools that fit naturally into early literacy programs. Their straightforward design and focused functionality make them ideal for repeated practice, individual exploration, or guided guidance. They boost self-correction, experimentation, and sound discovery — all necessary elements of learning how language works. Whether used during free choice time or as part of structured phonics guidance, they give ongoing opportunities for language growth.
+          </p>
         </div>
       </div>
     </div>

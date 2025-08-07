@@ -145,74 +145,71 @@ const Puzzle1 = () => {
 
       <div className={`welcome-container ${fadeIn ? "fade-in" : ""}`}>
         <div className="welcome-box left">
-          <h2 className="welcome-subtitle">💡 Why Puzzles?</h2>
-          <p>Puzzles enhance creativity, problem-solving, and patience. Every piece matters!</p>
+          <h1 className="welcome-subtitle">Welcome to the Extreme Puzzle Challenge!</h1>
+          <p className="welcome-text">
+            Hey, Puzzle lover! Each level on our site is a modern experience, full of excitement and a chance to boost your aptitudes.
+            Our platform isn’t about playing the game—it’s centered on challenging your intellect and celebrating each little triumph along the way.
+          </p>
         </div>
         <div className="welcome-box center">
-          <h1 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h1>
+          <h2 className="welcome-title">Why Puzzles?</h2>
           <p className="welcome-text">
-            Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
-            This is more than just a game—it's your journey to sharpen your mind, test your skills, and celebrate every small victory.
+            Puzzles aren't just games; they're a powerful tool for improving your cognitive skills. They stimulate advancement,
+            boost basic thinking, and energize tolerance. Whether you're matching cards or spotting patterns, every
+            card that you open is part of a greater strategy. Dive in, focus your mind, and enjoy the procedure of discovery!
           </p>
-          <ul className="welcome-list">
-            <li>🔍 Every piece counts: Take your time and explore the possibilities.</li>
-            <li>🧠 Sharpen your mind: Solve puzzles to grow stronger.</li>
-            <li>🎯 Embrace the challenge: Enjoy the thrill of completing each puzzle!</li>
-          </ul>
         </div>
         <div className="welcome-box right">
-          <h2 className="welcome-subtitle">🏆 Your Challenge</h2>
-          <p>Are you ready to test your skills? Get started and unlock new levels of fun!</p>
+          <h2 className="welcome-subtitle"> Your Challenge</h2>
+          <p className="welcome-text">
+            Are you ready to test your skills and boost your mental limits? The Ultimate Puzzle Challenge is designed to bring out
+            your  strategy. With every completed puzzle, you’ll grow more confident. Step into a world of fun,
+            logic, and excitement—your puzzle journey begins now!
+          </p>
         </div>
       </div>
-      <div className="game-instructions-container">
+
+      <article className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free ABC Puzzle Game – A Complete Beginner’s Guide</h2>
-
+            <h2 className="instructions-title">
+              How to Play Free ABC Puzzle Game – A Complete Beginner’s Guide
+            </h2>
             <p className="instructions-description">
-              The <strong>ABC Puzzle Game</strong> is a fun, interactive, and brain-boosting activity that helps sharpen your mind, improve memory, and enhance problem-solving skills. Whether you're playing a physical version or enjoying the <strong>ABC Puzzle Game online for free</strong>, this engaging game offers a perfect balance of challenge and relaxation. In this step-by-step guide, you’ll learn how to play the ABC Puzzle Game, understand its rules, and pick up expert tips to win more often.
+              The <strong>ABC Puzzle Game</strong> is a fun, engaging, and improved critical thinking activity designed to enhance memory
+              and improve logical problem-solving. Whether you're playing the physical version or the
+              <strong> ABC Puzzle Game online for free</strong>, this game gives a perfect mix of obstacles and relaxation.
+              In these beginner-friendly instructions, you’ll learn how to get started on this puzzle level, understand the puzzle rules, and discover top tips to win consistently.
             </p>
-
             <h3 className="instruction-step">1. Explore Different Types of ABC Puzzle Games</h3>
             <p className="instructions-description">
-              The ABC Puzzle Game comes in many forms, including physical puzzles, mobile apps, and <strong>online puzzle games</strong>. Each version offers unique gameplay mechanics and visuals, keeping the experience fresh and exciting.
+              ABC Puzzle Games are accessible in different formats, like physical puzzles, mobile apps, and engaging
+              <strong> online puzzles</strong>. Every version gives unique visuals and mechanics to keep your experience engaging and dynamic.
             </p>
-
             <h4 className="instruction-step">2. Learn the Game Rules</h4>
             <p className="instructions-description">
-              Understanding the rules of the ABC Puzzle Game is key to winning. Before you begin, take a moment to read through the game instructions. Here’s how it works:
+              Understanding the rules is necessary for mastering the ABC Puzzle Game. Before you play, take a minute to review how to play this game:
             </p>
             <ul className="instructions-list">
-              <li>Each player gets 3 chances per game round.</li>
-              <li>Match 3 ABC Puzzle Game cards correctly to win the game.</li>
-              <li>If the match fails, restart the game and try again.</li>
+              <li>Every player gets three chances per game round.</li>
+              <li>Match three ABC Puzzle cards correctly to win this level.</li>
+              <li>If you can't match the cards, restart and try again.</li>
             </ul>
-
-            <h5 className="instruction-step">3. Set Up for a Better Gaming Experience</h5>
-            <p className="instructions-description">
-              Whether you’re playing the ABC Puzzle Game on your phone, tablet, or using a traditional board, make sure your environment is set up for comfort:
-              <ul>
-                <li>Use a clean, flat surface with good lighting for physical puzzles.</li>
-                <li>For digital play, adjust brightness and volume settings to create a focused atmosphere.</li>
-              </ul>
-            </p>
-
             <h6 className="tips-title">Top Tips to Win at ABC Puzzle Game</h6>
             <ul className="instructions-list">
-              <li><strong>Stay Focused:</strong> Take your time and analyze each puzzle piece carefully.</li>
-              <li><strong>Practice Makes Perfect:</strong> Regular practice will boost your skills over time.</li>
-              <li><strong>Learn from Mistakes:</strong> Missed a match? Think about what went wrong and improve your strategy.</li>
-              <li><strong>Increase Difficulty Gradually:</strong> Challenge yourself with harder puzzles as you improve.</li>
+              <li><strong>Stay Focused:</strong> Observe every puzzle card and think strategically before opening a new one.</li>
+              <li><strong>Practice Makes Perfect:</strong> Puzzle game wants practice more you play, the better your skills become.</li>
+              <li><strong>Learn from Mistakes:</strong> Analyze your previous actions, check your errors, and build a strategy according to them.</li>
             </ul>
-
             <p className="instruction-step">Conclusion</p>
             <p className="instructions-description">
-              The <strong>ABC Puzzle Game</strong> is more than just a way to pass the time – it's a powerful tool for boosting brainpower and having fun. With a clear understanding of the rules and some smart strategies, you'll be matching puzzle cards like a pro in no time. Whether you're new to puzzle games or a seasoned player, the ABC Puzzle Game offers endless hours of entertainment. <strong>Start playing now and enjoy one of the best free puzzle games online!</strong>
+              The <strong>ABC Puzzle Game</strong> is an easy and enjoyable way to challenge your thinking level. Understanding the puzzle rules and steady practice, you’ll be matching puzzle cards like a professional. Whether you’re modern or experienced, this puzzle diversion guarantees endless excitement.
+              <strong> Start playing now!</strong>
             </p>
+
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

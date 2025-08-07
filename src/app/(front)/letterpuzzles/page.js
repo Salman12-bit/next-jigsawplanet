@@ -143,44 +143,27 @@ const Puzzle1 = () => {
         </div>
       </div>
       <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Victorian Puzzle Letter Games</h2>
-            <p className="instructions-description">
-              <strong>Victorian Puzzle Letter</strong> games are a fun and educational way to help children learn the alphabet with a touch of historical charm. These games support early literacy by strengthening letter recognition and phonics skills in an interactive setting. Perfect for preschoolers and early learners, Victorian Puzzle Letter activities combine play and learning to build confidence in reading.
-            </p>
-            <h3 className="instruction-step">1. Learn the Puzzle Basics</h3>
-            <p className="instructions-description">
-              Victorian Puzzle Letter games are simple to play and highly effective. Here’s how to get started:
-            </p>
-            <ul className="instructions-list">
-              <li>Let your child explore each alphabet piece on their own first.</li>
-              <li>Help them match each letter to its correct position or outline.</li>
-              <li>Say the letter name aloud and ask your child to repeat it.</li>
-              <li>Use the letters to form simple words as they progress.</li>
-            </ul>
-            <h4 className="instruction-step">2. Create a Positive Puzzle Space</h4>
-            <p className="instructions-description">
-              A well-prepared space helps kids focus and enjoy the experience:
-            </p>
-            <ul className="instructions-list">
-              <li>Use a soft surface or mat to keep puzzle pieces from sliding.</li>
-              <li>Make sure the area is well-lit and free from distractions.</li>
-              <li>Keep all puzzle parts organized in one place for easy setup and cleanup.</li>
-            </ul>
-            <h5 className="tips-title">Helpful Tips for Victorian Puzzle Letter Learning</h5>
-            <ul className="instructions-list">
-              <li><strong>Start with Familiar Letters:</strong> Begin with the letters in your child’s name.</li>
-              <li><strong>Use the ABC Song:</strong> Reinforce letter order with music and rhymes.</li>
-              <li><strong>Keep Sessions Short:</strong> Focused, 10-minute sessions work best for young kids.</li>
-              <li><strong>Combine with Stories:</strong> Connect letters to words and books your child enjoys.</li>
-            </ul>
-            <p className="instruction-step">Conclusion</p>
-            <p className="instructions-description">
-              <strong>Victorian Puzzle Letter</strong> games are a great way to introduce letters and phonics in a playful, hands-on way. With a blend of classic style and educational value, they help children develop essential literacy skills while keeping them engaged. Start your child’s learning adventure today with the timeless fun of Victorian Puzzle Letters!
-            </p>
-          </div>
-
+        <div className="game-instructions">
+          <h1 className="instructions-title">Victorian Puzzle Letters: Art, Secrecy, and Sentiment</h1>
+          <p className="instructions-description">
+            In the mid-19th century, when handwriting was both a personal signature and an art form, a curious convention emerged: the Victorian puzzle letter. Far from ordinary correspondence, these letters were part message and part keepsake. They invited the recipient to unfold a secret world — one where love and craftsmanship met in a single piece of paper.
+          </p>
+          <h2 className="instruction-step">When Letters Became Works of Art</h2>
+          <p className="instructions-description">
+            Puzzle letters turned communication into a hands-on experience. Writers didn’t simply send words; they developed them. Paper was folded into hearts, flowers, or complex geometric patterns, and often, writer messages are hidden in layers. Each crease carried intention — sometimes protecting a private joke or coded poem. In 1848, a London suitor sent his beloved a collapsed rose-shaped letter that, when opened petal by petal, revealed a sonnet and a bolt of his hair — an ardent motion that was both lively and intensely emotional.
+          </p>
+          <h3 className="instruction-step">A Language Beyond Every Word</h3>
+          <p className="instructions-description">
+            These letters offered a form of expression that was multi-dimensional. Messages were often inserted with rebuses, or symbolic colors, inviting the reader to unveil not just the words but the emotions between them. These layered techniques reflected a society that valued subtlety, emotional intelligence, and the art of excitement. A puzzle letter was as much an emotional performance as a written note.
+          </p>
+          <h4 className="instruction-step">A Delicate Legacy</h4>
+          <p className="instructions-description">
+            Real Victorian puzzle letters are rare today, their fragility matched only by the intimacy of their purpose. Museums and collectors treasure them not only for their beauty but as glimpses into a slower, more considered era of human connection. To preserve one is to maintain an act of love, creativity, and tangible storytelling — a reminder that communication was once as much about the journey as the message.
+          </p>
+          <h5 className="instruction-step">Modern Inspirations</h5>
+          <p className="instructions-description">
+            Modern artists and paper crafters are rediscovering the attraction of puzzle letters. Wedding invitations and digital art have borrowed from their folded narratives and symbolic layout, bringing the puzzle spirit into modern hands. In renewing this tradition of puzzles, today’s creators honor the balance of beauty and meaning that once changed simple letters into treasured heirlooms.
+          </p>
         </div>
       </div>
     </div>

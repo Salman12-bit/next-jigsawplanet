@@ -143,53 +143,27 @@ const Puzzle1 = () => {
         </div>
       </div>
       <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Wood Alphabet Puzzle – A Complete Beginner’s Guide</h2>
-
-            <p className="instructions-description">
-              The <strong>Wood Alphabet Puzzle</strong> is a classic educational toy designed to help children learn letters, improve hand-eye coordination, and develop fine motor skills. Whether you're using a traditional wooden puzzle set or a modern digital version, this interactive activity combines fun and learning in the best way. In this easy guide, you’ll discover how to play with the Wood Alphabet Puzzle, learn the rules, and pick up helpful tips to make the most of every session.
-            </p>
-
-            <h3 className="instruction-step">1. Explore Different Types of Wood Alphabet Puzzles</h3>
-            <p className="instructions-description">
-              Wood alphabet puzzles come in many styles—from simple letter cutouts to advanced sets that include pictures, sounds, or spelling challenges. Some are flat board puzzles, while others are 3D blocks or Montessori-style toys. Choose the version that suits your child’s age and learning level.
-            </p>
-
-            <h4 className="instruction-step">2. Learn the Puzzle Rules</h4>
-            <p className="instructions-description">
-              While wood alphabet puzzles are intuitive and beginner-friendly, understanding the basic rules and goals makes the activity more rewarding. Here's how it works:
-            </p>
-            <ul className="instructions-list">
-              <li>Match each wooden letter to its corresponding cutout or image.</li>
-              <li>Help your child pronounce the letter and associate it with a letter.</li>
-              <li>If the letter doesn’t fit, rotate it gently and try again.</li>
-              <li>Repeat until the full alphabet is matched correctly.</li>
-            </ul>
-
-            <h5 className="instruction-step">3. Set Up for a Better Puzzle Experience</h5>
-            <p className="instructions-description">
-              Create a comfortable and distraction-free space for learning and play:
-              <ul>
-                <li>Use a flat, child-friendly surface like a play table or mat.</li>
-                <li>Ensure the area has good lighting and a quiet atmosphere.</li>
-                <li>Keep all puzzle pieces in one place to avoid losing letters.</li>
-              </ul>
-            </p>
-
-            <h6 className="tips-title">Top Tips for Teaching with Wood Alphabet Puzzle</h6>
-            <ul className="instructions-list">
-              <li><strong>Start with a Few Letters:</strong> Introduce 3–5 letters at a time to avoid overwhelming young learners.</li>
-              <li><strong>Make It Interactive:</strong> Say each letter aloud and use fun examples (like animal names or toys).</li>
-              <li><strong>Repeat Often:</strong> Daily play helps reinforce letter recognition and phonics.</li>
-              <li><strong>Use Positive Encouragement:</strong> Praise effort, not just accuracy, to build confidence.</li>
-            </ul>
-
-            <p className="instruction-step">Conclusion</p>
-            <p className="instructions-description">
-              The <strong>Wood Alphabet Puzzle</strong> is a wonderful hands-on learning tool that supports early childhood development through play. It's fun, engaging, and educational—perfect for toddlers, preschoolers, and kindergarteners. Whether you’re a parent, teacher, or caregiver, using this puzzle is a great way to introduce the alphabet in an interactive and memorable way. <strong>Start exploring the alphabet today with a high-quality wood alphabet puzzle – where learning meets play!</strong>
-            </p>
-          </div>
+        <div className="game-instructions">
+          <h1 className="instructions-title">Wood Alphabet Puzzle</h1>
+          <p className="instructions-description">
+            A wood alphabet puzzle offers natural texture and tactile interaction in a single, classic product. Handmade with simplicity and purpose, these puzzles combine early literacy with tactile development in a process that digital tools often can’t copy. Whether a wooden puzzle is placed in a learning corner, on a table, or within a children's playroom, this wooden design continues to hold its place as a quiet yet powerful educational staple.
+          </p>
+          <h2 className="instruction-step">Material Integrity and Lasting Appeal</h2>
+          <p className="instructions-description">
+            The charm of a wood alphabet puzzle lies in the material itself. Unlike plastic or digital alternatives, wood adds warmth and physical connection. Its grain patterns, gentle weight, and smooth edges offer a sensory depth that invites touch and focus. The versatility of wooden cards guarantees they can be handled and extended without wearing down, making them perfect for repeated use over different learning stages. More than just a toy, they serve as a tangible connection between design and education, merging functionality with a characteristic stylish.
+          </p>
+          <h3 className="instruction-step">Letter Recognition With Hands-On Precision</h3>
+          <p className="instructions-description">
+            Letter recognition becomes more memorable when it’s experienced through physical interaction. A wood alphabet puzzle creates this opportunity by allowing children to pick up, rotate, and fit letters into specific slots — actions that strengthen both literacy and fine motor coordination. This guided movement deepens neural associations between shapes and sounds, making the alphabet easier to understand, not just to memorize. Each piece becomes a familiar symbol, processed not just by sight, but by feel and action.
+          </p>
+          <h4 className="instruction-step">Sustainable Design That Supports Learning</h4>
+          <p className="instructions-description">
+            In a time when sustainability and intentional living are growing problems, wooden puzzles give a conscious alternative to mass-produced, single-use objects. Various are crafted from responsibly sourced wood and completed with non-toxic paints or natural oils — providing peace of mind to parents and caregivers. But beyond their eco-friendly qualities, the quiet style of wood boosts the learning space. These puzzles promote slower, more centered interaction, diminishing sensory overburden, and encouraging a calm, grounded learning design.
+          </p>
+          <h5 className="instruction-step">A Multi-Sensory Approach to Early Literacy</h5>
+          <p className="instructions-description">
+            Language development flourishes on repetition and sensory variety. Wood alphabet puzzles naturally support this model. The distinct textures, weights, and spacing of every letter piece give a multisensory technique that aligns with how young minds pick up new information. Sound-symbol association, letter recognition, and shape identification all become part of a playful, self-directed experience. This holistic method enables learners to acquire knowledge but also confidence, developing a strong foundation for future language skills.
+          </p>
         </div>
       </div>
     </div>

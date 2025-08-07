@@ -2,21 +2,25 @@
     color: rgb(3, 3, 3);
     text-align: center;
 }
+
 .text-conainer {
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
 }
+
 .level-color {
     margin-bottom: 20px;
     text-align: center;
     color: black;
 }
+
 .planet-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .puzzlecontainer {
     display: flex;
     flex-direction: column;
@@ -24,10 +28,11 @@
     margin: 0 auto;
     padding: 20px;
 }
+
 .card2 {
     padding-top: 100%;
     position: relative;
-    background-color: rgba(20, 20, 20, 0.8); 
+    background-color: rgba(20, 20, 20, 0.8);
     color: white;
     display: flex;
     justify-content: center;
@@ -40,34 +45,38 @@
 }
 
 .card2:hover {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
-    transform: scale(1.05); 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+    transform: scale(1.05);
 }
 
 .card2.matched {
     background-color: #4caf50;
     cursor: default;
 }
+
 .card2.flipped {
     background-color: #e9e1e1;
     color: #000;
     cursor: default;
     transform: rotateY(180deg);
 }
+
 .card2>span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .message {
     margin-top: 20px;
     font-size: 18px;
 }
+
 .button {
     padding: 10px 20px;
     font-size: 16px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
     color: white;
     border: none;
     border-radius: 5px;
@@ -75,6 +84,7 @@
     margin: 10px 0px;
     margin-left: 10px;
 }
+
 .button:hover {
     padding: 10px 20px;
     font-size: 16px;
@@ -86,6 +96,7 @@
     margin: 10px 0px;
     margin-left: 10px;
 }
+
 .game-instructions-container {
     display: flex;
     flex-direction: column;
@@ -99,60 +110,41 @@
     margin-bottom: 20px;
     color: black;
 }
+
 .game-instructions-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
+
 .instructions-title {
     text-align: center;
     margin: 20px 0;
     font-size: 1.5rem;
 }
-.instructions-description {
-    font-size: 1.125rem;
-    margin-bottom: 16px;
 
+.instructions-description {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    text-align: justify;
+    margin-left: 10px;
 }
+
 .instruction-step {
     margin-top: 16px;
     font-size: 20px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2980b9;
+    padding-left: 12px;
 }
+
 .instructions-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 16px;
 }
+
 .tips-title {
     margin-top: 16px;
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

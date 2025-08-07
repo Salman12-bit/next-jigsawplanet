@@ -110,13 +110,17 @@
     font-size: 1.5rem;
 }
 .instructions-description {
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin-bottom: 16px;
-
+    text-align: justify;
+    margin-left: 10px;
 }
 .instruction-step {
     margin-top: 16px;
     font-size: 20px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2980b9;
+    padding-left: 12px;
 }
 .instructions-list {
     list-style-type: disc;
