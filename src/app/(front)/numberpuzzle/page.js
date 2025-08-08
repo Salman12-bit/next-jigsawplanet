@@ -11,8 +11,8 @@ const slideAnimation = keyframes`
 `;
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -24,10 +24,10 @@ const Container = styled.div`
 const TilesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 100px);
+  align-items: center;
   grid-auto-rows: 100px;
   gap: 10px;
   width: max-content;
-  margin: 0 auto;
   justify-content: center;
 `;
 
