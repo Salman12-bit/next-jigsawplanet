@@ -183,7 +183,7 @@ const PuzzleGame = () => {
 
   return (
     <Container>
-      <TilesGrid>
+      <TilesGrid className='number-board'>
         {tiles.map((tile, index) => (
           <Tile key={index} onClick={() => moveTile(index)}>
             <span>{tile}</span>

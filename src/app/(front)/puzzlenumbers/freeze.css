@@ -124,3 +124,9 @@ li {
 li:hover {
     transform: scale(1.02);
 }
+.number-board {
+    display: grid !important;
+    grid-template-columns: repeat(3, 90px) !important;
+    gap: 8px !important;
+    justify-content: center !important;
+}

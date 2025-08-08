@@ -183,7 +183,7 @@ const PuzzleGame = () => {
 
   return (
     <Container>
-      <TilesGrid>
+      <TilesGrid className='number-board'>
         {tiles.map((tile, index) => (
           <Tile key={index} onClick={() => moveTile(index)}>
             <span>{tile}</span>
@@ -199,7 +199,7 @@ const PuzzleGame = () => {
       <Button onClick={checkSolved}>I Have Completed</Button>
       <Button onClick={shuffleTiles}>Shuffle</Button>
       {isSolved && (
-        <Link href="/number-game">
+        <Link href="/wooden-number">
           <Button>Next Level</Button>
         </Link>
       )}

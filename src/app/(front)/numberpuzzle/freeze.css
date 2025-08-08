@@ -50,7 +50,7 @@ h1 {
     background-color: #c82333;
 }
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(8, 50px);
     gap: 5px;
@@ -90,7 +90,7 @@ h1 {
 .block.empty {
     background-color: #f0f0f0;
     border: 2px dashed #ccc;
-}
+} */
 
 h2 {
     font-size: 1.8rem;
@@ -123,4 +123,10 @@ li {
 
 li:hover {
     transform: scale(1.02);
+}
+.number-board {
+    display: grid !important;
+    grid-template-columns: repeat(3, 90px) !important;
+    gap: 8px !important;
+    justify-content: center !important;
 }
