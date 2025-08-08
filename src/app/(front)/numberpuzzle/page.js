@@ -28,6 +28,7 @@ const TilesGrid = styled.div`
   gap: 10px;
   width: max-content;
   margin: 0 auto;
+  justify-content: center;
 `;
 
 const Tile = styled.div`
@@ -183,7 +184,7 @@ const PuzzleGame = () => {
 
   return (
     <Container>
-      <TilesGrid className='number-board'>
+      <TilesGrid>
         {tiles.map((tile, index) => (
           <Tile key={index} onClick={() => moveTile(index)}>
             <span>{tile}</span>
