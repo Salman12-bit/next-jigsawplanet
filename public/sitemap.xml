@@ -138,9 +138,45 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-   <url>
+  <url>
     <loc>https://puzzlesplan.com/abc-puzzle</loc>
     <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puzzlesplan.com/letterpuzzles</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puzzlesplan.com/puzzle-solver</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puzzlesplan.com/puzzleblock</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puzzlesplan.com/woodenpuzzle</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puzzlesplan.com/jigsaw-planet</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puzzlesplan.com/jisawplanet</loc>
+    <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
