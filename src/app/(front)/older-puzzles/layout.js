@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Older Jigsaw Puzzles Classic Pieces to Enjoy Again",
-  keywords: "adult zigsaw puzzles,zigsaw puzzles",
+  title: "Play Planet Jigsaws Online – Explore the Galaxy in Puzzle Fun",
   description:
-    "Revisit older jigsaw puzzles with timeless charm. Perfect for collectors or anyone who loves vintage puzzle designs and quiet moments.",
+    "Play Planet Jigsaws online and explore space through fun puzzles. Unlock levels, challenge your mind, and enjoy galaxy-themed jigsaw adventures today!",
   openGraph: {
-    title: "Older Jigsaw Puzzles Classic Pieces to Enjoy Again",
+    title: "Play Planet Jigsaws Online – Explore the Galaxy in Puzzle Fun",
     description:
-      "Revisit older jigsaw puzzles with timeless charm. Perfect for collectors or anyone who loves vintage puzzle designs and quiet moments.",
+      "Play Planet Jigsaws online and explore space through fun puzzles. Unlock levels, challenge your mind, and enjoy galaxy-themed jigsaw adventures today!",
     url: "https://puzzlesplan.com/older-puzzles",
     images: [
       {
         url: "https://puzzlesplan.com/images/eiffeltower.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsaw planet puzzle on PuzzlesPlan",
+        alt: "Planet jigsaw puzzle game with space and galaxy pieces",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Older Jigsaw Puzzles Classic Pieces to Enjoy Again",
+    "name": "Play Planet Jigsaws Online – Explore the Galaxy in Puzzle Fun",
     "description":
-      "Revisit older jigsaw puzzles with timeless charm. Perfect for collectors or anyone who loves vintage puzzle designs and quiet moments.",
+      "Play Planet Jigsaws online and explore space through fun puzzles. Unlock levels, challenge your mind, and enjoy galaxy-themed jigsaw adventures today!",
     "url": "https://puzzlesplan.com/older-puzzles",
     "mainEntity": {
       "@type": "OnlineGame",

@@ -117,16 +117,18 @@
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 16px;
+    color: black;
 }
 
 .welcome-subtitle {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 12px;
+    color: black;
 }
 
 .welcome-text {
-    font-size: 1.125rem;
+    font-size: 1.09rem;
     margin-bottom: 16px;
     text-align: justify;
 }
@@ -173,18 +175,22 @@
     font-size: 1.5rem;
 }
 .instructions-description {
-    font-size: 1.125rem;
+    font-size: 1.09rem;
     margin-bottom: 16px;
+    text-align: justify;
+    margin-left: 10px;
 
 }
 .instruction-step {
-    margin-top: 16px;
+    margin-top: 10px;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 .instructions-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 16px;
+    font-size: 1.09rem;
 }
 .tips-title {
     margin-top: 16px;

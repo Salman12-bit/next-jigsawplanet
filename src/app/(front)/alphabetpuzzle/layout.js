@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Alphabet Puzzle Fun Learning for Kids & Toddlers",
-  keywords: "abc puzzle game,alphabet slider,alphabet",
+  title: "Alphabet Puzzle – Play Fun Learning Games Online",
   description:
-    "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
+    "Play Alphabet Puzzle online! Learn letters, solve fun challenges, and enjoy an engaging educational puzzle game – start playing now.",
   openGraph: {
-    title: "Alphabet Puzzle Fun Learning for Kids & Toddlers",
+    title: "Alphabet Puzzle – Play Fun Learning Games Online",
     description:
-      "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
+      "Play Alphabet Puzzle online! Learn letters, solve fun challenges, and enjoy an engaging educational puzzle game – start playing now.",
     url: "https://puzzlesplan.com/alphabetpuzzle",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play alphabet slider puzzle game on PuzzlesPlan",
+        alt: "Alphabet puzzle game with colorful letters and pieces",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Alphabet Puzzle Fun Learning for Kids & Toddlers",
+    "name": "Alphabet Puzzle – Play Fun Learning Games Online",
     "description":
-      "Make learning letters fun with an alphabet puzzle! Perfect for kids to boost letter recognition and early reading skills through play.",
+      "Play Alphabet Puzzle online! Learn letters, solve fun challenges, and enjoy an engaging educational puzzle game – start playing now.",
     "url": "https://puzzlesplan.com/alphabetpuzzle",
     "publisher": {
       "@type": "Organization",
@@ -42,10 +41,19 @@ export default function Layout({ children }) {
         "height": 500,
       },
     },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/alphabetpuzzle",
-    },
+    "mainEntity": {
+      "@type": "EducationalGame",
+      "name": "Alphabet Puzzle",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "EducationalGame",
+      "genre": "Puzzle, Kids, Learning",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Children",
+      },
+      "url": "https://puzzlesplan.com/alphabetpuzzle",
+      "image": "https://puzzlesplan.com/images/puzzlesplan.webp",
+    }
   };
 
   return (

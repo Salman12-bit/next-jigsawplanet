@@ -1,21 +1,21 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Puzzle Block Game Addictive Fun to Train Your Brain",
+  title: "Block Blast Unblocked – Play Free Online Puzzle Game",
   keywords: "sliding block puzzle game free,block puzzle - brain test game",
   description:
-    "Challenge your mind with a puzzle block game! Easy to play, hard to master—perfect for relaxing or sharpening your thinking skills.",
+    "Play Block Blast Unblocked online for free! Fit the blocks, clear rows, and challenge your brain with this addictive puzzle game. Start playing instantly today.",
   openGraph: {
-    title: "Puzzle Block Game Addictive Fun to Train Your Brain",
+    title: "Block Blast Unblocked – Play Free Online Puzzle Game",
     description:
-      "Challenge your mind with a puzzle block game! Easy to play, hard to master—perfect for relaxing or sharpening your thinking skills.",
+      "Play Block Blast Unblocked online for free! Fit the blocks, clear rows, and challenge your brain with this addictive puzzle game. Start playing instantly today.",
     url: "https://puzzlesplan.com/puzzleblock",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play brain test game on PuzzlesPlan",
+        alt: "Block Blast Unblocked free online puzzle game with colorful blocks",
       },
     ],
   },
@@ -28,9 +28,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Puzzle Block Game Addictive Fun to Train Your Brain",
+    "name": "Block Blast Unblocked – Play Free Online Puzzle Game",
     "description":
-      "Challenge your mind with a puzzle block game! Easy to play, hard to master—perfect for relaxing or sharpening your thinking skills.",
+      "Play Block Blast Unblocked online for free! Fit the blocks, clear rows, and challenge your brain with this addictive puzzle game. Start playing instantly today.",
     "url": "https://puzzlesplan.com/puzzleblock",
     "mainEntity": {
       "@type": "OnlineGame",

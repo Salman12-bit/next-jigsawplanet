@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Wooden Number Puzzle Hands-On Math Fun for Kids",
-  keywords: "binary number puzzles,number search puzzle",
+  title: "Wooden Number Puzzle – Play Free Online Brain Game",
   description:
-    "Explore numbers the fun way with a wooden number puzzle! Boost counting skills, number recognition, and fine motor play through touch.",
+    "lay Wooden Number Puzzle online for free! Slide the wooden tiles, arrange numbers in order, and challenge your brain with this addictive classic puzzle game.",
   openGraph: {
-    title: "Wooden Number Puzzle Hands-On Math Fun for Kids",
+    title: "Wooden Number Puzzle – Play Free Online Brain Game",
     description:
-      "Explore numbers the fun way with a wooden number puzzle! Boost counting skills, number recognition, and fine motor play through touch.",
+      "lay Wooden Number Puzzle online for free! Slide the wooden tiles, arrange numbers in order, and challenge your brain with this addictive classic puzzle game.",
     url: "https://puzzlesplan.com/wooden-number",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play binary number puzzles on PuzzlesPlan",
+        alt: "Wooden Number Puzzle free online sliding game with numbered tiles",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Wooden Number Puzzle Hands-On Math Fun for Kids",
+    "name": "Wooden Number Puzzle – Play Free Online Brain Game",
     "description":
-      "Explore numbers the fun way with a wooden number puzzle! Boost counting skills, number recognition, and fine motor play through touch.",
+      "lay Wooden Number Puzzle online for free! Slide the wooden tiles, arrange numbers in order, and challenge your brain with this addictive classic puzzle game.",
     "url": "https://puzzlesplan.com/wooden-number",
     "mainEntity": {
       "@type": "OnlineGame",

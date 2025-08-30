@@ -4,18 +4,23 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import './elment.css';
 
-const ElementBlockPuzzle = () => {
+const ElementBlockgame = () => {
   const [grid, setGrid] = useState([]);
   const [score, setScore] = useState(0);
   const [isGameActive, setIsGameActive] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [showNamePrompt, setShowNamePrompt] = useState(true);
   const [leaderboard, setLeaderboard] = useState([]);
   const [draggingBlock, setDraggingBlock] = useState(null);
   const [gameCompleted, setGameCompleted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [movesLeft, setMovesLeft] = useState(30);
+
 
   const gridSize = 8;
-  const elements = ['🌞', '🌙', '⭐', '🌌'];
-  const requiredScore = 230; 
+   const elements = ['🌞', '🌙', '⭐', '🌌', '☄️', '🪐'];
+  
+  const requiredScore = 225;
 
   const initializeGrid = () => {
     let newGrid;
@@ -23,9 +28,35 @@ const ElementBlockPuzzle = () => {
       newGrid = Array.from({ length: gridSize }, () =>
         Array.from({ length: gridSize }, () => elements[Math.floor(Math.random() * elements.length)])
       );
-    } while (checkInitialMatches(newGrid));
+    } while (hasAnyMatch(newGrid));
+
     setGrid(newGrid);
   };
+
+  const hasAnyMatch = (grid) => {
+    for (let r = 0; r < gridSize; r++) {
+      for (let c = 0; c < gridSize; c++) {
+        if (
+          c < gridSize - 2 &&
+          grid[r][c] &&
+          grid[r][c] === grid[r][c + 1] &&
+          grid[r][c] === grid[r][c + 2]
+        ) {
+          return true;
+        }
+        if (
+          r < gridSize - 2 &&
+          grid[r][c] &&
+          grid[r][c] === grid[r + 1][c] &&
+          grid[r][c] === grid[r + 2][c]
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
 
   const checkInitialMatches = (grid) => {
     for (let r = 0; r < gridSize; r++) {
@@ -43,12 +74,13 @@ const ElementBlockPuzzle = () => {
 
   useEffect(() => {
     const savedLeaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
-    setLeaderboard(savedLeaderboard.slice(0, 5));
+    setLeaderboard(savedLeaderboard);
   }, []);
 
   const startGame = () => {
     initializeGrid();
     setScore(0);
+    setMovesLeft(30);
     setIsGameActive(true);
     setGameCompleted(false);
     setErrorMessage("");
@@ -56,10 +88,16 @@ const ElementBlockPuzzle = () => {
 
   const handleDrop = (e, targetRow, targetCol) => {
     e.preventDefault();
-    if (!draggingBlock) return;
+    if (!draggingBlock || movesLeft <= 0) return;
+    setMovesLeft(prev => Math.max(prev - 1, 0));
+
 
     const { row: sourceRow, col: sourceCol } = draggingBlock;
     const newGrid = [...grid];
+
+    if (movesLeft - 1 <= 0) {
+      setIsGameActive(false);
+    }
 
     if (
       (Math.abs(sourceRow - targetRow) === 1 && sourceCol === targetCol) ||
@@ -72,27 +110,46 @@ const ElementBlockPuzzle = () => {
     setDraggingBlock(null);
   };
 
-  const checkForMatches = (grid) => {
+  const checkForMatches = (grid, isCascade = false) => {
     let newGrid = [...grid];
     let matched = [];
+    let scoreToAdd = 0;
 
     for (let r = 0; r < gridSize; r++) {
       for (let c = 0; c < gridSize; c++) {
+
         if (
           c < gridSize - 2 &&
-          grid[r][c] !== null &&
+          grid[r][c] &&
           grid[r][c] === grid[r][c + 1] &&
           grid[r][c] === grid[r][c + 2]
         ) {
-          matched.push([r, c], [r, c + 1], [r, c + 2]);
+          let length = 3;
+          while (c + length < gridSize && grid[r][c] === grid[r][c + length]) {
+            length++;
+          }
+          for (let k = 0; k < length; k++) matched.push([r, c + k]);
+
+          if (length === 3) scoreToAdd += 15;
+          else if (length === 4) scoreToAdd += 20;
+          else scoreToAdd += 30;
         }
+
         if (
           r < gridSize - 2 &&
-          grid[r][c] !== null &&
+          grid[r][c] &&
           grid[r][c] === grid[r + 1][c] &&
           grid[r][c] === grid[r + 2][c]
         ) {
-          matched.push([r, c], [r + 1, c], [r + 2, c]);
+          let length = 3;
+          while (r + length < gridSize && grid[r][c] === grid[r + length][c]) {
+            length++;
+          }
+          for (let k = 0; k < length; k++) matched.push([r + k, c]);
+
+          if (length === 3) scoreToAdd += 15;
+          else if (length === 4) scoreToAdd += 20;
+          else scoreToAdd += 30;
         }
       }
     }
@@ -101,9 +158,16 @@ const ElementBlockPuzzle = () => {
       matched.forEach(([r, c]) => (newGrid[r][c] = null));
       applyGravity(newGrid);
       setGrid(newGrid);
-      setScore((prev) => prev + 15);
+
+      if (isCascade) scoreToAdd = Math.floor(scoreToAdd / 2);
+
+      setScore((prev) => prev + scoreToAdd);
+
+      checkForMatches(newGrid, true);
     }
   };
+
+
 
   const applyGravity = (grid) => {
     for (let c = 0; c < gridSize; c++) {
@@ -121,38 +185,73 @@ const ElementBlockPuzzle = () => {
     }
   };
 
+  const updateLeaderboard = (name, score) => {
+    const newEntry = { name, score, date: new Date().toLocaleString() };
+
+    let currentLeaderboard = JSON.parse(localStorage.getItem("blockLeaderboard")) || [];
+
+    const existingIndex = currentLeaderboard.findIndex((entry) => entry.name === name);
+
+    if (existingIndex !== -1) {
+      if (score > currentLeaderboard[existingIndex].score) {
+        currentLeaderboard[existingIndex] = newEntry;
+      }
+    } else {
+      currentLeaderboard.push(newEntry);
+    }
+
+    currentLeaderboard.sort((a, b) => b.score - a.score);
+
+    const top5 = currentLeaderboard.slice(0, 5);
+
+    localStorage.setItem("blockLeaderboard", JSON.stringify(top5));
+    setLeaderboard(top5);
+  };
+
+
   const completeGame = () => {
     if (score >= requiredScore) {
       setIsGameActive(false);
       setGameCompleted(true);
       setErrorMessage("");
 
-      const newLeaderboard = [...leaderboard, { score, date: new Date().toLocaleString() }];
-      newLeaderboard.sort((a, b) => b.score - a.score);
-
-      const top5Leaderboard = newLeaderboard.slice(0, 5);
-      setLeaderboard(top5Leaderboard);
-      localStorage.setItem('leaderboard', JSON.stringify(top5Leaderboard));
+      updateLeaderboard(userName || "Anonymous", score);
     } else {
       setErrorMessage(`You must score at least ${requiredScore} points to complete the game!`);
     }
   };
 
+
   return (
     <div className="puzzle-container">
-      <h1>Element Block Puzzle Level 2</h1>
+      <h1>Play Free Block Game Online</h1>
       <p className="score">Score: {score}</p>
-      
       {!isGameActive && !gameCompleted && (
         <button className="start-button" onClick={startGame}>Start Game</button>
       )}
-      
       {isGameActive && (
         <button className="complete-button" onClick={completeGame}>Complete Game</button>
       )}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
 
-      {errorMessage && (
-        <p className="error-message">{errorMessage}</p>
+      {showNamePrompt && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2>Enter Your Name</h2>
+            <input
+              type="text"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              placeholder="Your name"
+            />
+            <button
+              onClick={() => setShowNamePrompt(false)}
+              disabled={!userName.trim()}
+            >
+              Continue
+            </button>
+          </div>
+        </div>
       )}
 
       <div className="grid">
@@ -173,21 +272,27 @@ const ElementBlockPuzzle = () => {
           </div>
         ))}
       </div>
+      <p className="moves">Moves Left: {movesLeft}</p>
+      
 
       {gameCompleted && (
         <Link href="/woodblock">
           <button className="next-level-button">Next Level</button>
         </Link>
       )}
-
-      <h2 className='leaderboardcolor'>Leaderboard</h2>
-      <ul className='board'>
+      <h2 className="leaderboardcolor">Leaderboard</h2>
+      <ul className="board">
         {leaderboard.map((entry, index) => (
-          <li className='scoreofboard' key={index}>{entry.score} points on {entry.date}</li>
+          <li className="scoreofboard" key={index}>
+            <span className="player-section">Name : {entry.name}</span> <br />
+            <span className="player-section">Score : {entry.score}</span> <br />
+            <span className="player-section">Points On : {entry.date}</span>
+          </li>
         ))}
       </ul>
+
     </div>
   );
 };
 
-export default ElementBlockPuzzle;
+export default ElementBlockgame;

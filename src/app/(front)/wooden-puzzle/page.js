@@ -29,7 +29,7 @@ const initialCards = [
   { id: 9, value: 'E' },
 ];
 
-const Puzzle1 = () => {
+const Puzzle3 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -144,9 +144,12 @@ const Puzzle1 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">Alphabet Sound Puzzle</h1>
+          <h1 className="instructions-title">Play Alphabet Sound Puzzle Online</h1>
           <p className="instructions-description">
-          In early years, alphabet sound puzzles introduce a meaningful way to connect letters with their corresponding phonetic sounds. Designed to support early reading development, this tool brings sound and symbol together in a way that’s both tangible and interactive. Every card typically represents a letter and is matched with a related sound, permitting learners to shape solid sound-related and visual links. As a result, this format has become a valuable resource in language acquisition and early phonics instruction.
+            Welcome to the Alphabet Sound Puzzle – a free online word game designed for kids to learn letters and their sounds while having fun. Instead of just being a wooden toy, this digital version lets children click, drag, and match letters with their correct sounds directly in the browser. It’s interactive, playful, and perfect for early reading practice.
+          </p>
+          <p className="instructions-description">
+            In early years, alphabet sound puzzles introduce a meaningful way to connect letters with their corresponding phonetic sounds. Designed to support early reading development, this tool brings sound and symbol together in a way that’s both tangible and interactive. Every card typically represents a letter and is matched with a related sound, permitting learners to shape solid sound-related and visual links. As a result, this format has become a valuable resource in language acquisition and early phonics instruction.
           </p>
           <h2 className="instruction-step">Sound Association Through Letter Interaction</h2>
           <p className="instructions-description">
@@ -158,11 +161,14 @@ const Puzzle1 = () => {
           </p>
           <h4 className="instruction-step">A Multisensory Experience for Language Development</h4>
           <p className="instructions-description">
-            The more senses involved in the learning process, the more likely information is to stick. The alphabet sound puzzle combines tactile exploration and visual identification into a single experience. Learners can hear the sound, see the alphabetic letters, and physically move the card into place or open — reinforcing comprehension from multiple angles. This multisensory support is helpful for early learners, young children with language delays, or those who benefit  from varied approaches to concept maintenance.
+            The more senses involved in the learning process, the more likely information is to stick. The alphabet sound puzzle combines tactile exploration and visual identification into a single experience. Learners can hear the sound, see the alphabetic letters, and drag and drop the letter into the correct place on screen — reinforcing comprehension from multiple angles. This multisensory support is helpful for early learners, young children with language delays, or those who benefit  from varied approaches to concept maintenance.
           </p>
           <h5 className="instruction-step">Practical Applications in Literacy Environments</h5>
           <p className="instructions-description">
-            In both classroom and home environments, these puzzles help as practical learning tools that fit naturally into early literacy programs. Their straightforward design and focused functionality make them ideal for repeated practice, individual exploration, or guided guidance. They boost self-correction, experimentation, and sound discovery — all necessary elements of learning how language works. Whether used during free choice time or as part of structured phonics guidance, they give ongoing opportunities for language growth.
+            In both classroom and home environments, these puzzles help as practical learning tools that fit naturally into early literacy programs. The online game’s simple design makes it easy for kids to practice repeatedly, individual exploration, or guided guidance. They boost self-correction, experimentation, and sound discovery — all necessary elements of learning how language works. Whether used during free choice time or as part of structured phonics guidance, they give ongoing opportunities for language growth.
+          </p>
+          <p className="instructions-description">
+            👉 Click the Start button above to begin playing the Alphabet Sound Puzzle online for free.
           </p>
         </div>
       </div>
@@ -171,4 +177,4 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Puzzle3;

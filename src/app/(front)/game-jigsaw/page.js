@@ -132,8 +132,8 @@ function resizeImage(img, targetWidth, targetHeight) {
     return canvas;
 }
 
-export default function Puzzle() {
-    const puzzleImage = "/images/jigsawsnow.webp"; 
+export default function Puzzle4() {
+    const puzzleImage = "/images/jigsawsnow.webp";
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -179,8 +179,8 @@ export default function Puzzle() {
     }, [isStarted, isFinished]);
 
     function createPuzzleData(img) {
-        const rows = 5; 
-        const cols = 5; 
+        const rows = 5;
+        const cols = 5;
         const pieceWidth = globalWidth / cols;
         const pieceHeight = globalHeight / rows;
 
@@ -288,7 +288,7 @@ export default function Puzzle() {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
-                <h2 className={styles.centerText}>Puzzle Game</h2>
+                <h1 className={styles.centerText}>Play Free Planet Puzzle Jigsaw Online</h1>
                 <div className={styles.imageContainer}>
                     <img
                         src={puzzleImage}
@@ -300,7 +300,7 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
-                <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
+                <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center", color: "white" }}>
                     {isFinished
                         ? "Congratulations! You solved this puzzle!"
@@ -321,7 +321,7 @@ export default function Puzzle() {
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
-                        <h1>Welcome to the Puzzlesplan Game!</h1>
+                        <h3>Welcome to the Puzzlesplan Game!</h3>
                         <p>Click “Start” to begin.</p>
                     </div>
                 )}
@@ -423,7 +423,7 @@ export default function Puzzle() {
             {showFinishModal && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent}>
-                        <h2>Congratulations!</h2>
+                        <h4>Congratulations!</h4>
                         <p>You solved this puzzle in {formatTime(time)}. Great job!</p>
                         <button onClick={handleCloseModal}>Close</button>
                     </div>
@@ -432,7 +432,7 @@ export default function Puzzle() {
             {showNotFinishModal && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent2}>
-                        <h2>Not Completed!</h2>
+                        <h5>Not Completed!</h5>
                         <p>Please complete this puzzle before finishing.</p>
                         <button onClick={handleCloseModal}>Close</button>
                     </div>

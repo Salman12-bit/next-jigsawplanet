@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Puzzle Numbers Fun Games to Boost Your Brainpower",
-  keywords: "puzzle number games,numbers puzzle",
+  title: "Play Number Slider Online – Fun Free Puzzle Challenge",
   description:
-    "Enjoy puzzle numbers that challenge your logic and sharpen your mind! Great for all ages to build focus, memory, and problem-solving skills.",
+    "Play Number Slider online for free! Move tiles, arrange numbers in order, and test your logic with this classic sliding puzzle game – start playing instantly.",
   openGraph: {
-    title: "Puzzle Numbers Fun Games to Boost Your Brainpower",
+    title: "Play Number Slider Online – Fun Free Puzzle Challenge",
     description:
-      "Enjoy puzzle numbers that challenge your logic and sharpen your mind! Great for all ages to build focus, memory, and problem-solving skills.",
+      "Play Number Slider online for free! Move tiles, arrange numbers in order, and test your logic with this classic sliding puzzle game – start playing instantly.",
     url: "https://puzzlesplan.com/puzzlenumbers",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play puzzle number games on PuzzlesPlan",
+        alt: "Number Slider free online sliding puzzle game with numbered tiles",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Puzzle Numbers Fun Games to Boost Your Brainpower",
+    "name": "Play Number Slider Online – Fun Free Puzzle Challenge",
     "description":
-      "Enjoy puzzle numbers that challenge your logic and sharpen your mind! Great for all ages to build focus, memory, and problem-solving skills.",
+      "Play Number Slider online for free! Move tiles, arrange numbers in order, and test your logic with this classic sliding puzzle game – start playing instantly.",
     "url": "https://puzzlesplan.com/puzzlenumbers",
     "mainEntity": {
       "@type": "OnlineGame",

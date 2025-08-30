@@ -1,21 +1,21 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jisaw Planet Escape into Beautiful Puzzle Worlds",
+  title: "Puzzles for Adults – Relax & Challenge Your Mind Online",
   keywords: "days of our lives puzzles,zoroxtv puzzle",
   description:
-    "Dive into Jisaw Planet—where every piece brings peace! Discover heartwarming, calming puzzles to spark joy and soothe your mind.",
+    "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
   openGraph: {
-    title: "Jisaw Planet Escape into Beautiful Puzzle Worlds",
+    title: "Puzzles for Adults – Relax & Challenge Your Mind Online",
     description:
-      "Dive into Jisaw Planet—where every piece brings peace! Discover heartwarming, calming puzzles to spark joy and soothe your mind.",
+      "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
     url: "https://puzzlesplan.com/jisawplanet",
     images: [
       {
         url: "https://puzzlesplan.com/images/treeriver.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsaw planet puzzle on PuzzlesPlan",
+        alt: "Adult puzzle game with challenging brain-teasing pieces",
       },
     ],
   },
@@ -28,9 +28,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Jisaw Planet Escape into Beautiful Puzzle Worlds",
+    "name": "Puzzles for Adults – Relax & Challenge Your Mind Online",
     "description":
-      "Dive into Jisaw Planet—where every piece brings peace! Discover heartwarming, calming puzzles to spark joy and soothe your mind.",
+      "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
     "url": "https://puzzlesplan.com/jisawplanet",
     "mainEntity": {
       "@type": "OnlineGame",

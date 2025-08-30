@@ -1,21 +1,21 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Puzzles Jigsaw Relaxing Fun for Every Age",
-  keywords: "easy jigsaw puzzles,games and jigsaw puzzles,game",
+  title: "Puzzle Table Jigsaw | Play Free Online Puzzle Game",
+  keywords: "jigsaw table puzzle, jigsaw puzzle table furniture",
   description:
-    "Enjoy puzzles jigsaw for stress-free fun and brain-boosting play. Great for kids, adults, and anyone who loves a good challenge!",
+    "Play Puzzle Table Jigsaw online for free! Enjoy fun levels, match pieces, and challenge your mind. Start playing now and join endless puzzle fun.",
   openGraph: {
-    title: "Puzzles Jigsaw Relaxing Fun for Every Age",
+    title: "Puzzle Table Jigsaw | Play Free Online Puzzle Game",
     description:
-      "Enjoy puzzles jigsaw for stress-free fun and brain-boosting play. Great for kids, adults, and anyone who loves a good challenge!",
+      "Play Puzzle Table Jigsaw online for free! Enjoy fun levels, match pieces, and challenge your mind. Start playing now and join endless puzzle fun.",
     url: "https://puzzlesplan.com/jigsawnight",
     images: [
       {
         url: "https://puzzlesplan.com/images/nightshift.webp",
         width: 1200,
         height: 630,
-        alt: "Play puzzle planet on PuzzlesPlan",
+        alt: "Play Puzzle Table Jigsaw online free on PuzzlesPlan",
       },
     ],
   },
@@ -27,41 +27,34 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Puzzles Jigsaw Relaxing Fun for Every Age",
+    "@type": ["WebApplication", "VideoGame"],
+    "name": "Puzzle Table Jigsaw | Play Free Online Puzzle Game",
     "description":
-      "Enjoy puzzles jigsaw for stress-free fun and brain-boosting play. Great for kids, adults, and anyone who loves a good challenge!",
+      "Play Puzzle Table Jigsaw online for free! Enjoy fun levels, match pieces, and challenge your mind. Start playing now and join endless puzzle fun.",
     "url": "https://puzzlesplan.com/jigsawnight",
-    "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzzle planet",
-      "genre": "Action, Puzzle",
-      "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Double Player",
-      "url": "https://puzzlesplan.com/jigsawnight",
-      "image": {
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": "Puzzle",
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/nightshift.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuzzlesPlan",
+      "url": "https://puzzlesplan.com",
+      "logo": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/nightshift.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/nightshift.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "width": 500,
+        "height": 500
       }
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://puzzlesplan.com/images/nightshift.webp",
-      "width": 1200,
-      "height": 630,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

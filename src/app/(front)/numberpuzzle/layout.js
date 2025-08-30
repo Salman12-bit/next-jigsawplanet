@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Number Puzzle Fun Math Game to Train Your Brain",
-  keywords: "numberpuzzle,block number puzzle",
+  title: "Number Puzzle – Play Free Online Brain & Logic Game",
   description:
-    "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
+    "Play Number Puzzle online for free! Arrange numbers, solve tricky puzzles, and challenge your brain with this addictive math and logic game – start now.",
   openGraph: {
-    title: "Number Puzzle Fun Math Game to Train Your Brain",
+    title: "Number Puzzle – Play Free Online Brain & Logic Game",
     description:
-      "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
+      "Play Number Puzzle online for free! Arrange numbers, solve tricky puzzles, and challenge your brain with this addictive math and logic game – start now.",
     url: "https://puzzlesplan.com/numberpuzzle",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play number puzzle game on PuzzlesPlan",
+        alt: "Number Puzzle free online game with tiles and brain teaser challenges",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Number Puzzle Fun Math Game to Train Your Brain",
+    "name": "Number Puzzle – Play Free Online Brain & Logic Game",
     "description":
-      "Challenge your mind with a number puzzle! Solve logic-based math games that boost focus, memory, and problem-solving skills for all ages.",
+      "Play Number Puzzle online for free! Arrange numbers, solve tricky puzzles, and challenge your brain with this addictive math and logic game – start now.",
     "url": "https://puzzlesplan.com/numberpuzzle",
     "mainEntity": {
       "@type": "OnlineGame",

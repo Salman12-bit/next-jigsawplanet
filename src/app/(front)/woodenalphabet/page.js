@@ -29,7 +29,7 @@ const initialCards = [
   { id: 9, value: 'C' },
 ];
 
-const Puzzle1 = () => {
+const Puzzle2 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -117,7 +117,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <h3 className='level-color'>Match The Letter {level}</h3>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -144,31 +144,51 @@ const Puzzle1 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">Wood Alphabet Puzzle</h1>
+          <h1 className="instructions-title">Play Wooden Alphabet Puzzle Online</h1>
           <p className="instructions-description">
-            A wood alphabet puzzle offers natural texture and tactile interaction in a single, classic product. Handmade with simplicity and purpose, these puzzles combine early literacy with tactile development in a process that digital tools often can’t copy. Whether a wooden puzzle is placed in a learning corner, on a table, or within a children's playroom, this wooden design continues to hold its place as a quiet yet powerful educational staple.
+            A wooden alphabet puzzle experience is now available in digital form, combining natural charm with interactive play.
+            Instead of physical pieces, this online version recreates the same focus and engagement, helping young children practice
+            early literacy through fun, hands-on gameplay. Whether played in a classroom or online through different devices, this classic puzzle
+            continues to hold its place as a quiet yet powerful educational staple.
           </p>
-          <h2 className="instruction-step">Material Integrity and Lasting Appeal</h2>
+
+          <h2 className="instruction-step">Interactive Appeal That Lasts</h2>
           <p className="instructions-description">
-            The charm of a wood alphabet puzzle lies in the material itself. Unlike plastic or digital alternatives, wood adds warmth and physical connection. Its grain patterns, gentle weight, and smooth edges offer a sensory depth that invites touch and focus. The versatility of wooden cards guarantees they can be handled and extended without wearing down, making them perfect for repeated use over different learning stages. More than just a toy, they serve as a tangible connection between design and education, merging functionality with a characteristic stylish.
+            The charm of the wooden alphabet puzzle has been reimagined for the screen. Unlike passive learning tools, this online
+            puzzle invites children to drag, drop, and match letters with accuracy. The simple yet versatile design makes it perfect
+            for repeated play across different learning stages. More than just a game, it serves as a bridge between design and
+            education, merging functionality with a classic style in digital form.
           </p>
+
           <h3 className="instruction-step">Letter Recognition With Hands-On Precision</h3>
           <p className="instructions-description">
-            Letter recognition becomes more memorable when it’s experienced through physical interaction. A wood alphabet puzzle creates this opportunity by allowing children to pick up, rotate, and fit letters into specific slots — actions that strengthen both literacy and fine motor coordination. This guided movement deepens neural associations between shapes and sounds, making the alphabet easier to understand, not just to memorize. Each piece becomes a familiar symbol, processed not just by sight, but by feel and action.
+            Letter recognition becomes more memorable when experienced through active interaction. The online puzzle creates this
+            opportunity by allowing children to move letters, rotate them, and fit them into matching slots — actions that strengthen
+            both literacy and fine motor coordination. This guided movement deepens associations between shapes and sounds, making
+            the alphabet easier to understand, not just memorize.
           </p>
-          <h4 className="instruction-step">Sustainable Design That Supports Learning</h4>
+
+          <h4 className="instruction-step">A Focused and Supportive Design</h4>
           <p className="instructions-description">
-            In a time when sustainability and intentional living are growing problems, wooden puzzles give a conscious alternative to mass-produced, single-use objects. Various are crafted from responsibly sourced wood and completed with non-toxic paints or natural oils — providing peace of mind to parents and caregivers. But beyond their eco-friendly qualities, the quiet style of wood boosts the learning space. These puzzles promote slower, more centered interaction, diminishing sensory overburden, and encouraging a calm, grounded learning design.
+            In a time when children face constant digital distractions, this puzzle offers a calm and intentional alternative.
+            The game is created to encourage slower, more centered interaction, reducing sensory overload while boosting focus.
+            It provides peace of mind for parents and caregivers who want screen time to remain purposeful and educational.
           </p>
+
           <h5 className="instruction-step">A Multi-Sensory Approach to Early Literacy</h5>
           <p className="instructions-description">
-            Language development flourishes on repetition and sensory variety. Wood alphabet puzzles naturally support this model. The distinct textures, weights, and spacing of every letter piece give a multisensory technique that aligns with how young minds pick up new information. Sound-symbol association, letter recognition, and shape identification all become part of a playful, self-directed experience. This holistic method enables learners to acquire knowledge but also confidence, developing a strong foundation for future language skills.
+            Language development flourishes on repetition and sensory variety. The online wooden alphabet puzzle naturally supports
+            this model. The distinct visuals, movement, and spacing of every letter piece give a multisensory technique that aligns
+            with how young minds absorb new information. Sound-symbol association, letter recognition, and shape identification all
+            become part of a playful, self-directed experience. This holistic method builds both knowledge and confidence, creating
+            a strong foundation for future language skills.
           </p>
         </div>
+
       </div>
     </div>
   );
 };
 
 
-export default Puzzle1;
+export default Puzzle2;

@@ -29,7 +29,7 @@ const initialCards = [
   { id: 9, value: 'D' },
 ];
 
-const Puzzle1 = () => {
+const Puzzle5 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -171,4 +171,4 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Puzzle5;

@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Wood Block Puzzle Relaxing Brain Game for All",
-  keywords: "wooden block puzzle,block wood puzzle",
+  title: "Play Wood Block Puzzle – Free Online Puzzle Game Now",
   description:
-    " Enjoy the wood block puzzle game! A simple yet addictive way to relax, think smart, and sharpen your brain with every move.",
+    "Wood Block Puzzle is a free online game where you place wooden blocks and solve fun challenges. Train your brain, relax, and enjoy endless puzzle fun now.",
   openGraph: {
-    title: "Wood Block Puzzle Relaxing Brain Game for All",
+    title: "Play Wood Block Puzzle – Free Online Puzzle Game Now",
     description:
-      " Enjoy the wood block puzzle game! A simple yet addictive way to relax, think smart, and sharpen your brain with every move.",
+      "Wood Block Puzzle is a free online game where you place wooden blocks and solve fun challenges. Train your brain, relax, and enjoy endless puzzle fun now.",
     url: "https://puzzlesplan.com/woodblock",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play block wood puzzle on PuzzlesPlan",
+        alt: "Wood block puzzle online game with wooden blocks and addictive gameplay",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Wood Block Puzzle Relaxing Brain Game for All",
+    "name": "Play Wood Block Puzzle – Free Online Puzzle Game Now",
     "description":
-      " Enjoy the wood block puzzle game! A simple yet addictive way to relax, think smart, and sharpen your brain with every move.",
+      "Wood Block Puzzle is a free online game where you place wooden blocks and solve fun challenges. Train your brain, relax, and enjoy endless puzzle fun now.",
     "url": "https://puzzlesplan.com/woodblock",
     "mainEntity": {
       "@type": "OnlineGame",

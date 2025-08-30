@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Number Wooden Puzzle Learn Numbers Through Play",
-  keywords: "wood number puzzle,number puzzle wood",
+  title: "Free Number Crossword Puzzle Online – Test Your Brain",
   description:
-    "Make learning fun with a number wooden puzzle! Help kids explore counting, number order, and hands-on math with natural, playful pieces.",
+    "Play Number Crossword Puzzle online for free! Solve number clues, fill in the crossword grid, and test your logic with this fun and addictive puzzle game today.",
   openGraph: {
-    title: "Number Wooden Puzzle Learn Numbers Through Play",
+    title: "Free Number Crossword Puzzle Online – Test Your Brain",
     description:
-      "Make learning fun with a number wooden puzzle! Help kids explore counting, number order, and hands-on math with natural, playful pieces.",
+      "Play Number Crossword Puzzle online for free! Solve number clues, fill in the crossword grid, and test your logic with this fun and addictive puzzle game today.",
     url: "https://puzzlesplan.com/woodenpuzzle",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play number puzzle wood on PuzzlesPlan",
+        alt: "Number Crossword Puzzle free online game with crossword grid and numbers",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Number Wooden Puzzle Learn Numbers Through Play",
+    "name": "Free Number Crossword Puzzle Online – Test Your Brain",
     "description":
-      "Make learning fun with a number wooden puzzle! Help kids explore counting, number order, and hands-on math with natural, playful pieces.",
+      "Play Number Crossword Puzzle online for free! Solve number clues, fill in the crossword grid, and test your logic with this fun and addictive puzzle game today.",
     "url": "https://puzzlesplan.com/woodenpuzzle",
     "mainEntity": {
       "@type": "OnlineGame",

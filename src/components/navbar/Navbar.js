@@ -9,13 +9,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session } = useSession();
 
- 
+
   const logout = async () => {
-    localStorage.removeItem("key"); 
+    localStorage.removeItem("key");
     await signOut({
-      callbackUrl: "https://puzzlesplan.com/login", 
+      callbackUrl: "https://puzzlesplan.com/login",
     });
-    window.location.href = "https://puzzlesplan.com/login"; 
+    window.location.href = "https://puzzlesplan.com/login";
   };
 
   const toggleMenu = () => {
@@ -47,6 +47,9 @@ const Navbar = () => {
           <Link href="/numberpuzzle" className={styles.navItem}>
             Number Puzzle
           </Link>
+          <Link href="/puzzleblog" className={styles.navItem}>
+            Puzzle Blog
+          </Link>
           <Link href="/themegallery" className={styles.navItem}>
             Theme Gallery
           </Link>
@@ -77,7 +80,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      
+
     </nav>
   );
 };

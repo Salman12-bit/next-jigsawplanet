@@ -176,37 +176,41 @@ const Puzzle1 = () => {
               How to Play Free ABC Puzzle Game – A Complete Beginner’s Guide
             </h2>
             <p className="instructions-description">
-              The <strong>ABC Puzzle Game</strong> is a fun, engaging, and improved critical thinking activity designed to enhance memory
-              and improve logical problem-solving. Whether you're playing the physical version or the
-              <strong> ABC Puzzle Game online for free</strong>, this game gives a perfect mix of obstacles and relaxation.
-              In these beginner-friendly instructions, you’ll learn how to get started on this puzzle level, understand the puzzle rules, and discover top tips to win consistently.
-            </p>
-            <h3 className="instruction-step">1. Explore Different Types of ABC Puzzle Games</h3>
-            <p className="instructions-description">
-              ABC Puzzle Games are accessible in different formats, like physical puzzles, mobile apps, and engaging
-              <strong> online puzzles</strong>. Every version gives unique visuals and mechanics to keep your experience engaging and dynamic.
-            </p>
-            <h4 className="instruction-step">2. Learn the Game Rules</h4>
-            <p className="instructions-description">
-              Understanding the rules is necessary for mastering the ABC Puzzle Game. Before you play, take a minute to review how to play this game:
-            </p>
-            <ul className="instructions-list">
-              <li>Every player gets three chances per game round.</li>
-              <li>Match three ABC Puzzle cards correctly to win this level.</li>
-              <li>If you can't match the cards, restart and try again.</li>
-            </ul>
-            <h6 className="tips-title">Top Tips to Win at ABC Puzzle Game</h6>
-            <ul className="instructions-list">
-              <li><strong>Stay Focused:</strong> Observe every puzzle card and think strategically before opening a new one.</li>
-              <li><strong>Practice Makes Perfect:</strong> Puzzle game wants practice more you play, the better your skills become.</li>
-              <li><strong>Learn from Mistakes:</strong> Analyze your previous actions, check your errors, and build a strategy according to them.</li>
-            </ul>
-            <p className="instruction-step">Conclusion</p>
-            <p className="instructions-description">
-              The <strong>ABC Puzzle Game</strong> is an easy and enjoyable way to challenge your thinking level. Understanding the puzzle rules and steady practice, you’ll be matching puzzle cards like a professional. Whether you’re modern or experienced, this puzzle diversion guarantees endless excitement.
-              <strong> Start playing now!</strong>
+              The ABC Puzzle Game is a fun, engaging, and improved critical thinking activity designed to enhance memory,
+              boost alphabet recognition, and improve logical problem-solving. Whether you're playing the physical version or the
+              online puzzle game for free, this educational activity gives a perfect mix of obstacles and relaxation.
+              In these beginner-friendly instructions, you’ll learn how to get started, understand the puzzle rules,
+              and discover top tips to win consistently like in other kids' learning games.
             </p>
 
+            <h3 className="instruction-step">1. Explore Different Types of ABC Puzzle Games</h3> 
+            <p className="instructions-description"> Alphabet-based puzzles are accessible in different formats, 
+            like physical puzzles, mobile apps, and engaging online puzzles. Every version gives unique visuals 
+            and mechanics to keep your experience engaging and dynamic. </p>
+
+            <h4 className="instruction-step">2. Learn the Game Rules</h4>
+            <p className="instructions-description">
+              Understanding the rules is necessary for mastering this puzzle. Before you play, take a minute to review how it works:
+            </p>
+            <ul className="instructions-list">
+              <li>Every player gets three chances per round, similar to other brain training games.</li>
+              <li>Match three alphabet cards correctly to move to the next level and improve your letter recognition skills.</li>
+              <li>If you can’t match the cards, restart and try again, like in most educational games for kids.</li>
+            </ul>
+
+            <h6 className="tips-title">Top Tips to Win</h6>
+            <ul className="instructions-list"> 
+            <li>Stay Focused: Observe every puzzle card and think strategically before opening a new one.</li> 
+            <li>Practice Makes Perfect: Puzzle game wants practice more you play, the better your skills become.</li> 
+            <li>Learn from Mistakes: Analyze your previous actions, check your errors, and build a strategy according to them.</li> </ul>
+
+            <p className="instruction-step">Conclusion</p>
+            <p className="instructions-description">
+              This ABC Puzzle Game is an easy and enjoyable way to challenge your thinking level. With consistent practice,
+              alphabet learning activities, and steady focus, you’ll be matching puzzle cards like a professional.
+              Whether you’re a beginner or experienced, this early learning puzzle guarantees endless excitement and fun for kids and adults alike.
+              Start playing now!
+            </p>
           </div>
         </div>
       </article>

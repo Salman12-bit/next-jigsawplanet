@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Block Puzzle Games Relaxing Brain Boosters to Play",
-  keywords: "blue block puzzle,block sudoku woody puzzle game",
+  title: "Unblocked Game Websites – Play Free Online Games Anywhere",
   description:
-    "Enjoy block puzzle games that challenge your logic and keep your mind sharp. A perfect mix of fun, focus, and satisfying gameplay.",
+    "Discover the best unblocked game websites online. Play free puzzle, arcade, and action games anytime, anywhere. Start gaming instantly with no restrictions.",
   openGraph: {
-    title: "Block Puzzle Games Relaxing Brain Boosters to Play",
+    title: "Unblocked Game Websites – Play Free Online Games Anywhere",
     description:
-      "Enjoy block puzzle games that challenge your logic and keep your mind sharp. A perfect mix of fun, focus, and satisfying gameplay.",
+      "Discover the best unblocked game websites online. Play free puzzle, arcade, and action games anytime, anywhere. Start gaming instantly with no restrictions.",
     url: "https://puzzlesplan.com/woody-block",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play blue block puzzle on PuzzlesPlan",
+        alt: "Unblocked game websites with free online puzzle and arcade games",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Block Puzzle Games Relaxing Brain Boosters to Play",
+    "name": "Unblocked Game Websites – Play Free Online Games Anywhere",
     "description":
-      "Enjoy block puzzle games that challenge your logic and keep your mind sharp. A perfect mix of fun, focus, and satisfying gameplay.",
+      "Discover the best unblocked game websites online. Play free puzzle, arcade, and action games anytime, anywhere. Start gaming instantly with no restrictions.",
     "url": "https://puzzlesplan.com/woody-block",
     "mainEntity": {
       "@type": "OnlineGame",

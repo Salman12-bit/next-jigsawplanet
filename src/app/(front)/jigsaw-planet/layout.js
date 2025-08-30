@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "jogsaw puzzles Explore, Solve & Share Online Puzzles",
-  keywords: "interactive puzzles,jigsaw planet puzzle",
+  title: "Play Barbie Puzzle Games Online | Free Jigsaw & Fun Challenges",
   description:
-    "Visit jogsaw puzzles to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
+    "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
   openGraph: {
-    title: "jogsaw puzzles Explore, Solve & Share Online Puzzles",
+    title: "Play Barbie Puzzle Games Online | Free Jigsaw & Fun Challenges",
     description:
-      "Visit jogsaw puzzles to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
+      "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
     url: "https://puzzlesplan.com/jigsaw-planet",
     images: [
       {
         url: "https://puzzlesplan.com/images/jigsawengine.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsaw planet puzzle on PuzzlesPlan",
+        alt: "Colorful Barbie puzzle game screenshot with jigsaw pieces being solved online",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "jogsaw puzzles Explore, Solve & Share Online Puzzles",
+    "name": "Play Barbie Puzzle Games Online | Free Jigsaw & Fun Challenges",
     "description":
-      "Visit jogsaw puzzles to play stunning online puzzles, create your own, and challenge friends. A relaxing, interactive puzzle world awaits!",
+      "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
     "url": "https://puzzlesplan.com/jigsaw-planet",
     "mainEntity": {
       "@type": "OnlineGame",

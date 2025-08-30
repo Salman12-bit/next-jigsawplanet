@@ -1,14 +1,13 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Letter Puzzles Fun Way to Learn and Play with Words",
-  keywords: "missing letter crossword puzzle,victorian puzzle letter",
+  title: "Letter Puzzles – Play Fun Alphabet Learning Games Online",
   description:
-    "Enjoy letter puzzles that make learning the alphabet exciting! Boost spelling, memory, and word skills with fun challenges for all ages.",
+    "Play Letter Puzzles online and make learning the alphabet fun! Solve interactive puzzles, match letters, and enjoy an educational game designed to boost kids’ ABC skills – start playing today.",
   openGraph: {
-    title: "Letter Puzzles Fun Way to Learn and Play with Words",
+    title: "Letter Puzzles – Play Fun Alphabet Learning Games Online",
     description:
-      "Enjoy letter puzzles that make learning the alphabet exciting! Boost spelling, memory, and word skills with fun challenges for all ages.",
+      "Play Letter Puzzles online and make learning the alphabet fun! Solve interactive puzzles, match letters, and enjoy an educational game designed to boost kids’ ABC skills – start playing today.",
     url: "https://puzzlesplan.com/letterpuzzles",
     images: [
       {
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Letter Puzzles Fun Way to Learn and Play with Words",
+    "name": "Letter Puzzles – Play Fun Alphabet Learning Games Online",
     "description":
-      "Enjoy letter puzzles that make learning the alphabet exciting! Boost spelling, memory, and word skills with fun challenges for all ages.",
+      "Play Letter Puzzles online and make learning the alphabet fun! Solve interactive puzzles, match letters, and enjoy an educational game designed to boost kids’ ABC skills – start playing today.",
     "url": "https://puzzlesplan.com/letterpuzzles",
     "publisher": {
       "@type": "Organization",

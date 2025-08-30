@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Games Jigsaw Puzzles Relaxing Fun for Everyone",
-  keywords: "barbie puzzle games,puzel",
+  title: "Free Planet Puzzle Jigsaw Online – Start Playing Instantly",
   description:
-    " Discover games jigsaw puzzles for all ages! Solve relaxing and brain-boosting puzzles anytime—great for kids, adults, and families.",
+    "Jump into Planet Puzzle Jigsaw and enjoy free online puzzles with exciting levels. Relax, challenge your brain, and play anywhere, anytime.",
   openGraph: {
-    title: "Games Jigsaw Puzzles Relaxing Fun for Everyone",
+    title: "Free Planet Puzzle Jigsaw Online – Start Playing Instantly",
     description:
-      " Discover games jigsaw puzzles for all ages! Solve relaxing and brain-boosting puzzles anytime—great for kids, adults, and families.",
+      "Jump into Planet Puzzle Jigsaw and enjoy free online puzzles with exciting levels. Relax, challenge your brain, and play anywhere, anytime.",
     url: "https://puzzlesplan.com/game-jigsaw",
     images: [
       {
         url: "https://puzzlesplan.com/images/jigsawsnow.webp",
         width: 1200,
         height: 630,
-        alt: "Play puzel on PuzzlesPlan",
+        alt: "Planet Puzzle Jigsaw game screenshot with colorful puzzle pieces",
       },
     ],
   },
@@ -27,34 +26,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Games Jigsaw Puzzles Relaxing Fun for Everyone",
+    "@type": ["WebApplication", "VideoGame"],
+    "name": "Free Planet Puzzle Jigsaw Online – Start Playing Instantly",
     "description":
-      " Discover games jigsaw puzzles for all ages! Solve relaxing and brain-boosting puzzles anytime—great for kids, adults, and families.",
+      "Jump into Planet Puzzle Jigsaw and enjoy free online puzzles with exciting levels. Relax, challenge your brain, and play anywhere, anytime.",
     "url": "https://puzzlesplan.com/game-jigsaw",
-    "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzel",
-      "genre": "Action, Puzzle",
-      "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Double Player",
-      "url": "https://puzzlesplan.com/game-jigsaw",
-      "image": {
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": "Puzzle",
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/jigsawsnow.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuzzlesPlan",
+      "url": "https://puzzlesplan.com",
+      "logo": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/jigsawsnow.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/jigsawsnow.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "width": 500,
+        "height": 500
       }
     },
     "mainEntityOfPage": {

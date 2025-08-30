@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Puzzle ABC Learn the Alphabet Through Play",
-  keywords: "a b c puzzle,abc foam puzzle",
+  title: "Puzzle ABC – Play Fun & Educational Letter Games Online",
   description:
-    "Puzzle ABC turns learning into fun! Help kids explore letters, sounds, and spelling with colorful, hands-on alphabet puzzles.",
+    "Play Puzzle ABC online and make learning the alphabet fun! Solve interactive letter puzzles, boost memory, and enjoy an educational game designed to help kids learn ABCs – start playing today.",
   openGraph: {
-    title: "Puzzle ABC Learn the Alphabet Through Play",
+    title: "Puzzle ABC – Play Fun & Educational Letter Games Online",
     description:
-      "Puzzle ABC turns learning into fun! Help kids explore letters, sounds, and spelling with colorful, hands-on alphabet puzzles.",
+      "Play Puzzle ABC online and make learning the alphabet fun! Solve interactive letter puzzles, boost memory, and enjoy an educational game designed to help kids learn ABCs – start playing today.",
     url: "https://puzzlesplan.com/puzzle-abc",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play abc animal puzzle on PuzzlesPlan",
+        alt: "Puzzle ABC game with colorful alphabet letters for kids learning online",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Puzzle ABC Learn the Alphabet Through Play",
+    "name": "Puzzle ABC – Play Fun & Educational Letter Games Online",
     "description":
-      "Puzzle ABC turns learning into fun! Help kids explore letters, sounds, and spelling with colorful, hands-on alphabet puzzles.",
+      "Play Puzzle ABC online and make learning the alphabet fun! Solve interactive letter puzzles, boost memory, and enjoy an educational game designed to help kids learn ABCs – start playing today.",
     "url": "https://puzzlesplan.com/puzzle-abc",
     "publisher": {
       "@type": "Organization",

@@ -2,105 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import styled, { keyframes } from "styled-components";
-
-const slideAnimation = keyframes`
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-`;
-
-const TilesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-auto-rows: 100px;
-  gap: 10px;
-  width: max-content;
-  margin: 0 auto;
-`;
-
-
-const Tile = styled.div`
-  width: 100%;
-  padding-top: 100%;
-  position: relative;
-  background-color: rgb(53, 56, 56);
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-  animation: ${slideAnimation} 0.3s ease;
-
-  &:hover {
-    background-color: rgb(158, 160, 161);
-  }
-
-  & > span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-`;
-
-const Button = styled.button`
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(74, 75, 75);
-  color: white;
-
-  &:hover {
-    background-color: rgb(149, 152, 153);
-  }
-`;
-
-const Info = styled.div`
-  margin-top: 20px;
-  font-size: 18px;
-  color: #333;
-  text-align: center;
-`;
-
-const Leaderboard = styled.div`
-  margin-top: 20px;
-  width: 100%;
-  max-width: 320px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-  h3 {
-    margin-bottom: 10px;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-  }
-`;
+import "./freeze.css";
 
 const PuzzleGame = () => {
   const [tiles, setTiles] = useState([]);
@@ -179,40 +81,42 @@ const PuzzleGame = () => {
     setMessage("");
     setMoveCount(0);
     setTime(0);
-    setIsRunning(false); // ✅ Don't start timer here
+    setIsRunning(false);
   };
 
   return (
-    <Container>
-      <TilesGrid>
+    <div className="Puzzle-container">
+      <h1 className="puzzle-title"> Play Free Number <br/>
+      Puzzle Online </h1>
+      <div className="tiles-grid">
         {tiles.map((tile, index) => (
-          <Tile key={index} onClick={() => moveTile(index)}>
+          <div key={index} className="tile" onClick={() => moveTile(index)}>
             <span>{tile}</span>
-          </Tile>
+          </div>
         ))}
-      </TilesGrid>
+      </div>
 
-      <Info>
+      <div className="info">
         <p>⏱️ Time: {time} seconds</p>
         <p>🧮 Moves: {moveCount}</p>
         <p>{message}</p>
-      </Info>
-      <Button onClick={checkSolved}>I Have Completed</Button>
-      <Button onClick={shuffleTiles}>Shuffle</Button>
+      </div>
+      <button className="btn" onClick={checkSolved}>✅ I Have Completed</button>
+      <button className="btn" onClick={shuffleTiles}>🔀 Shuffle</button>
       {isSolved && (
         <Link href="/puzzlenumbers">
-          <Button>Next Level</Button>
+          <button className="btn">➡️ Next Level</button>
         </Link>
       )}
-      <Leaderboard>
+      <div className="leaderboard">
         <h3>🏆 Leaderboard</h3>
         <ul>
           {leaderboard.map((entry, index) => (
             <li key={index}><span>Time: {entry.time}s</span><span>Moves: {entry.moves}</span></li>
           ))}
         </ul>
-      </Leaderboard>
-    </Container>
+      </div>
+    </div>
   );
 };
 

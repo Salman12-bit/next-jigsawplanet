@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "JigsawPlanet Play Free Online Jigsaw Puzzles Now",
-  keywords: "jigsaw,jp puzzle",
+  title: "Disney Puzzle | Play Free Online Puzzle Game Now",
   description:
-    "Explore JigsawPlanet and enjoy thousands of free jigsaw puzzles. Fun, relaxing, and perfect for puzzle lovers of every age!",
+    "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
   openGraph: {
-    title: "JigsawPlanet. Play Free Online Jigsaw Puzzles Now",
+    title: "Disney Puzzle | Play Free Online Puzzle Game Now",
     description:
-      "Explore JigsawPlanet and enjoy thousands of free jigsaw puzzles. Fun, relaxing, and perfect for puzzle lovers of every age!",
+      "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
     url: "https://puzzlesplan.com/jigsawdark",
     images: [
       {
         url: "https://puzzlesplan.com/images/darkhistory.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsaw on PuzzlesPlan",
+        alt: "Play Disney Puzzle online free on PuzzlesPlan",
       },
     ],
   },
@@ -27,41 +26,34 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "JigsawPlanet. Play Free Online Jigsaw Puzzles Now",
+    "@type": ["WebApplication", "VideoGame"],
+    "name": "Disney Puzzle | Play Free Online Puzzle Game Now",
     "description":
-      "Explore JigsawPlanet and enjoy thousands of free jigsaw puzzles. Fun, relaxing, and perfect for puzzle lovers of every age!",
+      "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
     "url": "https://puzzlesplan.com/jigsawdark",
-    "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzzle planet",
-      "genre": "Action, Puzzle",
-      "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Double Player",
-      "url": "https://puzzlesplan.com/jigsawdark",
-      "image": {
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": "Puzzle",
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/darkhistory.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuzzlesPlan",
+      "url": "https://puzzlesplan.com",
+      "logo": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/darkhistory.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/darkhistory.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "width": 500,
+        "height": 500
       }
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://puzzlesplan.com/images/darkhistory.webp",
-      "width": 1200,
-      "height": 630,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

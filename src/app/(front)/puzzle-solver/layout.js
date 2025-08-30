@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Block Puzzle. Addictive Game to Train Your Brain",
-  keywords: "brick block puzzle,block puzzle solver",
+  title: "Free New Block Game – Play Online & Test Puzzle Skills",
   description:
-    "Play block puzzle games that test your logic and keep you thinking! A relaxing yet challenging way to boost focus and pass the time.",
+    "Play New Block Game free online and experience hours of puzzle fun. Arrange blocks, test your logic, and challenge yourself in this addictive block puzzle game.",
   openGraph: {
-    title: "Block Puzzle. Addictive Game to Train Your Brain",
+    title: "Free New Block Game – Play Online & Test Puzzle Skills",
     description:
-      "Play block puzzle games that test your logic and keep you thinking! A relaxing yet challenging way to boost focus and pass the time.",
+      "Play New Block Game free online and experience hours of puzzle fun. Arrange blocks, test your logic, and challenge yourself in this addictive block puzzle game.",
     url: "https://puzzlesplan.com/puzzle-solver",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play block puzzle solver on PuzzlesPlan",
+        alt: "New block game online with colorful puzzle blocks",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Block Puzzle. Addictive Game to Train Your Brain",
+    "name": "Free New Block Game – Play Online & Test Puzzle Skills",
     "description":
-      "Play block puzzle games that test your logic and keep you thinking! A relaxing yet challenging way to boost focus and pass the time.",
+      "Play New Block Game free online and experience hours of puzzle fun. Arrange blocks, test your logic, and challenge yourself in this addictive block puzzle game.",
     "url": "https://puzzlesplan.com/puzzle-solver",
     "mainEntity": {
       "@type": "OnlineGame",

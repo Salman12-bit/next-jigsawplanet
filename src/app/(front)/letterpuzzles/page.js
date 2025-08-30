@@ -29,7 +29,7 @@ const initialCards = [
   { id: 9, value: 'D' },
 ];
 
-const Puzzle1 = () => {
+const Puzzle6 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -158,7 +158,7 @@ const Puzzle1 = () => {
           </p>
           <h4 className="instruction-step">A Delicate Legacy</h4>
           <p className="instructions-description">
-            Real Victorian puzzle letters are rare today, their fragility matched only by the intimacy of their purpose. Museums and collectors treasure them not only for their beauty but as glimpses into a slower, more considered era of human connection. To preserve one is to maintain an act of love, creativity, and tangible storytelling — a reminder that communication was once as much about the journey as the message.
+            Real Victorian letters are rare today, their fragility matched only by the intimacy of their purpose. Museums and collectors treasure them not only for their beauty but as glimpses into a slower, more considered era of human connection. To preserve one is to maintain an act of love, creativity, and tangible storytelling — a reminder that communication was once as much about the journey as the message.
           </p>
           <h5 className="instruction-step">Modern Inspirations</h5>
           <p className="instructions-description">
@@ -171,4 +171,4 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Puzzle6;

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.footerContainer}>
         <div className={styles.footerLeft}>
           <p className={styles.contact}>
-            📧 Email: <a href="mailto:support@jigsawplanet.com">support@puzzlesplan.com</a>
+            📧 Email: <a href="mailto:support@jigsawplanet.online">support@puzzlesplan.com</a>
           </p>
           <p className={styles.contact}>📞 Phone: +92 336 389 1016</p>
          

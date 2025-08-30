@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Block Puzzle Game Fun & Addictive Brain Challenge",
-  keywords: "block puzzle games free,block puzzle high score",
+  title: "Block Game Play Free Online Puzzle & Block Challenges",
   description:
-    "Play the block puzzle game to relax and train your brain! Fit blocks, clear rows, and enjoy endless fun for kids and adults alike.",
+    "Play Block Game online for free! Move, fit, and clear blocks in this fun and addictive puzzle game. Challenge your brain, relax, and enjoy hours of gameplay today.",
   openGraph: {
-    title: "Block Puzzle Game Fun & Addictive Brain Challenge",
+    title: "Block Game Play Free Online Puzzle & Block Challenges",
     description:
-      "Play the block puzzle game to relax and train your brain! Fit blocks, clear rows, and enjoy endless fun for kids and adults alike.",
+      "Play Block Game online for free! Move, fit, and clear blocks in this fun and addictive puzzle game. Challenge your brain, relax, and enjoy hours of gameplay today.",
     url: "https://puzzlesplan.com/blockgame",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play block puzzle high score on PuzzlesPlan",
+        alt: "Block game online with awesome puzzle blocks",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Block Puzzle Game Fun & Addictive Brain Challenge",
+    "name": "Block Game Play Free Online Puzzle & Block Challenges",
     "description":
-      "Play the block puzzle game to relax and train your brain! Fit blocks, clear rows, and enjoy endless fun for kids and adults alike.",
+      "Play Block Game online for free! Move, fit, and clear blocks in this fun and addictive puzzle game. Challenge your brain, relax, and enjoy hours of gameplay today.",
     "url": "https://puzzlesplan.com/blockgame",
     "mainEntity": {
       "@type": "OnlineGame",

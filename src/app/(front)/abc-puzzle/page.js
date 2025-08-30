@@ -29,7 +29,7 @@ const initialCards = [
   { id: 9, value: 'B' },
 ];
 
-const Puzzle1 = () => {
+const Puzzle4 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -144,31 +144,36 @@ const Puzzle1 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">ABC Puzzles</h1>
+          <h1 className="instructions-title">How ABC Puzzles Turn Alphabet Learning Into Play</h1>
           <p className="instructions-description">
-            ABC puzzles are more than just playful deviations — they’re tools that introduce young learners to the alphabet through immersive engagement. The combination of physical letters and thoughtful structure changes letter recognition into a hands-on experience. Unlike passive learning ways, these puzzles involve repetition and exploration, which naturally help early cognitive development and literacy readiness.
+            ABC puzzles are more than just playful deviations — they’re interactive tools that introduce young learners to the alphabet through immersive online engagement. The combination of on-screen letters and thoughtful structure turns letter recognition into a fun digital experience. Unlike passive learning methods, these online puzzles involve repetition and exploration, which naturally support early cognitive development and literacy readiness.
           </p>
+
           <h2 className="instruction-step">Learning Through Letter and Placement</h2>
           <p className="instructions-description">
-          The physical design of the puzzle encourages spatial awareness by challenging learners to match the alphabet letters with their corresponding slots. This simple act of fitting a letter in place or matching a card activates visual processing and letter differentiation — foundational skills for recognizing and distinguishing between letters and cards. When letters are presented in uppercase, lowercase, or varied fonts, the process becomes even more enriching, promoting flexible thinking and expanding visual familiarity with the alphabet.
+            The digital layout of the puzzle encourages spatial awareness by challenging learners to drag and drop letters into their correct positions or match a card with one alphabet letter like A or B. This simple act of moving a letter into place activates visual processing and letter differentiation — foundational skills for recognizing and distinguishing between alphabet shapes. When letters appear in uppercase, lowercase, or varied fonts, the process becomes even more enriching, promoting flexible thinking and expanding visual familiarity with the alphabet.
           </p>
+
           <h3 className="instruction-step">Supporting Memory Retention Through Repetition</h3>
           <p className="instructions-description">
-            Repetition is a key element in building memory, and ABC puzzles provide that naturally through replay. Every attempt to complete the puzzle reinforces recognition patterns, helping children recall the sequence of letters. This isn’t rote memorization — it’s active learning that gives true benefits to the children. The act of picking up a letter, turning it over, and carefully opening it engages muscle memory, reinforcing auditory and visual learning to enhance retention.
+            Repetition is a key element in building memory, and ABC puzzles give that naturally through replay. Every attempt to complete the game reinforces recognition patterns, helping children recall the sequence of letters. This isn’t rote memorization — it’s active learning that provides true benefits to the children. The act of dragging, rotating, and placing letters engages visual and motor memory, reinforcing auditory and visual learning to enhance retention.
           </p>
+
           <h4 className="instruction-step">Foundations for Spelling and Vocabulary Growth</h4>
           <p className="instructions-description">
-            Stimulating with the alphabet early on creates a pathway toward spelling and vocabulary development. Alphabet puzzles provide the groundwork by familiarizing learners with the order of letters, individual letter names like A, B, and the idea of combining letters into meaningful words. As children become more conscious in recognizing the alphabet, they're better prepared to decode words, syllables, and understand word structure — these components help children to read and descriptive writing.
+            Playing with the alphabet early on creates a pathway toward spelling and vocabulary development. Online alphabet puzzles give the groundwork by familiarizing learners with the order of letters, individual letter names like A, B, and the idea of combining letters into meaningful words. As children become more confident in recognizing the alphabet, they're better prepared to decode words, and understand word structure — all of which support early reading and writing skills.
           </p>
+
           <h5 className="instruction-step">An Inviting Entry Point Into Independent Discovery</h5>
           <p className="instructions-description">
-            ABC puzzles provide a learner-led experience where exploration and success come through trial, not instruction. This autonomy improves interest and self-correction — two traits that lead to deeper interaction. Without the pressure of right or wrong answers on the first try, learners are confident to experiment and enjoy the satisfaction of completion.
+            This platform offers a learner-led experience where exploration and success come through trial, not instruction. This autonomy boosts interest and self-correction — two traits that lead to deeper interaction. Without the pressure of getting it right on the first try, learners are confident to experiment and enjoy the satisfaction of completing the puzzle on their own, which gives them benefits in the future.
           </p>
         </div>
+
       </div>
     </div>
   );
 };
 
 
-export default Puzzle1;
+export default Puzzle4;

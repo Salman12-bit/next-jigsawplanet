@@ -1,21 +1,20 @@
-import React from 'react';
+import React from "react";
 
 export const metadata = {
-  title: "Wooden Alphabet Puzzle Fun Learning for Kids",
-  keywords: "wood alphabet puzzle,alphabet wooden puzzles",
+  title: "Best Wooden Alphabet Puzzle Game – Play & Learn Letters Online",
   description:
-    "Teach letters the fun way with a wooden alphabet puzzle! Safe, hands-on learning that helps kids recognize letters and build early skills.",
+    "Play the best Wooden Alphabet Puzzle online! Learn letters, enjoy interactive fun, and challenge kids’ minds – start playing today.",
   openGraph: {
-    title: "Wooden Alphabet Puzzle Fun Learning for Kids",
+    title: "Best Wooden Alphabet Puzzle Game – Play & Learn Letters Online",
     description:
-      "Teach letters the fun way with a wooden alphabet puzzle! Safe, hands-on learning that helps kids recognize letters and build early skills.",
+      "Play the best Wooden Alphabet Puzzle online! Learn letters, enjoy interactive fun, and challenge kids’ minds – start playing today.",
     url: "https://puzzlesplan.com/woodenalphabet",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play alphabet wooden puzzles on PuzzlesPlan",
+        alt: "Play Wooden Alphabet Puzzle Game Online on PuzzlesPlan",
       },
     ],
   },
@@ -27,11 +26,14 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Wooden Alphabet Puzzle Fun Learning for Kids",
-    "description":
-      "Teach letters the fun way with a wooden alphabet puzzle! Safe, hands-on learning that helps kids recognize letters and build early skills.",
+    "@type": "VideoGame",
+    "name": "Wooden Alphabet Puzzle Online",
+    "applicationCategory": "EducationalGame",
+    "operatingSystem": "Web Browser",
+    "playMode": "SinglePlayer",
     "url": "https://puzzlesplan.com/woodenalphabet",
+    "description":
+      "Play the best Wooden Alphabet Puzzle online! Learn letters, enjoy interactive fun, and challenge kids’ minds – start playing today.",
     "publisher": {
       "@type": "Organization",
       "name": "PuzzlesPlan",
@@ -41,6 +43,12 @@ export default function Layout({ children }) {
         "width": 500,
         "height": 500,
       },
+    },
+    "image": "https://puzzlesplan.com/images/puzzlesplan.webp",
+    "genre": ["Puzzle", "Educational"],
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Kids, Students, Parents, Teachers",
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

@@ -1,21 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Number Board Game Fun Math Play for All Ages",
-  keywords: "number puzzle game,123 puzzle",
+  title: "Number Board Game – Play Free Online Puzzle Game",
   description:
-    "Play a number board game that makes math fun! Great for kids and families to learn numbers, count, and boost thinking skills together.",
+    "Play Number Board Game online for free! Arrange numbers on the board, solve fun puzzles, and challenge your brain with this addictive logic game – start now.",
   openGraph: {
-    title: "Number Board Game Fun Math Play for All Ages",
+    title: "Number Board Game – Play Free Online Puzzle Game",
     description:
-      "Play a number board game that makes math fun! Great for kids and families to learn numbers, count, and boost thinking skills together.",
+      "Play Number Board Game online for free! Arrange numbers on the board, solve fun puzzles, and challenge your brain with this addictive logic game – start now.",
     url: "https://puzzlesplan.com/number-game",
     images: [
       {
         url: "https://puzzlesplan.com/images/puzzlesplan.webp",
         width: 1200,
         height: 630,
-        alt: "Play number puzzle game on PuzzlesPlan",
+        alt: "Number Board Game free online puzzle with numbered tiles on a board",
       },
     ],
   },
@@ -28,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Number Board Game Fun Math Play for All Ages",
+    "name": "Number Board Game – Play Free Online Puzzle Game",
     "description":
-      "Play a number board game that makes math fun! Great for kids and families to learn numbers, count, and boost thinking skills together.",
+      "Play Number Board Game online for free! Arrange numbers on the board, solve fun puzzles, and challenge your brain with this addictive logic game – start now.",
     "url": "https://puzzlesplan.com/number-game",
     "mainEntity": {
       "@type": "OnlineGame",
