@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const metadata = {
   title: "ABC Puzzle – Play Fun & Educational Letter Games Online",
@@ -26,25 +26,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "ABC Puzzle – Play Fun & Educational Letter Games Online",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "ABC Puzzle",
     "description":
       "Play ABC Puzzle online and make learning letters fun! Solve interactive puzzles, match ABCs, and enjoy an educational game designed to boost kids’ learning skills – start playing today.",
     "url": "https://puzzlesplan.com/abc-puzzle",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/puzzlesplan.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "PuzzlesPlan",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "url": "https://puzzlesplan.com"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/abc-puzzle",
-    },
+      "@id": "https://puzzlesplan.com/abc-puzzle"
+    }
   };
 
   return (

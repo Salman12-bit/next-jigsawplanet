@@ -26,35 +26,31 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": ["OnlineGame", "WebApplication"],
     "name": "Free Number Crossword Puzzle Online – Test Your Brain",
     "description":
       "Play Number Crossword Puzzle online for free! Solve number clues, fill in the crossword grid, and test your logic with this fun and addictive puzzle game today.",
     "url": "https://puzzlesplan.com/woodenpuzzle",
-    "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzlesplan",
-      "genre": "Puzzle, Number Game",
-      "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Single Player",
-      "url": "https://puzzlesplan.com/woodenpuzzle",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-          "width": 500,
-          "height": 500,
-        },
-      }
+    "genre": ["Puzzle", "Number Game"],
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "playMode": "SinglePlayer",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
+      "width": 1200,
+      "height": 630
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuzzlesPlan",
+      "url": "https://puzzlesplan.com"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

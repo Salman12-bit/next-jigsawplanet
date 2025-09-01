@@ -79,6 +79,9 @@ export default function Home() {
 
   return (
     <div className="home-container">
+      <h1 className="home-title" >
+        Play the Best Jigsaw Puzzle Online – Free & Fun in 2025
+      </h1>
       <div style={{
         display: "flex",
         alignItems: "center",
@@ -96,6 +99,7 @@ export default function Home() {
                   src={item.image}
                   alt={`Puzzle ${index + 1}`}
                   className="puzzle-game-image"
+                  loading="lazy"
                 />
               </Link>
             </div>
@@ -104,9 +108,7 @@ export default function Home() {
         }
       </div>
       <div className='article-container'>
-        <h1>
-          Online Jigsaw Puzzles in 2025: Relaxation, Education & Mindfulness
-        </h1>
+        <h2 >Online Jigsaw Puzzles in 2025: Relaxation, Education & Mindfulness</h2>
         <p><strong>By <span itemProp="author">PuzzlesPlan.com</span></strong></p>
 
         <h2 >Why Online Jigsaw Puzzles Are the Best Mindful Games in 2025</h2>
@@ -254,6 +256,9 @@ export default function Home() {
         </p>
         <p>
           Whether you're finding puzzles for fun, educational use, or therapeutic value, this platform continues to lead the way. We proudly recommend discovering the world of jigsaw puzzles an activity that calms the mind while sharpening it.
+        </p>
+        <p>
+          Ready to try? 👉 <Link href="/jigsawnight" className="cta-link">Play Free Puzzle Now</Link>
         </p>
       </div>
       <div className="posts">

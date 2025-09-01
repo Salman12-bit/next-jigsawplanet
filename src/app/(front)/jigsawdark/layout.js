@@ -26,12 +26,12 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": ["WebApplication", "VideoGame"],
+    "@type": ["WebApplication", "OnlineGame"],
     "name": "Disney Puzzle | Play Free Online Puzzle Game Now",
     "description":
       "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
     "url": "https://puzzlesplan.com/jigsawdark",
-    "applicationCategory": "GameApplication",
+    "applicationCategory": "Game",
     "operatingSystem": "Web",
     "browserRequirements": "HTML5",
     "inLanguage": "en",
@@ -48,12 +48,6 @@ export default function Layout({ children }) {
       "@type": "Organization",
       "name": "PuzzlesPlan",
       "url": "https://puzzlesplan.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/darkhistory.webp",
-        "width": 500,
-        "height": 500
-      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

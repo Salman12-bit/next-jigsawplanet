@@ -32,28 +32,29 @@ export default function Layout({ children }) {
       "Play Number Slider online for free! Move tiles, arrange numbers in order, and test your logic with this classic sliding puzzle game – start playing instantly.",
     "url": "https://puzzlesplan.com/puzzlenumbers",
     "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "Number Puzzle Game",
-      "genre": "Puzzle, Number Game",
+      "@type": ["WebApplication", "OnlineGame"],
+      "name": "Number Slider",
+      "genre": ["Puzzle", "Sliding", "Number"],
       "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Single Player",
+      "operatingSystem": "Web",
+      "browserRequirements": "HTML5",
+      "playMode": "SinglePlayer",
       "url": "https://puzzlesplan.com/puzzlenumbers",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
         "width": 1200,
-        "height": 630,
+        "height": 630
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
       },
       "publisher": {
         "@type": "Organization",
         "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "url": "https://puzzlesplan.com"
       }
     },
     "mainEntityOfPage": {

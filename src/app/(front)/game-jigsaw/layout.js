@@ -26,12 +26,12 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": ["WebApplication", "VideoGame"],
+    "@type": ["WebApplication", "OnlineGame"],
     "name": "Free Planet Puzzle Jigsaw Online – Start Playing Instantly",
     "description":
       "Jump into Planet Puzzle Jigsaw and enjoy free online puzzles with exciting levels. Relax, challenge your brain, and play anywhere, anytime.",
     "url": "https://puzzlesplan.com/game-jigsaw",
-    "applicationCategory": "GameApplication",
+    "applicationCategory": "Game",
     "operatingSystem": "Web",
     "browserRequirements": "HTML5",
     "inLanguage": "en",
@@ -48,12 +48,6 @@ export default function Layout({ children }) {
       "@type": "Organization",
       "name": "PuzzlesPlan",
       "url": "https://puzzlesplan.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/jigsawsnow.webp",
-        "width": 500,
-        "height": 500
-      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

@@ -43,14 +43,15 @@ export default function Layout({ children }) {
     "author": {
       "@type": "Person",
       "name": "Puzzle Author",
-      "url": "https://puzzlesplan.com/"
+      "url": "https://puzzlesplan.com/",
     },
     "publisher": {
       "@type": "Organization",
       "name": "Puzzles Plan",
     },
-    "datePublished": "2025-08-31",
-    "dateModified": "2025-08-31",
+    "datePublished": "2025-09-01",
+    "dateModified": "2025-09-01",
+    "isAccessibleForFree": true,
     "keywords": [
       "big puzzle pieces",
       "larger puzzles",
@@ -70,6 +71,12 @@ export default function Layout({ children }) {
       "Relaxation & Mindfulness",
       "Family Entertainment",
       "Online Jigsaw Puzzles"
+    ],
+    "about": [
+      { "@type": "Thing", "name": "Jigsaw Puzzles" },
+      { "@type": "Thing", "name": "Big Puzzle Pieces" },
+      { "@type": "Thing", "name": "Puzzle Games for Seniors" },
+      { "@type": "Thing", "name": "Educational Puzzle Games" }
     ]
   };
 

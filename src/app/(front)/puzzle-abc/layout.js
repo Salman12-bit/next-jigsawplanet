@@ -31,20 +31,36 @@ export default function Layout({ children }) {
     "description":
       "Play Puzzle ABC online and make learning the alphabet fun! Solve interactive letter puzzles, boost memory, and enjoy an educational game designed to help kids learn ABCs – start playing today.",
     "url": "https://puzzlesplan.com/puzzle-abc",
-    "publisher": {
-      "@type": "Organization",
-      "name": "PuzzlesPlan",
-      "logo": {
+    "mainEntity": {
+      "@type": ["WebApplication", "OnlineGame"],
+      "name": "Puzzle ABC",
+      "genre": ["Puzzle", "Educational", "Alphabet"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Web",
+      "browserRequirements": "HTML5",
+      "playMode": "SinglePlayer",
+      "url": "https://puzzlesplan.com/puzzle-abc",
+      "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-        "width": 500,
-        "height": 500,
+        "width": 1200,
+        "height": 630
       },
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PuzzlesPlan",
+        "url": "https://puzzlesplan.com"
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/puzzle-abc",
-    },
+      "@id": "https://puzzlesplan.com/puzzle-abc"
+    }
   };
 
   return (

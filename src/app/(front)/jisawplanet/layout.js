@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 
 export const metadata = {
   title: "Puzzles for Adults – Relax & Challenge Your Mind Online",
-  keywords: "days of our lives puzzles,zoroxtv puzzle",
   description:
     "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
   openGraph: {
@@ -27,35 +26,28 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Puzzles for Adults – Relax & Challenge Your Mind Online",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Puzzles for Adults",
     "description":
       "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
     "url": "https://puzzlesplan.com/jisawplanet",
-    "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzel",
-      "genre": "Action, Puzzle",
-      "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Double Player",
-      "url": "https://puzzlesplan.com/jisawplanet",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/treeriver.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/treeriver.webp",
-          "width": 500,
-          "height": 500,
-        },
-      }
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Brain Training", "Adults"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/treeriver.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PuzzlesPlan",
+      "url": "https://puzzlesplan.com"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

@@ -27,12 +27,12 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": ["WebApplication", "VideoGame"],
+    "@type": ["WebApplication", "OnlineGame"],
     "name": "Puzzle Table Jigsaw | Play Free Online Puzzle Game",
     "description":
       "Play Puzzle Table Jigsaw online for free! Enjoy fun levels, match pieces, and challenge your mind. Start playing now and join endless puzzle fun.",
     "url": "https://puzzlesplan.com/jigsawnight",
-    "applicationCategory": "GameApplication",
+    "applicationCategory": "Game",
     "operatingSystem": "Web",
     "browserRequirements": "HTML5",
     "inLanguage": "en",
@@ -49,12 +49,6 @@ export default function Layout({ children }) {
       "@type": "Organization",
       "name": "PuzzlesPlan",
       "url": "https://puzzlesplan.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/nightshift.webp",
-        "width": 500,
-        "height": 500
-      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",

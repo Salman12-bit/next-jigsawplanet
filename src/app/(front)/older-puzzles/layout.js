@@ -32,28 +32,29 @@ export default function Layout({ children }) {
       "Play Planet Jigsaws online and explore space through fun puzzles. Unlock levels, challenge your mind, and enjoy galaxy-themed jigsaw adventures today!",
     "url": "https://puzzlesplan.com/older-puzzles",
     "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzel",
-      "genre": "Action, Puzzle",
+      "@type": ["WebApplication", "OnlineGame"],
+      "name": "Planet Jigsaw Game",
+      "genre": ["Puzzle", "Jigsaw", "Galaxy Theme"],
       "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Double Player",
+      "operatingSystem": "Web",
+      "browserRequirements": "HTML5",
+      "playMode": "SinglePlayer",
       "url": "https://puzzlesplan.com/older-puzzles",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/eiffeltower.webp",
         "width": 1200,
-        "height": 630,
+        "height": 630
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
       },
       "publisher": {
         "@type": "Organization",
         "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/eiffeltower.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "url": "https://puzzlesplan.com",
       }
     },
     "mainEntityOfPage": {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const metadata = {
   title: "Alphabet Puzzle – Play Fun Learning Games Online",
@@ -26,33 +26,32 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Alphabet Puzzle – Play Fun Learning Games Online",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Alphabet Puzzle",
     "description":
       "Play Alphabet Puzzle online! Learn letters, solve fun challenges, and enjoy an engaging educational puzzle game – start playing now.",
     "url": "https://puzzlesplan.com/alphabetpuzzle",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids", "Learning"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/puzzlesplan.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "PuzzlesPlan",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "url": "https://puzzlesplan.com"
     },
-    "mainEntity": {
-      "@type": "EducationalGame",
-      "name": "Alphabet Puzzle",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "EducationalGame",
-      "genre": "Puzzle, Kids, Learning",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Children",
-      },
-      "url": "https://puzzlesplan.com/alphabetpuzzle",
-      "image": "https://puzzlesplan.com/images/puzzlesplan.webp",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://puzzlesplan.com/alphabetpuzzle"
     }
   };
 

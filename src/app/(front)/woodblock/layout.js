@@ -32,28 +32,29 @@ export default function Layout({ children }) {
       "Wood Block Puzzle is a free online game where you place wooden blocks and solve fun challenges. Train your brain, relax, and enjoy endless puzzle fun now.",
     "url": "https://puzzlesplan.com/woodblock",
     "mainEntity": {
-      "@type": "OnlineGame",
-      "name": "puzzlesplan",
-      "genre": "Action, Puzzle",
+      "@type": ["WebApplication", "OnlineGame"],
+      "name": "Wood Block Puzzle",
+      "genre": ["Puzzle", "Block", "Brain Training"],
       "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Single Player",
+      "operatingSystem": "Web",
+      "browserRequirements": "HTML5",
+      "playMode": "SinglePlayer",
       "url": "https://puzzlesplan.com/woodblock",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
         "width": 1200,
-        "height": 630,
+        "height": 630
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
       },
       "publisher": {
         "@type": "Organization",
         "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "url": "https://puzzlesplan.com"
       }
     },
     "mainEntityOfPage": {

@@ -59,12 +59,6 @@ export default function Layout({ children }) {
     "publisher": {
       "@type": "Organization",
       "name": "PuzzlesPlan",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-        "width": 500,
-        "height": 500,
-      },
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",

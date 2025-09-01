@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const metadata = {
   title: "Letter Puzzles – Play Fun Alphabet Learning Games Online",
@@ -26,25 +26,39 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Letter Puzzles – Play Fun Alphabet Learning Games Online",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Letter Puzzles – Alphabet Learning Game",
     "description":
       "Play Letter Puzzles online and make learning the alphabet fun! Solve interactive puzzles, match letters, and enjoy an educational game designed to boost kids’ ABC skills – start playing today.",
     "url": "https://puzzlesplan.com/letterpuzzles",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Alphabet Learning"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://puzzlesplan.com/images/puzzlesplan.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "PuzzlesPlan",
+      "url": "https://puzzlesplan.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
         "width": 500,
-        "height": 500,
-      },
+        "height": 500
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/letterpuzzles",
-    },
+      "@id": "https://puzzlesplan.com/letterpuzzles"
+    }
   };
 
   return (

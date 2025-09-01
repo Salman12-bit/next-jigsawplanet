@@ -32,28 +32,29 @@ export default function Layout({ children }) {
       "Play Number Board Game online for free! Arrange numbers on the board, solve fun puzzles, and challenge your brain with this addictive logic game – start now.",
     "url": "https://puzzlesplan.com/number-game",
     "mainEntity": {
-      "@type": "OnlineGame",
+      "@type": ["WebApplication", "OnlineGame"],
       "name": "Number Puzzle Game",
-      "genre": "Puzzle, Number Game",
+      "genre": ["Puzzle", "Logic", "Number Game"],
       "applicationCategory": "Game",
-      "operatingSystem": "Web Browser",
-      "playMode": "Single Player",
+      "operatingSystem": "Web",
+      "browserRequirements": "HTML5",
+      "playMode": "SinglePlayer",
       "url": "https://puzzlesplan.com/number-game",
       "image": {
         "@type": "ImageObject",
         "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
         "width": 1200,
-        "height": 630,
+        "height": 630
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
       },
       "publisher": {
         "@type": "Organization",
         "name": "PuzzlesPlan",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://puzzlesplan.com/images/puzzlesplan.webp",
-          "width": 500,
-          "height": 500,
-        },
+        "url": "https://puzzlesplan.com",
       }
     },
     "mainEntityOfPage": {
