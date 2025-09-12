@@ -1,18 +1,17 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
-import styled from 'styled-components';
-import './puzzle.css';
-import Link from 'next/link'
-import Card from '@/app/Card/page';
+import React, { useState, useEffect, useCallback } from "react";
+import styled from "styled-components";
+import "./puzzle.css";
+import Link from "next/link";
 
 const containerStyle1 = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  gap: '10px',
-  width: '100%',
-  maxWidth: '1000px',
-  margin: '0 auto',
+  display: "flex",
+  justifyContent: "space-between",
+  gap: "10px",
+  width: "100%",
+  maxWidth: "1000px",
+  margin: "0 auto",
 };
 
 const Board1 = styled.div`
@@ -22,25 +21,21 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'C' }, { id: 2, value: 'B' },
-  { id: 3, value: 'B' }, { id: 4, value: 'E' },
-  { id: 5, value: 'E' }, { id: 6, value: 'B' },
-  { id: 7, value: 'A' }, { id: 8, value: 'F' },
-  { id: 9, value: 'B' },
+  { id: 1, value: "A" },
+  { id: 2, value: "A" },
+  { id: 3, value: "A" },
+  { id: 4, value: "B" },
+  { id: 5, value: "B" },
+  { id: 6, value: "B" },
+  { id: 7, value: "C" },
+  { id: 8, value: "C" },
+  { id: 9, value: "C" },
 ];
 
-const Puzzle4 = () => {
+const ABCPuzzle = () => {
   const [cards, setCards] = useState([]);
-  const [flippedCards, setFlippedCards] = useState([]);
-  const [matchedCards, setMatchedCards] = useState([]);
-  const [attempts, setAttempts] = useState(0);
-  const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(4);
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setFadeIn(true), 300);
-  }, []);
+  const [message, setMessage] = useState("Arrange letters into ABC order!");
+  const [level, setLevel] = useState(1);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -52,90 +47,72 @@ const Puzzle4 = () => {
 
   const initializeGame = useCallback(() => {
     setCards(shuffle([...initialCards]));
-    setFlippedCards([]);
-    setMatchedCards([]);
-    setAttempts(0);
-    setMessage('Attempts left: 3');
+    setMessage("Arrange letters into ABC order!");
   }, []);
 
   useEffect(() => {
     initializeGame();
   }, [level, initializeGame]);
 
-  const handleCardClick = (id, value) => {
-    if (flippedCards.length < 3 && !flippedCards.some(card => card.id === id)) {
-      setFlippedCards(prev => [...prev, { id, value }]);
+  const handleDragStart = (e, index) => {
+    e.dataTransfer.setData("cardIndex", index);
+  };
 
-      if (flippedCards.length === 2) {
-        setAttempts(prev => prev + 1);
+  const handleDrop = (e, dropIndex) => {
+    const dragIndex = e.dataTransfer.getData("cardIndex");
+    if (dragIndex === "") return;
 
-        const [firstCard, secondCard] = flippedCards;
+    const newCards = [...cards];
+    const [dragged] = newCards.splice(dragIndex, 1);
+    newCards.splice(dropIndex, 0, dragged);
 
-        if (firstCard.value === value && secondCard.value === value) {
-          setMatchedCards(prev => [...prev, firstCard.id, secondCard.id, id]);
-          setFlippedCards([]);
-          if (matchedCards.length + 3 === initialCards.length) {
-            setMessage('You won this game!');
-            setTimeout(() => {
-              setLevel(prev => prev + 1);
-            }, 1000);
-          }
-        } else {
-          setTimeout(() => {
-            setFlippedCards([]);
-          }, 1000);
-        }
+    setCards(newCards);
 
-        if (attempts >= 2) {
-          setTimeout(() => {
-            setMessage('Game over! Restarting...');
-            setTimeout(initializeGame, 2000);
-          }, 1000);
-        } else {
-          setMessage(`Attempts left: ${2 - attempts}`);
-        }
-      }
+
+    const isSolved =
+      newCards[0].value === "A" &&
+      newCards[1].value === "B" &&
+      newCards[2].value === "C" &&
+      newCards[3].value === "A" &&
+      newCards[4].value === "B" &&
+      newCards[5].value === "C" &&
+      newCards[6].value === "A" &&
+      newCards[7].value === "B" &&
+      newCards[8].value === "C";
+
+    if (isSolved) {
+      setMessage("🎉 You solved the ABC Puzzle!");
     }
   };
 
-  const hasMatchedThree = () => {
-    const valueCount = matchedCards.reduce((count, cardId) => {
-      const card = cards.find(card => card.id === cardId);
-      if (card) {
-        count[card.value] = (count[card.value] || 0) + 1;
-      }
-      return count;
-    }, {});
-    return Object.values(valueCount).some(count => count === 3);
-  };
-
   return (
-    <div className='text-conainer' style={{
-      padding: "20px"
-    }}>
-      <div className='planet-container'>
-        <div className='row'>
+    <div className="text-conainer" style={{ padding: "20px" }}>
+      <div className="planet-container">
+        <div className="row">
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
-              <div>
-                <Board1 className='game-board'>
-                  {cards.map(card => (
-                    <Card
-                      key={card.id}
-                      id={card.id}
-                      value={card.value}
-                      isFlipped={flippedCards.some(flippedCard => flippedCard.id === card.id) || matchedCards.includes(card.id)}
-                      handleClick={handleCardClick}
-                    />
-                  ))}
-                </Board1>
-              </div>
+              <h3 className="level-color">ABC Puzzle – Level {level}</h3>
+              <Board1 className="game-board">
+                {cards.map((card, index) => (
+                  <div
+                    key={card.id}
+                    className="card-tile"
+                    draggable
+                    onDragStart={(e) => handleDragStart(e, index)}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={(e) => handleDrop(e, index)}
+                  >
+                    {card.value}
+                  </div>
+                ))}
+              </Board1>
               <div className="message">{message}</div>
-              <button className="button" onClick={initializeGame}>Restart Game</button>
-              {hasMatchedThree() && (
+              <button className="button" onClick={initializeGame}>
+                Restart ABC Puzzle
+              </button>
+              {message.includes("🎉") && (
                 <Link href="/puzzle-abc">
-                  <button className="button ms-2">Next Level</button>
+                  <button className="button ms-2">Next Puzzle</button>
                 </Link>
               )}
             </div>
@@ -144,29 +121,29 @@ const Puzzle4 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">How ABC Puzzles Turn Alphabet Learning Into Play</h1>
+          <h1 className="instructions-title">ABC Puzzle – Arrange, Learn, and Play</h1>
           <p className="instructions-description">
-            ABC puzzles are more than just playful deviations — they’re interactive tools that introduce young learners to the alphabet through immersive online engagement. The combination of on-screen letters and thoughtful structure turns letter recognition into a fun digital experience. Unlike passive learning methods, these online puzzles involve repetition and exploration, which naturally support early cognitive development and literacy readiness.
+            The ABC Puzzle is an engaging drag-and-drop puzzle that helps players practice sequencing letters in the ABC order. By organizing tiles marked A, B, and C into the correct pattern, learners strengthen memory, logic, and letter recognition in a fun way.
           </p>
 
-          <h2 className="instruction-step">Learning Through Letter and Placement</h2>
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            The digital layout of the puzzle encourages spatial awareness by challenging learners to drag and drop letters into their correct positions or match a card with one alphabet letter like A or B. This simple act of moving a letter into place activates visual processing and letter differentiation — foundational skills for recognizing and distinguishing between alphabet shapes. When letters appear in uppercase, lowercase, or varied fonts, the process becomes even more enriching, promoting flexible thinking and expanding visual familiarity with the alphabet.
+            At the start of the game, the letters are shuffled across the board. Your job is to drag and drop each letter into its proper position to form the repeating ABC sequence. Setting up the letters until the order is correct, and once completed, the puzzle rewards you with a success message.
           </p>
 
-          <h3 className="instruction-step">Supporting Memory Retention Through Repetition</h3>
+          <h2 className="instruction-step">Why It’s Engaging</h2>
           <p className="instructions-description">
-            Repetition is a key element in building memory, and ABC puzzles give that naturally through replay. Every attempt to complete the game reinforces recognition patterns, helping children recall the sequence of letters. This isn’t rote memorization — it’s active learning that provides true benefits to the children. The act of dragging, rotating, and placing letters engages visual and motor memory, reinforcing auditory and visual learning to enhance retention.
+            This game sequencing puzzle mixes learning with play. The drag-and-drop of letters keeps players actively engaged, testing both recognition and problem-solving skills. It’s a hands-on style to practice patterns and logical thinking while having fun.
           </p>
 
-          <h4 className="instruction-step">Foundations for Spelling and Vocabulary Growth</h4>
+          <h2 className="instruction-step">Who Can Enjoy It?</h2>
           <p className="instructions-description">
-            Playing with the alphabet early on creates a pathway toward spelling and vocabulary development. Online alphabet puzzles give the groundwork by familiarizing learners with the order of letters, individual letter names like A, B, and the idea of combining letters into meaningful words. As children become more confident in recognizing the alphabet, they're better prepared to decode words, and understand word structure — all of which support early reading and writing skills.
+            This puzzle is designed for all ages. Kids will love organizing the letters in the correct pattern, families can solve it together with love and happiness, and adults can use it as a quick mental break. Its simple rules create it easy to pick up, while completing the pattern still feels rewarding.
           </p>
 
-          <h5 className="instruction-step">An Inviting Entry Point Into Independent Discovery</h5>
+          <h2 className="instruction-step">Next Challenges Await</h2>
           <p className="instructions-description">
-            This platform offers a learner-led experience where exploration and success come through trial, not instruction. This autonomy boosts interest and self-correction — two traits that lead to deeper interaction. Without the pressure of getting it right on the first try, learners are confident to experiment and enjoy the satisfaction of completing the puzzle on their own, which gives them benefits in the future.
+            After solving the first level, new puzzles introduce fresh twists—more letters, tougher design, and advanced sequencing challenges. Keep arranging and see how far your logic and memory can take you.
           </p>
         </div>
 
@@ -175,5 +152,10 @@ const Puzzle4 = () => {
   );
 };
 
+export default ABCPuzzle;
 
-export default Puzzle4;
+
+
+
+
+

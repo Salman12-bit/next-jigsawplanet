@@ -1,11 +1,11 @@
 import React from "react";
 
 export const metadata = {
-  title: "Play Barbie Puzzle Games Online | Free Jigsaw & Fun Challenges",
+  title: "Play Barbie Jigsaw Puzzle Online | Free & Fun Challenges",
   description:
     "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
   openGraph: {
-    title: "Play Barbie Puzzle Games Online | Free Jigsaw & Fun Challenges",
+    title: "Play Barbie Jigsaw Puzzle Online | Free & Fun Challenges",
     description:
       "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
     url: "https://puzzlesplan.com/jigsaw-planet",
@@ -27,7 +27,7 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "OnlineGame"],
-    "name": "Barbie Puzzle Game",
+    "name": "Play Barbie Jigsaw Puzzle Online | Free & Fun Challenges",
     "description":
       "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
     "url": "https://puzzlesplan.com/jigsaw-planet",

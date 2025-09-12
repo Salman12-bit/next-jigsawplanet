@@ -2,21 +2,25 @@
     color: rgb(3, 3, 3);
     text-align: center;
 }
+
 .text-conainer {
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
 }
+
 .level-color {
     margin-bottom: 20px;
     text-align: center;
     color: black;
 }
+
 .planet-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .puzzlecontainer {
     display: flex;
     flex-direction: column;
@@ -24,50 +28,67 @@
     margin: 0 auto;
     padding: 20px;
 }
+
+
 .card2 {
-    padding-top: 100%;
     position: relative;
-    background-color: rgba(20, 20, 20, 0.8); 
-    color: white;
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #d6b68c, #a67b5b);
+    border: 2px solid #7a5a3a;
+    border-radius: 12px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #3b2d1f;
+    text-shadow: 1px 1px #fff3e0;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.5s ease-in-out, transform 0.2s;
-    opacity: 1;
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .card2:hover {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
-    transform: scale(1.05); 
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #e1c89b, #b58a65);
 }
 
-.card2.matched {
-    background-color: #4caf50;
-    cursor: default;
-}
+
 .card2.flipped {
-    background-color: #e9e1e1;
-    color: #000;
+    background: #f4e4c1;
+    color: #2b1b0a;
     cursor: default;
     transform: rotateY(180deg);
 }
+
+
+.card2.matched {
+    background: #4caf50;
+    color: white;
+    cursor: default;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+}
+
+
 .card2>span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 .message {
     margin-top: 20px;
     font-size: 18px;
 }
+
 .button {
     padding: 10px 20px;
     font-size: 16px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
     color: white;
     border: none;
     border-radius: 5px;
@@ -75,6 +96,7 @@
     margin: 10px 0px;
     margin-left: 10px;
 }
+
 .button:hover {
     padding: 10px 20px;
     font-size: 16px;
@@ -86,6 +108,7 @@
     margin: 10px 0px;
     margin-left: 10px;
 }
+
 .game-instructions-container {
     display: flex;
     flex-direction: column;
@@ -99,22 +122,26 @@
     margin-bottom: 20px;
     color: black;
 }
+
 .game-instructions-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
+
 .instructions-title {
     text-align: center;
     margin: 20px 0;
     font-size: 1.5rem;
 }
+
 .instructions-description {
     font-size: 1.09rem;
     margin-bottom: 16px;
     text-align: justify;
     margin-left: 10px;
 }
+
 .instruction-step {
     margin-top: 16px;
     font-size: 20px;
@@ -122,11 +149,13 @@
     border-left: 4px solid #2980b9;
     padding-left: 12px;
 }
+
 .instructions-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 16px;
 }
+
 .tips-title {
     margin-top: 16px;
     font-size: 20px;
@@ -139,29 +168,7 @@
     justify-content: center !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mode-select {
+    text-align: center;
+    margin-top: 10px;
+}

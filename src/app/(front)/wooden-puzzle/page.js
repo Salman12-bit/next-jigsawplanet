@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import './puzzle.css';
-import Link from 'next/link'
+import Link from 'next/link';
 import Card from '@/app/Card/page';
 
 const containerStyle1 = {
@@ -15,32 +15,40 @@ const containerStyle1 = {
   margin: '0 auto',
 };
 
-const Board1 = styled.div`
+const Board = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 90px);
-  grid-gap: 8px;
+  grid-template-columns: repeat(3, 110px);
+  grid-gap: 14px;
+  margin: 0 auto;
 `;
 
-const initialCards = [
-  { id: 1, value: 'C' }, { id: 2, value: 'A' },
-  { id: 3, value: 'F' }, { id: 4, value: 'E' },
-  { id: 5, value: 'E' }, { id: 6, value: 'S' },
-  { id: 7, value: 'A' }, { id: 8, value: 'F' },
-  { id: 9, value: 'E' },
-];
+const phonicData = {
+  K: { word: "Kite", emoji: "🪁", sound: "/k/" },
+  L: { word: "Lion", emoji: "🦁", sound: "/l/" },
+  M: { word: "Moon", emoji: "🌙", sound: "/m/" },
+  N: { word: "Nest", emoji: "🐦", sound: "/n/" },
+  O: { word: "Orange", emoji: "🍊", sound: "/ɒ/" },
+};
 
-const Puzzle3 = () => {
+
+const generateNineCards = () => {
+  const letters = ["K", "L", "M", "N", "O"];
+  let id = 1;
+  const pairs = letters.slice(0, 4).flatMap(l => [
+    { id: id++, value: l },
+    { id: id++, value: l },
+  ]);
+  pairs.push({ id: id++, value: letters[4] });
+  return pairs;
+};
+
+const SoundPuzzle = () => {
+  const [mode, setMode] = useState(null);
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
+  const [message, setMessage] = useState('');
   const [attempts, setAttempts] = useState(0);
-  const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(3);
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setFadeIn(true), 300);
-  }, []);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -51,130 +59,154 @@ const Puzzle3 = () => {
   };
 
   const initializeGame = useCallback(() => {
-    setCards(shuffle([...initialCards]));
+    setCards(shuffle(generateNineCards()));
     setFlippedCards([]);
     setMatchedCards([]);
     setAttempts(0);
-    setMessage('Attempts left: 3');
+    setMessage('Match the Alphabet Sound Puzzle cards!');
   }, []);
 
   useEffect(() => {
-    initializeGame();
-  }, [level, initializeGame]);
+    if (mode) initializeGame();
+  }, [mode, initializeGame]);
 
   const handleCardClick = (id, value) => {
-    if (flippedCards.length < 3 && !flippedCards.some(card => card.id === id)) {
-      setFlippedCards(prev => [...prev, { id, value }]);
+    if (flippedCards.length < 2 && !flippedCards.some(c => c.id === id)) {
+      const newFlipped = [...flippedCards, { id, value }];
+      setFlippedCards(newFlipped);
 
-      if (flippedCards.length === 2) {
+      if (newFlipped.length === 2) {
         setAttempts(prev => prev + 1);
+        const [first, second] = newFlipped;
 
-        const [firstCard, secondCard] = flippedCards;
-
-        if (firstCard.value === value && secondCard.value === value) {
-          setMatchedCards(prev => [...prev, firstCard.id, secondCard.id, id]);
+        if (first.value === second.value) {
+          setMatchedCards(prev => [...prev, first.id, second.id]);
           setFlippedCards([]);
-          if (matchedCards.length + 3 === initialCards.length) {
-            setMessage('You won this game!');
-            setTimeout(() => {
-              setLevel(prev => prev + 1);
-            }, 1000);
+
+          if (mode === "kid" && phonicData[value]) {
+            const { word, emoji, sound } = phonicData[value];
+            setMessage(`🎉 ${value} is for ${word} ${emoji} (sound: ${sound})`);
+          } else {
+            setMessage(`✅ Matched ${value}!`);
           }
         } else {
+          setMessage("❌ Try again!");
           setTimeout(() => {
             setFlippedCards([]);
+            setMessage("Match the Alphabet Sound Puzzle cards!");
           }, 1000);
-        }
-
-        if (attempts >= 2) {
-          setTimeout(() => {
-            setMessage('Game over! Restarting...');
-            setTimeout(initializeGame, 2000);
-          }, 1000);
-        } else {
-          setMessage(`Attempts left: ${2 - attempts}`);
         }
       }
     }
   };
 
-  const hasMatchedThree = () => {
-    const valueCount = matchedCards.reduce((count, cardId) => {
-      const card = cards.find(card => card.id === cardId);
-      if (card) {
-        count[card.value] = (count[card.value] || 0) + 1;
-      }
-      return count;
-    }, {});
-    return Object.values(valueCount).some(count => count === 3);
-  };
+  const hasMatchedAll = () => matchedCards.length >= cards.length - 1;
 
   return (
-    <div className='text-conainer' style={{
-      padding: "20px"
-    }}>
+    <div className='text-container' style={{ padding: "20px" }}>
       <div className='planet-container'>
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
-              <div>
-                <Board1 className='game-board'>
-                  {cards.map(card => (
-                    <Card
-                      key={card.id}
-                      id={card.id}
-                      value={card.value}
-                      isFlipped={flippedCards.some(flippedCard => flippedCard.id === card.id) || matchedCards.includes(card.id)}
-                      handleClick={handleCardClick}
-                    />
-                  ))}
-                </Board1>
-              </div>
-              <div className="message">{message}</div>
-              <button className="button" onClick={initializeGame}>Restart Game</button>
-              {hasMatchedThree() && (
-                <Link href="/abc-puzzle">
-                  <button className="button ms-2">Next Level</button>
-                </Link>
+              {!mode && (
+                <div className="mode-select text-center p-6">
+                  <h2 className="mb-4">Choose Your Alphabet Sound Puzzle Mode</h2>
+                  <button className="button m-2" onClick={() => setMode("kid")}>
+                    👶 Kid Mode (Phonics + Sounds)
+                  </button>
+                  <button className="button m-2" onClick={() => setMode("young")}>
+                    🧑 Young Learner Mode (Memory)
+                  </button>
+                </div>
+              )}
+
+              {mode && (
+                <>
+                  <h3 className='level-color'>
+                    Alphabet Sound Puzzle – {mode === "kid" ? "Kid Mode" : "Young Mode"}
+                  </h3>
+                  <Board className='game-board'>
+                    {cards.map(card => (
+                      <Card
+                        key={card.id}
+                        id={card.id}
+                        value={card.value}
+                        isFlipped={
+                          flippedCards.some(f => f.id === card.id) ||
+                          matchedCards.includes(card.id)
+                        }
+                        handleClick={handleCardClick}
+                      />
+                    ))}
+                  </Board>
+                  <div className="message">{message}</div>
+                  <div className="stats">Attempts: {attempts}</div>
+                  <button className="button" onClick={initializeGame}>Restart Puzzle</button>
+                  <button className="button ms-2" onClick={() => setMode(null)}>🔙 Back to Modes</button>
+
+                  {hasMatchedAll() && (
+                    <div className="mt-3">
+                      <p>🎉 You solved the Alphabet Sound Puzzle! 🎉</p>
+                      <Link href="/">
+                        <button className="button ms-2">Next Puzzle</button>
+                      </Link>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </div>
         </div>
       </div>
-      <div className="game-instructions-container">
+      <article className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">Play Alphabet Sound Puzzle Online</h1>
+          <h1 className="instructions-title">Alphabet Sound Puzzle – Learn Letters the Fun Way</h1>
           <p className="instructions-description">
-            Welcome to the Alphabet Sound Puzzle – a free online word game designed for kids to learn letters and their sounds while having fun. Instead of just being a wooden toy, this digital version lets children click, drag, and match letters with their correct sounds directly in the browser. It’s interactive, playful, and perfect for early reading practice.
+            The Alphabet Sound Puzzle takes the idea of a classic letter game and makes it more exciting.
+            Instead of just looking at wooden tiles, kids get to flip digital cards, match pairs, and hear fun sounds like
+            “K is for Kite 🪁” or “L is for Lion 🦁.” It feels more like playtime than study time, which is exactly what makes it stick.
           </p>
+
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            In early years, alphabet sound puzzles introduce a meaningful way to connect letters with their corresponding phonetic sounds. Designed to support early reading development, this tool brings sound and symbol together in a way that’s both tangible and interactive. Every card typically represents a letter and is matched with a related sound, permitting learners to shape solid sound-related and visual links. As a result, this format has become a valuable resource in language acquisition and early phonics instruction.
+            Getting started is super simple. Just pick a mode and dive in. In <strong>Kid Mode</strong>,
+            every time kids find a match, the game says the letter out loud, shows a word, and even adds a fun emoji to go with it.
+            In <strong>Young Learner Mode</strong>, things get a little trickier—it’s all about memory.
+            Flip a card, try to remember where you saw its match, and keep going until the board is cleared.
+            Easy to learn, but it keeps you thinking the whole time.
           </p>
-          <h2 className="instruction-step">Sound Association Through Letter Interaction</h2>
+
+          <h2 className="instruction-step">Benefits of Playing</h2>
           <p className="instructions-description">
-            Understanding the link between letters and their sounds is a core milestone in literacy. This learning tool supports this association by creating opportunities to match letters to audio or phonetic prompts. Each letter represents more than just a shape on a board — it changes into a gateway for pronunciation, recognition, and early learning skills. When a learner listens to a sound and connects it to the right letter, the letter set becomes a useful code or a memorable mental image.
+            You know how kids usually groan when something feels like homework? This puzzle flips that on its head.
+            They’re busy turning cards, laughing at the emojis, and suddenly—bam—they’ve learned a new letter sound without
+            even trying. The cool part is, while they’re having fun, their brain is secretly working hard: memory, focus,
+            problem-solving, all of it. Parents usually catch on quickly and go, “Wait, this is actually teaching them something,”
+            which makes it a rare win-win for both sides.
           </p>
-          <h3 className="instruction-step">Building Phonemic Awareness at an Early Stage</h3>
+
+          <h2 className="instruction-step">Who Can Enjoy It?</h2>
           <p className="instructions-description">
-            Phonemic awareness is the ability to hear and manipulate individual sounds in spoken words. Alphabet puzzles help this basic literacy skill by allowing children to isolate letter sounds and relate them directly to visual representations of those sounds. This tactile coordination deepens understanding of how words are formed and broken down. It’s a designed, low-pressure format that improves early reading readiness by connecting physical pieces with phonological awareness in a developmentally proper way.
+            Honestly, it’s not just for little kids. Sure, the toddlers love shouting out the letters, but older kids treat it
+            like a challenge—“I bet I can remember faster than you.” Families end up turning it into a mini game night, and yep,
+            even adults sneak in a round here and there. Not because they need to learn the letters again, but because it’s a nice little
+            brain stretch when you’re bored or just need a quick mental break.
           </p>
-          <h4 className="instruction-step">A Multisensory Experience for Language Development</h4>
+
+
+          <h2 className="instruction-step">Next Challenges Await</h2>
           <p className="instructions-description">
-            The more senses involved in the learning process, the more likely information is to stick. The alphabet sound puzzle combines tactile exploration and visual identification into a single experience. Learners can hear the sound, see the alphabetic letters, and drag and drop the letter into the correct place on screen — reinforcing comprehension from multiple angles. This multisensory support is helpful for early learners, young children with language delays, or those who benefit  from varied approaches to concept maintenance.
-          </p>
-          <h5 className="instruction-step">Practical Applications in Literacy Environments</h5>
-          <p className="instructions-description">
-            In both classroom and home environments, these puzzles help as practical learning tools that fit naturally into early literacy programs. The online game’s simple design makes it easy for kids to practice repeatedly, individual exploration, or guided guidance. They boost self-correction, experimentation, and sound discovery — all necessary elements of learning how language works. Whether used during free choice time or as part of structured phonics guidance, they give ongoing opportunities for language growth.
-          </p>
-          <p className="instructions-description">
-            👉 Click the Start button above to begin playing the Alphabet Sound Puzzle online for free.
+            Once you’ve mastered the first round, the puzzle doesn’t just stop there.
+            New levels bring in fresh letters, trickier matches, and more sounds to keep things interesting.
+            Each stage feels like a small step up, so players keep learning while still enjoying the game.
+            There’s always something new waiting, which makes coming back to play feel rewarding every time.
           </p>
         </div>
-      </div>
+
+      </article>
+
     </div>
   );
 };
 
-
-export default Puzzle3;
+export default SoundPuzzle;

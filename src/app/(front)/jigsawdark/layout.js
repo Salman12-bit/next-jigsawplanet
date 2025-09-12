@@ -2,6 +2,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Disney Puzzle | Play Free Online Puzzle Game Now",
+
   description:
     "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
   openGraph: {
@@ -14,7 +15,7 @@ export const metadata = {
         url: "https://puzzlesplan.com/images/darkhistory.webp",
         width: 1200,
         height: 630,
-        alt: "Play Disney Puzzle online free on PuzzlesPlan",
+        alt: "Play Disney Jigsaw Puzzle online free on PuzzlesPlan",
       },
     ],
   },

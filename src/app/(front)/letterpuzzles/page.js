@@ -22,20 +22,20 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'C' }, { id: 2, value: 'F' },
+  { id: 1, value: 'C' }, { id: 2, value: 'A' },
   { id: 3, value: 'B' }, { id: 4, value: 'E' },
-  { id: 5, value: 'F' }, { id: 6, value: 'D' },
+  { id: 5, value: 'A' }, { id: 6, value: 'D' },
   { id: 7, value: 'A' }, { id: 8, value: 'F' },
   { id: 9, value: 'D' },
 ];
 
-const Puzzle6 = () => {
+const Puzzle1 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(6);
+  const [level, setLevel] = useState(1);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const Puzzle6 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/">
+                <Link href="/abc-puzzle">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -144,25 +144,25 @@ const Puzzle6 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">Victorian Puzzle Letters: Art, Secrecy, and Sentiment</h1>
+          <h1 className="instructions-title">Letter Puzzle – A Fun and Challenging Memory Game</h1>
           <p className="instructions-description">
-            In the mid-19th century, when handwriting was both a personal signature and an art form, a curious convention emerged: the Victorian puzzle letter. Far from ordinary correspondence, these letters were part message and part keepsake. They invited the recipient to unfold a secret world — one where love and craftsmanship met in a single piece of paper.
+            The Letter Puzzle is an interactive mix of memory, strategy, and learning for lovers. Players see a grid of hidden cards, each one holding a letter. Every new player's challenge is to flip the cards, find the hidden letters, and match letters correctly before you run out of attempts. This exclusive blend of a matching puzzle and alphabet memory game makes it interactive and educational for kids, families, and adults alike.
           </p>
-          <h2 className="instruction-step">When Letters Became Works of Art</h2>
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            Puzzle letters turned communication into a hands-on experience. Writers didn’t simply send words; they developed them. Paper was folded into hearts, flowers, or complex geometric patterns, and often, writer messages are hidden in layers. Each crease carried intention — sometimes protecting a private joke or coded poem. In 1848, a London suitor sent his beloved a collapsed rose-shaped letter that, when opened petal by petal, revealed a sonnet and a bolt of his hair — an ardent motion that was both lively and intensely emotional.
+            Playing this game is simple but never boring. You start by flipping a card to show its hidden letter, then try another card to find a match. If the two letters are the same, they stay open; if not, they turn back over, testing your memory. With limited attempts, every move matters and gives you a strategy to complete this. Some rounds even need matching three identical letters, adding a clever twist that makes the puzzle more challenging as you progress.
           </p>
-          <h3 className="instruction-step">A Language Beyond Every Word</h3>
+          <h2 className="instruction-step">Why It’s Engaging</h2>
           <p className="instructions-description">
-            These letters offered a form of expression that was multi-dimensional. Messages were often inserted with rebuses, or symbolic colors, inviting the reader to unveil not just the words but the emotions between them. These layered techniques reflected a society that valued subtlety, emotional intelligence, and the art of excitement. A puzzle letter was as much an emotional performance as a written note.
+            What makes the game stand out is the suspense of each flip. If cards match, then good, if cards are not matched, then keep in mind their place for later? This card puzzle gives excitement, enhances concentration, and supports problem-solving skills. The theme of hidden letters keeps players hooked while gradually testing memory and logic skills in a fun way.
           </p>
-          <h4 className="instruction-step">A Delicate Legacy</h4>
+          <h2 className="instruction-step">Who Can Enjoy It?</h2>
           <p className="instructions-description">
-            Real Victorian letters are rare today, their fragility matched only by the intimacy of their purpose. Museums and collectors treasure them not only for their beauty but as glimpses into a slower, more considered era of human connection. To preserve one is to maintain an act of love, creativity, and tangible storytelling — a reminder that communication was once as much about the journey as the message.
+            The game is designed for everyone. Kids enjoy the surprise of finding or matching letters, families can play together, and adults can take it as a quick mental exercise. Its simple rules, colorful theme, and rewarding progress craft it suitable for all ages and skill levels.
           </p>
-          <h5 className="instruction-step">Modern Inspirations</h5>
+          <h2 className="instruction-step">Next Challenge Awaits</h2>
           <p className="instructions-description">
-            Modern artists and paper crafters are rediscovering the attraction of puzzle letters. Wedding invitations and digital art have borrowed from their folded narratives and symbolic layout, bringing the puzzle spirit into modern hands. In renewing this tradition of puzzles, today’s creators honor the balance of beauty and meaning that once changed simple letters into treasured heirlooms.
+            Once you’ve mastered the Letter Puzzle, you can move on to the next challenge, where new puzzles and fresh twists are waiting. Keep flipping, keep matching, and see how far your memory and strategy can take you.
           </p>
         </div>
       </div>
@@ -171,4 +171,4 @@ const Puzzle6 = () => {
 };
 
 
-export default Puzzle6;
+export default Puzzle1;

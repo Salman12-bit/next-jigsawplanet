@@ -41,8 +41,8 @@ const Navbar = () => {
           <Link href="/blockspuzzle" className={styles.navItem}>
             Element Puzzle
           </Link>
-          <Link href="/alphabetpuzzle" className={styles.navItem}>
-            Alphabet Puzzle
+          <Link href="/letterpuzzles" className={styles.navItem}>
+            Letter Puzzle
           </Link>
           <Link href="/numberpuzzle" className={styles.navItem}>
             Number Puzzle
