@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import './woodpuzzle.css';
 import Link from 'next/link';
-import Card from '@/app/Card/page';
+import Card from '@/app/LetterCard/page';
 
 const containerStyle1 = {
   display: 'flex',

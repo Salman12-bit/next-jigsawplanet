@@ -287,9 +287,9 @@ export default function Puzzle4() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.sidebar}>
-                <h1 className={styles.centerText}>Play Free Planet Puzzle Jigsaw Online</h1>
-                <div className={styles.imageContainer}>
+            <div className={styles.sidesidebar}>
+                <h1 className={styles.sidecenterText}>Play Free Planet Puzzle Jigsaw Online</h1>
+                <div className={styles.sideimageContainer}>
                     <img
                         src={puzzleImage}
                         alt="Puzzle preview"
@@ -300,27 +300,27 @@ export default function Puzzle4() {
                         }}
                     />
                 </div>
-                <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
+                <h2 className={styles.sidecenterText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center", color: "white" }}>
                     {isFinished
                         ? "Congratulations! You solved this puzzle!"
                         : "Drag each pieces onto its matching slot. Good luck!"}
                 </p>
                 {(!isStarted || isFinished) && (
-                    <button onClick={handleStart} className={styles.btn}>
+                    <button onClick={handleStart} className={styles.sidebtn}>
                         {isFinished ? "Restart" : "Start"}
                     </button>
                 )}
                 {isStarted && !isFinished && (
-                    <button onClick={handleFinish} className={styles.btn}>
+                    <button onClick={handleFinish} className={styles.sidebtn}>
                         Finish
                     </button>
                 )}
             </div>
 
-            <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
+            <div ref={puzzleContainerRef} className={styles.sidepuzzleBoard}>
                 {!isStarted && (
-                    <div className={styles.overlay}>
+                    <div className={styles.sideoverlay}>
                         <h3>Welcome to the Puzzlesplan Game!</h3>
                         <p>Click “Start” to begin.</p>
                     </div>
@@ -421,8 +421,8 @@ export default function Puzzle4() {
             </div>
 
             {showFinishModal && (
-                <div className={styles.modalOverlay}>
-                    <div className={styles.modalContent}>
+                <div className={styles.sidemodalOverlay}>
+                    <div className={styles.sidemodalContent}>
                         <h4>Congratulations!</h4>
                         <p>You solved this puzzle in {formatTime(time)}. Great job!</p>
                         <button onClick={handleCloseModal}>Close</button>
@@ -430,8 +430,8 @@ export default function Puzzle4() {
                 </div>
             )}
             {showNotFinishModal && (
-                <div className={styles.modalOverlay}>
-                    <div className={styles.modalContent2}>
+                <div className={styles.sidemodalOverlay}>
+                    <div className={styles.sidemodalContent2}>
                         <h5>Not Completed!</h5>
                         <p>Please complete this puzzle before finishing.</p>
                         <button onClick={handleCloseModal}>Close</button>

@@ -8,7 +8,7 @@ export const metadata = {
     title: "Play Barbie Jigsaw Puzzle Online | Free & Fun Challenges",
     description:
       "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
-    url: "https://puzzlesplan.com/jigsaw-planet",
+    url: "https://puzzlesplan.com/jigsaw-barbie",
     images: [
       {
         url: "https://puzzlesplan.com/images/jigsawengine.webp",
@@ -19,7 +19,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/jigsaw-planet",
+    canonical: "https://puzzlesplan.com/jigsaw-barbie",
   },
 };
 
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
     "name": "Play Barbie Jigsaw Puzzle Online | Free & Fun Challenges",
     "description":
       "Play Barbie Puzzle Games online for free! Solve fun jigsaw puzzles, enjoy beautiful Barbie themes, and start playing instantly without downloads.",
-    "url": "https://puzzlesplan.com/jigsaw-planet",
+    "url": "https://puzzlesplan.com/jigsaw-barbie",
     "applicationCategory": "Game",
     "operatingSystem": "Web",
     "browserRequirements": "HTML5",
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/jigsaw-planet"
+      "@id": "https://puzzlesplan.com/jigsaw-barbie"
     }
   };
 

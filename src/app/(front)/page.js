@@ -30,7 +30,7 @@ export default function Home() {
     },
     {
       "image": "/images/jigsawengine.webp",
-      link: '/jigsaw-planet'
+      link: '/jigsaw-barbie'
     },
     {
       "image": "/images/eiffeltower.webp",
@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       "image": "/images/treeriver.webp",
-      link: '/jisawplanet'
+      link: '/jigsawadult'
     },
   ]
 

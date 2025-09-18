@@ -86,17 +86,17 @@ const PuzzleABC = () => {
   };
 
   return (
-    <div className="text-conainer" style={{ padding: "20px" }}>
-      <div className="planet-container">
+    <div className="main-container" style={{ padding: "20px" }}>
+      <div className="content-center">
         <div className="row">
-          <div className="upper-container" style={containerStyle1}>
-            <div className="game-container">
-              <h3 className="level-color">ABC Puzzle Wooden– Level {level}</h3>
-              <Board1 className="game-board">
+          <div className="section-wrapper" style={containerStyle1}>
+            <div className="board-section">
+              <h3 className="section-title">ABC Puzzle Wooden – Level {level}</h3>
+              <Board1 className="board-grid">
                 {cards.map((card, index) => (
                   <div
                     key={card.id}
-                    className="card-tile"
+                    className="card-item"
                     draggable
                     onDragStart={(e) => handleDragStart(e, index)}
                     onDragOver={(e) => e.preventDefault()}
@@ -106,48 +106,58 @@ const PuzzleABC = () => {
                   </div>
                 ))}
               </Board1>
-              <div className="message">{message}</div>
-              <button className="button" onClick={initializeGame}>
+              <div className="status-message">{message}</div>
+              <button className="action-button" onClick={initializeGame}>
                 Restart Game
               </button>
               {message.includes("🎉") && (
                 <Link href="/alphabetpuzzle">
-                  <button className="button ms-2">Next Puzzle</button>
+                  <button className="action-button ms-2">Next Puzzle</button>
                 </Link>
               )}
             </div>
           </div>
         </div>
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions">
-          <h1 className="instructions-title">ABC Puzzle Wooden – A Fun Way to Learn and Play</h1>
-          <p className="instructions-description">
-            If you’ve ever messed around with fridge magnets, this game will feel familiar. You get these chunky wooden-style tiles with the letters D, E, and F, all scrambled on a little board. The whole point is just to drag them around until the pattern looks right. Super simple, no instructions needed—you figure it out as you go, and that’s part of the fun.
-          </p>
-          <h2 className="instruction-step">How to Play</h2>
-          <p className="instructions-description">
-            When you start, everything’s kind of a mess. You just grab a tile, move it, drop it, and slowly the pattern starts to come together. Once the whole thing lines up, the game pops up a little “well done” message, which feels pretty satisfying even though it’s simple.
-          </p>
-          <h2 className="instruction-step">Why It’s Beneficial</h2>
-          <p className="instructions-description">
-            It’s good for kids because it sneaks in some letter practice without feeling like schoolwork. For adults, it’s more of a quick brain exercise—something light you can play when you don’t want to overthink.
+
+      <div className="info-container">
+        <div className="info-content">
+          <h1 className="info-title">ABC Puzzle Wooden – A Fun Way to Learn and Play</h1>
+          <p className="info-text">
+            If you’ve ever messed around with fridge magnets, this game will feel familiar.
+            You get these chunky wooden-style tiles with the letters D, E, and F, all scrambled on a little board.
+            The whole point is just to drag them around until the pattern looks right. Super simple, no instructions needed—you figure it out as you go, and that’s part of the fun.
           </p>
 
-          <h2 className="instruction-step">Who Can Enjoy</h2>
-          <p className="instructions-description">
-            Honestly, it’s for pretty much anyone. Kids love dragging the tiles around and seeing the sequence fall into place. Parents like it because it’s sneaky learning disguised as play. And adults? It works as a quick break—you can clear your head for a couple of minutes without diving into something heavy. The wooden look gives it a cozy, old-school vibe, so it doesn’t feel like another flashy app.
+          <h2 className="info-heading">How to Play</h2>
+          <p className="info-text">
+            When you start, everything’s kind of a mess. You just grab a tile, move it, drop it, and slowly the pattern starts to come together.
+            Once the whole thing lines up, the game pops up a little “well done” message, which feels pretty satisfying even though it’s simple.
           </p>
 
-          <h2 className="instruction-step">Next Challenges</h2>
-          <p className="instructions-description">
-            And if you get bored with the basics, harder levels are waiting—more letters, trickier layouts, stuff that makes you pause for a second before dragging the next piece.
+          <h2 className="info-heading">Why It’s Beneficial</h2>
+          <p className="info-text">
+            It’s good for kids because it sneaks in some letter practice without feeling like schoolwork.
+            For adults, it’s more of a quick brain exercise—something light you can play when you don’t want to overthink.
+          </p>
+
+          <h2 className="info-heading">Who Can Enjoy</h2>
+          <p className="info-text">
+            Honestly, it’s for pretty much anyone. Kids love dragging the tiles around and seeing the sequence fall into place.
+            Parents like it because it’s sneaky learning disguised as play.
+            And adults? It works as a quick break—you can clear your head for a couple of minutes without diving into something heavy.
+            The wooden look gives it a cozy, old-school vibe, so it doesn’t feel like another flashy app.
+          </p>
+
+          <h2 className="info-heading">Next Challenges</h2>
+          <p className="info-text">
+            And if you get bored with the basics, harder levels are waiting—more letters, trickier layouts,
+            stuff that makes you pause for a second before dragging the next piece.
           </p>
         </div>
-
-
       </div>
     </div>
+
   );
 };
 

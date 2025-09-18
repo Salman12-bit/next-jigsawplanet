@@ -13,7 +13,7 @@
     }
 }
 
-.modalOverlay {
+.jigsawmodalOverlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
     z-index: 9999;
 }
 
-.modalContent {
+.jigsawmodalContent {
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
@@ -37,7 +37,7 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 
-.modalContent2 {
+.jigsawmodalContent2 {
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
@@ -48,42 +48,42 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 
-.modalContent h2 {
+.jigsawmodalContent h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #333;
 }
 
-.modalContent h1 {
+.jigsawmodalContent h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #000000;
 }
-.modalContent2 h2 {
+.jigsawmodalContent2 h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #333;
 }
 
-.NotFinish h2 {
+.jigsawNotFinish h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #333;
 }
 
-.modalContent p {
+.jigsawmodalContent p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
 }
 
-.NotFinish p {
+.jigsawNotFinish p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
 }
 
-.modalContent button {
+.jigsawmodalContent button {
     background-color: #4caf50;
     color: #fff;
     border: none;
@@ -94,7 +94,7 @@
     transition: background-color 0.3s ease;
 }
 
-.modalContent2 button {
+.jigsawmodalContent2 button {
     background-color: #e1212b;
     color: #fff;
     border: none;
@@ -106,7 +106,7 @@
     transition: background-color 0.3s ease;
 }
 
-.modalContent button:hover {
+.jigsawmodalContent button:hover {
     background-color: #45a049;
 }
 
@@ -122,7 +122,7 @@
     }
 }
 
-.sidebar {
+.jigsawsidebar {
     width: 300px;
     min-width: 300px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
@@ -132,14 +132,14 @@
 }
 
 @media (max-width: 768px) {
-    .sidebar {
+    .jigsawsidebar {
         width: 100%;
         min-width: auto;
         margin-bottom: 40px;
     }
 }
 
-.puzzleBoard {
+.jigsawpuzzleBoard {
     flex: 1;
     position: relative;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6)); 
@@ -148,7 +148,7 @@
     border-radius: 10px;
 }
 
-.overlay {
+.jigsawoverlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -164,12 +164,12 @@
     border-radius: 10px;
 }
 
-.centerText {
+.jigsawcenterText {
     text-align: center;
     color: white;
 }
 
-.btn {
+.jigsawbtn {
     display: block;
     margin: 20px auto;
     padding: 7px 15px;
@@ -178,16 +178,13 @@
     border-radius: 5px;
 }
 
-.imageContainer {
+.jigsawimageContainer {
     margin: 10px 0;
     text-align: center;
 }
 
-.previewImage {
+.jigsawpreviewImage {
     width: 300px;
     height: 300px;
     border: 1px solid #666;
 }
-
-
-

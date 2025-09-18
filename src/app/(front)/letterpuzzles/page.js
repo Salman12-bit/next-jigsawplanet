@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import './puzzle.css';
 import Link from 'next/link'
-import Card from '@/app/Card/page';
+import Card from '@/app/LetterCard/page';
 
 const containerStyle1 = {
   display: 'flex',
@@ -110,16 +110,16 @@ const Puzzle1 = () => {
   };
 
   return (
-    <div className='text-conainer' style={{
+    <div className='lettertext-conainer' style={{
       padding: "20px"
     }}>
-      <div className='planet-container'>
-        <div className='row'>
-          <div className="upper-container" style={containerStyle1}>
-            <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+      <div className='letterplanet-container'>
+        <div className='letterrow'>
+          <div className="letterupper-container" style={containerStyle1}>
+            <div className="lettergame-container">
+              <h3 className='letterlevel-color'>Match The Pairs Level {level}</h3>
               <div>
-                <Board1 className='game-board'>
+                <Board1 className='lettergame-board'>
                   {cards.map(card => (
                     <Card
                       key={card.id}
@@ -131,37 +131,37 @@ const Puzzle1 = () => {
                   ))}
                 </Board1>
               </div>
-              <div className="message">{message}</div>
-              <button className="button" onClick={initializeGame}>Restart Game</button>
+              <div className="lettermessage">{message}</div>
+              <button className="letterbutton" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
                 <Link href="/abc-puzzle">
-                  <button className="button ms-2">Next Level</button>
+                  <button className="letterbutton ms-2">Next Level</button>
                 </Link>
               )}
             </div>
           </div>
         </div>
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions">
-          <h1 className="instructions-title">Letter Puzzle – A Fun and Challenging Memory Game</h1>
-          <p className="instructions-description">
+      <div className="letter-instructions-container">
+        <div className="letter-instructions">
+          <h1 className="letter-title">Letter Puzzle – A Fun and Challenging Memory Game</h1>
+          <p className="letter-description">
             The Letter Puzzle is an interactive mix of memory, strategy, and learning for lovers. Players see a grid of hidden cards, each one holding a letter. Every new player's challenge is to flip the cards, find the hidden letters, and match letters correctly before you run out of attempts. This exclusive blend of a matching puzzle and alphabet memory game makes it interactive and educational for kids, families, and adults alike.
           </p>
-          <h2 className="instruction-step">How to Play</h2>
-          <p className="instructions-description">
+          <h2 className="letter-step">How to Play</h2>
+          <p className="letter-description">
             Playing this game is simple but never boring. You start by flipping a card to show its hidden letter, then try another card to find a match. If the two letters are the same, they stay open; if not, they turn back over, testing your memory. With limited attempts, every move matters and gives you a strategy to complete this. Some rounds even need matching three identical letters, adding a clever twist that makes the puzzle more challenging as you progress.
           </p>
-          <h2 className="instruction-step">Why It’s Engaging</h2>
-          <p className="instructions-description">
+          <h2 className="letter-step">Why It’s Engaging</h2>
+          <p className="letter-description">
             What makes the game stand out is the suspense of each flip. If cards match, then good, if cards are not matched, then keep in mind their place for later? This card puzzle gives excitement, enhances concentration, and supports problem-solving skills. The theme of hidden letters keeps players hooked while gradually testing memory and logic skills in a fun way.
           </p>
-          <h2 className="instruction-step">Who Can Enjoy It?</h2>
-          <p className="instructions-description">
+          <h2 className="letter-step">Who Can Enjoy It?</h2>
+          <p className="letter-description">
             The game is designed for everyone. Kids enjoy the surprise of finding or matching letters, families can play together, and adults can take it as a quick mental exercise. Its simple rules, colorful theme, and rewarding progress craft it suitable for all ages and skill levels.
           </p>
-          <h2 className="instruction-step">Next Challenge Awaits</h2>
-          <p className="instructions-description">
+          <h2 className="letter-step">Next Challenge Awaits</h2>
+          <p className="letter-description">
             Once you’ve mastered the Letter Puzzle, you can move on to the next challenge, where new puzzles and fresh twists are waiting. Keep flipping, keep matching, and see how far your memory and strategy can take you.
           </p>
         </div>

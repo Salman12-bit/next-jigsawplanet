@@ -1,20 +1,20 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Play Free Jigsaw Puzzles Online | Fun Puzzle Games Now",
+  title: "Play Difficult Jigsaw Puzzles Online | Fun Puzzle Games Now",
   description:
-    "Play free Jigsaw Puzzles online and enjoy endless fun! Solve beautiful puzzle pieces, challenge your brain, and start playing instantly with no download required.",
+    "Play Difficult Jigsaw Puzzles online and enjoy endless fun! Solve beautiful puzzle pieces, challenge your brain, and start playing instantly with no download required.",
   openGraph: {
-    title: "Play Free Jigsaw Puzzles Online | Fun Puzzle Games Now",
+    title: "Play Difficult Jigsaw Puzzles Online | Fun Puzzle Games Now",
     description:
-      "Play free Jigsaw Puzzles online and enjoy endless fun! Solve beautiful puzzle pieces, challenge your brain, and start playing instantly with no download required.",
+      "Play Difficult Jigsaw Puzzles online and enjoy endless fun! Solve beautiful puzzle pieces, challenge your brain, and start playing instantly with no download required.",
     url: "https://puzzlesplan.com/jigsawplace",
     images: [
       {
         url: "https://puzzlesplan.com/images/beautifulplace.webp",
         width: 1200,
         height: 630,
-        alt: "Colorful jigsaw puzzle pieces forming a complete picture",
+        alt: "Difficult jigsaw puzzle pieces forming a complete picture",
       },
     ],
   },
@@ -27,9 +27,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "OnlineGame"],
-    "name": "Play Free Jigsaw Puzzles Online | Fun Puzzle Games Now",
+    "name": "Play Difficult Jigsaw Puzzles Online | Fun Puzzle Games Now",
     "description":
-      "Play free Jigsaw Puzzles online and enjoy endless fun! Solve beautiful puzzle pieces, challenge your brain, and start playing instantly with no download required.",
+      "Play Difficult Jigsaw Puzzles online and enjoy endless fun! Solve beautiful puzzle pieces, challenge your brain, and start playing instantly with no download required.",
     "url": "https://puzzlesplan.com/jigsawplace",
     "applicationCategory": "Game",
     "operatingSystem": "Web",

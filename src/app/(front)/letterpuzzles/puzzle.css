@@ -1,27 +1,27 @@
-.game-container {
+.lettergame-container {
     color: rgb(3, 3, 3);
     text-align: center;
 }
 
-.text-conainer {
+.lettertext-conainer {
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
 }
 
-.level-color {
+.letterlevel-color {
     margin-bottom: 20px;
     text-align: center;
     color: black;
 }
 
-.planet-container {
+.letterplanet-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.puzzlecontainer {
+.letterpuzzlecontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,12 +68,12 @@
     transform: translate(-50%, -50%);
 }
 
-.message {
+.lettermessage {
     margin-top: 20px;
     font-size: 18px;
 }
 
-.button {
+.letterbutton {
     padding: 10px 20px;
     font-size: 16px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
@@ -85,7 +85,7 @@
     margin-left: 10px;
 }
 
-.button:hover {
+.letterbutton:hover {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #374151;
@@ -97,7 +97,7 @@
     margin-left: 10px;
 }
 
-.game-instructions-container {
+.letter-instructions-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,26 +111,26 @@
     color: black;
 }
 
-.game-instructions-content {
+.letter-instructions-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
 
-.instructions-title {
+.letter-title {
     text-align: center;
     margin: 20px 0;
     font-size: 1.5rem;
 }
 
-.instructions-description {
+.letter-description {
     font-size: 1.09rem;
     margin-bottom: 16px;
     text-align: justify;
     margin-left: 10px;
 }
 
-.instruction-step {
+.letter-step {
     margin-top: 16px;
     font-size: 20px;
     margin-bottom: 16px;
@@ -138,18 +138,13 @@
     padding-left: 12px;
 }
 
-.instructions-list {
+.letter-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 16px;
 }
 
-.tips-title {
-    margin-top: 16px;
-    font-size: 20px;
-}
-
-.game-board {
+.lettergame-board {
     display: grid !important;
     grid-template-columns: repeat(3, 90px) !important;
     gap: 8px !important;

@@ -1,12 +1,12 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Disney Puzzle | Play Free Online Puzzle Game Now",
+  title: "Disney Jigsaw Puzzles | Play Free Online Puzzle Game Now",
 
   description:
     "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
   openGraph: {
-    title: "Disney Puzzle | Play Free Online Puzzle Game Now",
+    title: "Disney Jigsaw Puzzles | Play Free Online Puzzle Game Now",
     description:
       "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
     url: "https://puzzlesplan.com/jigsawdark",
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "OnlineGame"],
-    "name": "Disney Puzzle | Play Free Online Puzzle Game Now",
+    "name": "Disney Jigsaw Puzzles | Play Free Online Puzzle Game Now",
     "description":
       "Play Disney Puzzle online for free! Solve fun jigsaw puzzles, enjoy magical themes, and start playing instantly with no download required.",
     "url": "https://puzzlesplan.com/jigsawdark",

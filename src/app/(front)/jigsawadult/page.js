@@ -132,8 +132,8 @@ function resizeImage(img, targetWidth, targetHeight) {
     return canvas;
 }
 
-export default function Puzzle5() {
-    const puzzleImage = "/images/jigsawengine.webp"; 
+export default function Puzzle7() {
+    const puzzleImage = "/images/treeriver.webp"; 
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -287,9 +287,9 @@ export default function Puzzle5() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.sidebar}>
-                <h1 className={styles.centerText}>Play Free Barbie Jigsaw Online</h1>
-                <div className={styles.imageContainer}>
+            <div className={styles.jigsawsidebar}>
+                <h1 className={styles.jigsawcenterText}>Adult Puzzle Games Online – Challenge Your Mind and Relax</h1>
+                <div className={styles.jigsawimageContainer}>
                     <img
                         src={puzzleImage}
                         alt="Puzzle preview"
@@ -300,27 +300,27 @@ export default function Puzzle5() {
                         }}
                     />
                 </div>
-                <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
+                <h2 className={styles.jigsawcenterText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center", color: "white" }}>
                     {isFinished
                         ? "Congratulations! You solved this puzzle!"
                         : "Drag each pieces onto its matching slot. Good luck!"}
                 </p>
                 {(!isStarted || isFinished) && (
-                    <button onClick={handleStart} className={styles.btn}>
+                    <button onClick={handleStart} className={styles.jigsawbtn}>
                         {isFinished ? "Restart" : "Start"}
                     </button>
                 )}
                 {isStarted && !isFinished && (
-                    <button onClick={handleFinish} className={styles.btn}>
+                    <button onClick={handleFinish} className={styles.jigsawbtn}>
                         Finish
                     </button>
                 )}
             </div>
 
-            <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
+            <div ref={puzzleContainerRef} className={styles.jigsawpuzzleBoard}>
                 {!isStarted && (
-                    <div className={styles.overlay}>
+                    <div className={styles.jigsawoverlay}>
                         <h3>Welcome to the Puzzlesplan Game!</h3>
                         <p>Click “Start” to begin.</p>
                     </div>
@@ -421,8 +421,8 @@ export default function Puzzle5() {
             </div>
 
             {showFinishModal && (
-                <div className={styles.modalOverlay}>
-                    <div className={styles.modalContent}>
+                <div className={styles.jigsawmodalOverlay}>
+                    <div className={styles.jigsawmodalContent}>
                         <h2>Congratulations!</h2>
                         <p>You solved this puzzle in {formatTime(time)}. Great job!</p>
                         <button onClick={handleCloseModal}>Close</button>
@@ -430,8 +430,8 @@ export default function Puzzle5() {
                 </div>
             )}
             {showNotFinishModal && (
-                <div className={styles.modalOverlay}>
-                    <div className={styles.modalContent2}>
+                <div className={styles.jigsawmodalOverlay}>
+                    <div className={styles.jigsawmodalContent2}>
                         <h3>Not Completed!</h3>
                         <p>Please complete this puzzle before finishing.</p>
                         <button onClick={handleCloseModal}>Close</button>

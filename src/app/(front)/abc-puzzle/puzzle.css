@@ -1,35 +1,27 @@
-.game-container {
-    color: rgb(3, 3, 3);
-    text-align: center;
-}
-
-.text-conainer {
+.main-container {
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 0;
     margin-bottom: 17px;
 }
 
-.level-color {
+.board-section {
+    color: #030303;
+    text-align: center;
+}
+
+.section-title {
     margin-bottom: 20px;
     text-align: center;
     color: black;
 }
 
-.planet-container {
+.content-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.puzzlecontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.card-tile {
+.card-item {
     width: 90px;
     height: 90px;
     display: flex;
@@ -45,22 +37,22 @@
     transition: all 0.2s ease-in-out;
 }
 
-.card-tile:active {
+.card-item:active {
     cursor: grabbing;
     transform: scale(0.95);
 }
 
-.card-tile:hover {
+.card-item:hover {
     background: #e0e0ff;
     border-color: #3a3a8c;
 }
 
-.message {
+.status-message {
     margin-top: 20px;
     font-size: 18px;
 }
 
-.button {
+.action-button {
     padding: 10px 20px;
     font-size: 16px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
@@ -68,56 +60,48 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0px;
+    margin: 10px 0;
     margin-left: 10px;
 }
 
-.button:hover {
-    padding: 10px 20px;
-    font-size: 16px;
+.action-button:hover {
     background-color: #374151;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0px;
-    margin-left: 10px;
 }
 
-.game-instructions-container {
+.info-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-    background-color: rgb(212, 211, 211);
+    background-color: #d4d3d3;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     color: black;
 }
 
-.game-instructions-content {
+.info-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
 
-.instructions-title {
+.info-title {
     text-align: center;
     margin: 20px 0;
     font-size: 1.5rem;
 }
 
-.instructions-description {
+.info-text {
     font-size: 1.09rem;
     margin-bottom: 16px;
     text-align: justify;
     margin-left: 10px;
 }
 
-.instruction-step {
+.info-heading {
     margin-top: 16px;
     font-size: 20px;
     margin-bottom: 16px;
@@ -125,18 +109,7 @@
     padding-left: 12px;
 }
 
-.instructions-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 16px;
-}
-
-.tips-title {
-    margin-top: 16px;
-    font-size: 20px;
-}
-
-.game-board {
+.board-grid {
     display: grid !important;
     grid-template-columns: repeat(3, 90px) !important;
     gap: 8px !important;

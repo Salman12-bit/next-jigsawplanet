@@ -8,7 +8,7 @@ export const metadata = {
     title: "Puzzles for Adults – Relax & Challenge Your Mind Online",
     description:
       "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
-    url: "https://puzzlesplan.com/jisawplanet",
+    url: "https://puzzlesplan.com/jigsawadult",
     images: [
       {
         url: "https://puzzlesplan.com/images/treeriver.webp",
@@ -19,7 +19,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://puzzlesplan.com/jisawplanet",
+    canonical: "https://puzzlesplan.com/jigsawadult",
   },
 };
 
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
     "name": "Puzzles for Adults",
     "description":
       "Discover puzzles for adults online! Challenge your mind, relax, and enjoy hours of fun with our brain-boosting puzzle games – play now!",
-    "url": "https://puzzlesplan.com/jisawplanet",
+    "url": "https://puzzlesplan.com/jigsawadult",
     "applicationCategory": "Game",
     "operatingSystem": "Web",
     "browserRequirements": "HTML5",
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://puzzlesplan.com/jisawplanet"
+      "@id": "https://puzzlesplan.com/jigsawadult"
     }
   };
 

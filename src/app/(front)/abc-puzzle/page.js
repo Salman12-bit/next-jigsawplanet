@@ -86,17 +86,17 @@ const ABCPuzzle = () => {
   };
 
   return (
-    <div className="text-conainer" style={{ padding: "20px" }}>
-      <div className="planet-container">
+    <div className="main-container" style={{ padding: "20px" }}>
+      <div className="content-center">
         <div className="row">
-          <div className="upper-container" style={containerStyle1}>
-            <div className="game-container">
-              <h3 className="level-color">ABC Puzzle – Level {level}</h3>
-              <Board1 className="game-board">
+          <div className="section-wrapper" style={containerStyle1}>
+            <div className="board-section">
+              <h3 className="section-title">ABC Puzzle – Level {level}</h3>
+              <Board1 className="board-grid">
                 {cards.map((card, index) => (
                   <div
                     key={card.id}
-                    className="card-tile"
+                    className="card-item"
                     draggable
                     onDragStart={(e) => handleDragStart(e, index)}
                     onDragOver={(e) => e.preventDefault()}
@@ -106,49 +106,66 @@ const ABCPuzzle = () => {
                   </div>
                 ))}
               </Board1>
-              <div className="message">{message}</div>
-              <button className="button" onClick={initializeGame}>
+              <div className="status-message">{message}</div>
+              <button className="action-button" onClick={initializeGame}>
                 Restart ABC Puzzle
               </button>
               {message.includes("🎉") && (
                 <Link href="/puzzle-abc">
-                  <button className="button ms-2">Next Puzzle</button>
+                  <button className="action-button ms-2">Next Puzzle</button>
                 </Link>
               )}
             </div>
           </div>
         </div>
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions">
-          <h1 className="instructions-title">ABC Puzzle – Arrange, Learn, and Play</h1>
-          <p className="instructions-description">
-            The ABC Puzzle is an engaging drag-and-drop puzzle that helps players practice sequencing letters in the ABC order. By organizing tiles marked A, B, and C into the correct pattern, learners strengthen memory, logic, and letter recognition in a fun way.
+
+      <div className="info-container">
+        <div className="info-content">
+          <h1 className="info-title">ABC Puzzle – Arrange, Learn, and Play</h1>
+          <p className="info-text">
+            The ABC Puzzle is an engaging drag-and-drop puzzle that helps players
+            practice sequencing letters in the ABC order. By organizing tiles marked
+            A, B, and C into the correct pattern, learners strengthen memory, logic,
+            and letter recognition in a fun way.
           </p>
 
-          <h2 className="instruction-step">How to Play</h2>
-          <p className="instructions-description">
-            At the start of the game, the letters are shuffled across the board. Your job is to drag and drop each letter into its proper position to form the repeating ABC sequence. Setting up the letters until the order is correct, and once completed, the puzzle rewards you with a success message.
+          <h2 className="info-heading">How to Play</h2>
+          <p className="info-text">
+            At the start of the game, the letters are shuffled across the board.
+            Your job is to drag and drop each letter into its proper position to
+            form the repeating ABC sequence. Setting up the letters until the order
+            is correct, and once completed, the puzzle rewards you with a success
+            message.
           </p>
 
-          <h2 className="instruction-step">Why It’s Engaging</h2>
-          <p className="instructions-description">
-            This game sequencing puzzle mixes learning with play. The drag-and-drop of letters keeps players actively engaged, testing both recognition and problem-solving skills. It’s a hands-on style to practice patterns and logical thinking while having fun.
+          <h2 className="info-heading">Why It’s Engaging</h2>
+          <p className="info-text">
+            This game sequencing puzzle mixes learning with play. The drag-and-drop
+            of letters keeps players actively engaged, testing both recognition and
+            problem-solving skills. It’s a hands-on style to practice patterns and
+            logical thinking while having fun.
           </p>
 
-          <h2 className="instruction-step">Who Can Enjoy It?</h2>
-          <p className="instructions-description">
-            This puzzle is designed for all ages. Kids will love organizing the letters in the correct pattern, families can solve it together with love and happiness, and adults can use it as a quick mental break. Its simple rules create it easy to pick up, while completing the pattern still feels rewarding.
+          <h2 className="info-heading">Who Can Enjoy It?</h2>
+          <p className="info-text">
+            This puzzle is designed for all ages. Kids will love organizing the
+            letters in the correct pattern, families can solve it together with love
+            and happiness, and adults can use it as a quick mental break. Its simple
+            rules create it easy to pick up, while completing the pattern still
+            feels rewarding.
           </p>
 
-          <h2 className="instruction-step">Next Challenges Await</h2>
-          <p className="instructions-description">
-            After solving the first level, new puzzles introduce fresh twists—more letters, tougher design, and advanced sequencing challenges. Keep arranging and see how far your logic and memory can take you.
+          <h2 className="info-heading">Next Challenges Await</h2>
+          <p className="info-text">
+            After solving the first level, new puzzles introduce fresh twists—more
+            letters, tougher design, and advanced sequencing challenges. Keep
+            arranging and see how far your logic and memory can take you.
           </p>
         </div>
-
       </div>
     </div>
+
   );
 };
 

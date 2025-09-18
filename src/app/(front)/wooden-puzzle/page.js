@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 import './puzzle.css';
 import Link from 'next/link';
-import Card from '@/app/Card/page';
+import Card from '@/app/LetterCard/page';
 
 const containerStyle1 = {
   display: 'flex',
@@ -103,18 +103,18 @@ const SoundPuzzle = () => {
   const hasMatchedAll = () => matchedCards.length >= cards.length - 1;
 
   return (
-    <div className='text-container' style={{ padding: "20px" }}>
-      <div className='planet-container'>
-        <div className='row'>
-          <div className="upper-container" style={containerStyle1}>
-            <div className="game-container">
+    <div className='alphatext-container' style={{ padding: "20px" }}>
+      <div className='alphaplanet-container'>
+        <div className='alpharow'>
+          <div className="alphaupper-container" style={containerStyle1}>
+            <div className="alphagame-container">
               {!mode && (
                 <div className="mode-select text-center p-6">
                   <h2 className="mb-4">Choose Your Alphabet Sound Puzzle Mode</h2>
-                  <button className="button m-2" onClick={() => setMode("kid")}>
+                  <button className="alphabutton m-2" onClick={() => setMode("kid")}>
                     👶 Kid Mode (Phonics + Sounds)
                   </button>
-                  <button className="button m-2" onClick={() => setMode("young")}>
+                  <button className="alphabutton m-2" onClick={() => setMode("young")}>
                     🧑 Young Learner Mode (Memory)
                   </button>
                 </div>
@@ -122,10 +122,10 @@ const SoundPuzzle = () => {
 
               {mode && (
                 <>
-                  <h3 className='level-color'>
+                  <h3 className='alphalevel-color'>
                     Alphabet Sound Puzzle – {mode === "kid" ? "Kid Mode" : "Young Mode"}
                   </h3>
-                  <Board className='game-board'>
+                  <Board className='alphagame-board'>
                     {cards.map(card => (
                       <Card
                         key={card.id}
@@ -139,16 +139,16 @@ const SoundPuzzle = () => {
                       />
                     ))}
                   </Board>
-                  <div className="message">{message}</div>
-                  <div className="stats">Attempts: {attempts}</div>
-                  <button className="button" onClick={initializeGame}>Restart Puzzle</button>
-                  <button className="button ms-2" onClick={() => setMode(null)}>🔙 Back to Modes</button>
+                  <div className="alphamessage">{message}</div>
+                  <div className="alphastats">Attempts: {attempts}</div>
+                  <button className="alphabutton" onClick={initializeGame}>Restart Puzzle</button>
+                  <button className="alphabutton ms-2" onClick={() => setMode(null)}>🔙 Back to Modes</button>
 
                   {hasMatchedAll() && (
                     <div className="mt-3">
                       <p>🎉 You solved the Alphabet Sound Puzzle! 🎉</p>
                       <Link href="/">
-                        <button className="button ms-2">Next Puzzle</button>
+                        <button className="alphabutton ms-2">Next Puzzle</button>
                       </Link>
                     </div>
                   )}
@@ -158,17 +158,17 @@ const SoundPuzzle = () => {
           </div>
         </div>
       </div>
-      <article className="game-instructions-container">
-        <div className="game-instructions">
-          <h1 className="instructions-title">Alphabet Sound Puzzle – Learn Letters the Fun Way</h1>
-          <p className="instructions-description">
+      <article className="alphagame-instructions-container">
+        <div className="alphagame-instructions">
+          <h1 className="alphainstructions-title">Alphabet Sound Puzzle – Learn Letters the Fun Way</h1>
+          <p className="alphainstructions-description">
             The Alphabet Sound Puzzle takes the idea of a classic letter game and makes it more exciting.
             Instead of just looking at wooden tiles, kids get to flip digital cards, match pairs, and hear fun sounds like
             “K is for Kite 🪁” or “L is for Lion 🦁.” It feels more like playtime than study time, which is exactly what makes it stick.
           </p>
 
-          <h2 className="instruction-step">How to Play</h2>
-          <p className="instructions-description">
+          <h2 className="alphainstruction-step">How to Play</h2>
+          <p className="alphainstructions-description">
             Getting started is super simple. Just pick a mode and dive in. In <strong>Kid Mode</strong>,
             every time kids find a match, the game says the letter out loud, shows a word, and even adds a fun emoji to go with it.
             In <strong>Young Learner Mode</strong>, things get a little trickier—it’s all about memory.
@@ -176,8 +176,8 @@ const SoundPuzzle = () => {
             Easy to learn, but it keeps you thinking the whole time.
           </p>
 
-          <h2 className="instruction-step">Benefits of Playing</h2>
-          <p className="instructions-description">
+          <h2 className="alphainstruction-step">Benefits of Playing</h2>
+          <p className="alphainstructions-description">
             You know how kids usually groan when something feels like homework? This puzzle flips that on its head.
             They’re busy turning cards, laughing at the emojis, and suddenly—bam—they’ve learned a new letter sound without
             even trying. The cool part is, while they’re having fun, their brain is secretly working hard: memory, focus,
@@ -185,8 +185,8 @@ const SoundPuzzle = () => {
             which makes it a rare win-win for both sides.
           </p>
 
-          <h2 className="instruction-step">Who Can Enjoy It?</h2>
-          <p className="instructions-description">
+          <h2 className="alphainstruction-step">Who Can Enjoy It?</h2>
+          <p className="alphainstructions-description">
             Honestly, it’s not just for little kids. Sure, the toddlers love shouting out the letters, but older kids treat it
             like a challenge—“I bet I can remember faster than you.” Families end up turning it into a mini game night, and yep,
             even adults sneak in a round here and there. Not because they need to learn the letters again, but because it’s a nice little
@@ -194,8 +194,8 @@ const SoundPuzzle = () => {
           </p>
 
 
-          <h2 className="instruction-step">Next Challenges Await</h2>
-          <p className="instructions-description">
+          <h2 className="alphainstruction-step">Next Challenges Await</h2>
+          <p className="alphainstructions-description">
             Once you’ve mastered the first round, the puzzle doesn’t just stop there.
             New levels bring in fresh letters, trickier matches, and more sounds to keep things interesting.
             Each stage feels like a small step up, so players keep learning while still enjoying the game.
