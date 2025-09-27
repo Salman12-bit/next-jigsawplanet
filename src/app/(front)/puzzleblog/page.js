@@ -8,7 +8,7 @@ const puzzleGames = [
   {
     image: "/images/lagerpuzzle.webp",
     link: '/big-puzzle-pieces-for-all-ages',
-    text: "Puzzles have long been one of the simplest yet most rewarding pastimes. Sitting down at a table, sorting through pieces,and slowly revealing a beautiful picture can be both calming and mentally stimulating.",
+    text: "A few years back, I decided to take on a thousand-piece jigsaw of Van Gogh’s Starry Night. In my head,I pictured myself sipping tea, listening to soft music, and calmly puzzling away.",
   },
 ];
 

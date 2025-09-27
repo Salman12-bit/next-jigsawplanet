@@ -1,27 +1,27 @@
-.game-container {
+.alphagame-container {
     color: rgb(3, 3, 3);
     text-align: center;
 }
 
-.text-conainer {
+.alphatext-conainer {
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
 }
 
-.level-color {
+.alphalevel-color {
     margin-bottom: 20px;
     text-align: center;
     color: black;
 }
 
-.planet-container {
+.alphaplanet-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.puzzlecontainer {
+.alphapuzzlecontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,12 +80,12 @@
 }
 
 
-.message {
+.alphamessage {
     margin-top: 20px;
     font-size: 18px;
 }
 
-.button {
+.alphabutton {
     padding: 10px 20px;
     font-size: 16px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
@@ -97,7 +97,7 @@
     margin-left: 10px;
 }
 
-.button:hover {
+.alphabutton:hover {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #374151;
@@ -109,7 +109,7 @@
     margin-left: 10px;
 }
 
-.game-instructions-container {
+.alphagame-instructions-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,26 +123,26 @@
     color: black;
 }
 
-.game-instructions-content {
+.alphagame-instructions-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
 
-.instructions-title {
+.alphainstructions-title {
     text-align: center;
     margin: 20px 0;
     font-size: 1.5rem;
 }
 
-.instructions-description {
+.alphainstructions-description {
     font-size: 1.09rem;
     margin-bottom: 16px;
     text-align: justify;
     margin-left: 10px;
 }
 
-.instruction-step {
+.alphainstruction-step {
     margin-top: 16px;
     font-size: 20px;
     margin-bottom: 16px;
@@ -150,25 +150,25 @@
     padding-left: 12px;
 }
 
-.instructions-list {
+.alphainstructions-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 16px;
 }
 
-.tips-title {
+.alphatips-title {
     margin-top: 16px;
     font-size: 20px;
 }
 
-.game-board {
+.alphagame-board {
     display: grid !important;
     grid-template-columns: repeat(3, 90px) !important;
     gap: 8px !important;
     justify-content: center !important;
 }
 
-.mode-select {
+.alphamode-select {
     text-align: center;
     margin-top: 10px;
 }

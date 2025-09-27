@@ -143,10 +143,7 @@ const PuzzleABC = () => {
 
           <h2 className="info-heading">Who Can Enjoy</h2>
           <p className="info-text">
-            Honestly, it’s for pretty much anyone. Kids love dragging the tiles around and seeing the sequence fall into place.
-            Parents like it because it’s sneaky learning disguised as play.
-            And adults? It works as a quick break—you can clear your head for a couple of minutes without diving into something heavy.
-            The wooden look gives it a cozy, old-school vibe, so it doesn’t feel like another flashy app.
+            This one works for everyone. Kids like moving the tiles and watching the order fall into place. Parents enjoy it because it mixes learning with play. Adults can use it as a quick break—just a couple of minutes to reset without anything too serious. The wooden style gives it a warm, old-school feel that’s different from the usual flashy apps.
           </p>
 
           <h2 className="info-heading">Next Challenges</h2>

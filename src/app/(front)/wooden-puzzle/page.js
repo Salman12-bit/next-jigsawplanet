@@ -162,44 +162,38 @@ const SoundPuzzle = () => {
         <div className="alphagame-instructions">
           <h1 className="alphainstructions-title">Alphabet Sound Puzzle – Learn Letters the Fun Way</h1>
           <p className="alphainstructions-description">
-            The Alphabet Sound Puzzle takes the idea of a classic letter game and makes it more exciting.
-            Instead of just looking at wooden tiles, kids get to flip digital cards, match pairs, and hear fun sounds like
-            “K is for Kite 🪁” or “L is for Lion 🦁.” It feels more like playtime than study time, which is exactly what makes it stick.
+            Alphabet Sound Puzzle is simple at heart—you flip cards and look for pairs.
+            The twist is that each match talks back.
+            Find K, and you’ll hear “K is for Kite 🪁.” Match L, and it goes “L is for Lion 🦁.”
+            It feels playful, almost like a toy, and kids end up learning the sounds without even noticing.
           </p>
 
           <h2 className="alphainstruction-step">How to Play</h2>
           <p className="alphainstructions-description">
-            Getting started is super simple. Just pick a mode and dive in. In <strong>Kid Mode</strong>,
-            every time kids find a match, the game says the letter out loud, shows a word, and even adds a fun emoji to go with it.
-            In <strong>Young Learner Mode</strong>, things get a little trickier—it’s all about memory.
-            Flip a card, try to remember where you saw its match, and keep going until the board is cleared.
-            Easy to learn, but it keeps you thinking the whole time.
+            Just pick a mode and start. In <strong>Kid Mode</strong>, every match gives you the letter, a word, and a sound to go with it.
+            In <strong>Young Learner Mode</strong>, the board is face down—you flip two cards, check for a match, and try to remember the spots.
+            Clear the board and you’re done. No tricky rules, just match and learn.
           </p>
 
-          <h2 className="alphainstruction-step">Benefits of Playing</h2>
+          <h2 className="alphainstruction-step">Why It’s Fun</h2>
           <p className="alphainstructions-description">
-            You know how kids usually groan when something feels like homework? This puzzle flips that on its head.
-            They’re busy turning cards, laughing at the emojis, and suddenly—bam—they’ve learned a new letter sound without
-            even trying. The cool part is, while they’re having fun, their brain is secretly working hard: memory, focus,
-            problem-solving, all of it. Parents usually catch on quickly and go, “Wait, this is actually teaching them something,”
-            which makes it a rare win-win for both sides.
+            The fun is in the flipping. You don’t know what’s under the card until it turns,
+            and hearing the sounds makes it feel alive.
+            Kids laugh at the emojis, older players enjoy the memory part, and the mix keeps it from feeling like homework.
           </p>
 
-          <h2 className="alphainstruction-step">Who Can Enjoy It?</h2>
+          <h2 className="alphainstruction-step">Who Can Play</h2>
           <p className="alphainstructions-description">
-            Honestly, it’s not just for little kids. Sure, the toddlers love shouting out the letters, but older kids treat it
-            like a challenge—“I bet I can remember faster than you.” Families end up turning it into a mini game night, and yep,
-            even adults sneak in a round here and there. Not because they need to learn the letters again, but because it’s a nice little
-            brain stretch when you’re bored or just need a quick mental break.
+            Small kids pick it up fast, older kids treat it like a challenge, and families often play together for fun.
+            Adults join in sometimes, too—not to learn letters again, but as a quick memory warm-up.
+            It’s simple enough for anyone, which is what makes this alphabet sound puzzle for kids and families so easy to enjoy.
           </p>
 
-
-          <h2 className="alphainstruction-step">Next Challenges Await</h2>
+          <h2 className="alphainstruction-step">Next Challenges</h2>
           <p className="alphainstructions-description">
-            Once you’ve mastered the first round, the puzzle doesn’t just stop there.
-            New levels bring in fresh letters, trickier matches, and more sounds to keep things interesting.
-            Each stage feels like a small step up, so players keep learning while still enjoying the game.
-            There’s always something new waiting, which makes coming back to play feel rewarding every time.
+            Once you finish the first few rounds, it doesn’t stop there.
+            New boards bring more letters, larger grids, and matches that take more focus.
+            Each stage feels a bit tougher, so there’s always something fresh to try in the alphabet sound puzzle for kids.
           </p>
         </div>
 

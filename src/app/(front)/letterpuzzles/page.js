@@ -145,24 +145,29 @@ const Puzzle1 = () => {
       <div className="letter-instructions-container">
         <div className="letter-instructions">
           <h1 className="letter-title">Letter Puzzle – A Fun and Challenging Memory Game</h1>
+
           <p className="letter-description">
-            The Letter Puzzle is an interactive mix of memory, strategy, and learning for lovers. Players see a grid of hidden cards, each one holding a letter. Every new player's challenge is to flip the cards, find the hidden letters, and match letters correctly before you run out of attempts. This exclusive blend of a matching puzzle and alphabet memory game makes it interactive and educational for kids, families, and adults alike.
+            The Letter Puzzle is easy to get into. The cards are face down, each hiding a letter. Flip one, see what’s there, and try to remember it. Match the letters before your turns run out. It’s quick, simple, and works for kids, families, or adults who just want a short challenge.
           </p>
+
           <h2 className="letter-step">How to Play</h2>
           <p className="letter-description">
-            Playing this game is simple but never boring. You start by flipping a card to show its hidden letter, then try another card to find a match. If the two letters are the same, they stay open; if not, they turn back over, testing your memory. With limited attempts, every move matters and gives you a strategy to complete this. Some rounds even need matching three identical letters, adding a clever twist that makes the puzzle more challenging as you progress.
+            You start by flipping a card to see the letter. Then pick another card and hope it matches. When you’re right, the pair stays open. If not, they flip back, and you’ll need to remember where they were. Since you only get limited tries, every move counts. Some levels even shake things up by asking you to match three of the same letter instead of just two.
           </p>
-          <h2 className="letter-step">Why It’s Engaging</h2>
+
+          <h2 className="letter-step">Why It’s Fun</h2>
           <p className="letter-description">
-            What makes the game stand out is the suspense of each flip. If cards match, then good, if cards are not matched, then keep in mind their place for later? This card puzzle gives excitement, enhances concentration, and supports problem-solving skills. The theme of hidden letters keeps players hooked while gradually testing memory and logic skills in a fun way.
+            The fun part is the guessing. You flip a card and hope it’s the one you need. Sometimes it works out, sometimes it doesn’t—but either way, you remember more for the next turn. When you finally land a match, it gives you a nice little win. And the hidden letters keep it from feeling like just another puzzle game.
           </p>
-          <h2 className="letter-step">Who Can Enjoy It?</h2>
+
+          <h2 className="letter-step">Who Can Play</h2>
           <p className="letter-description">
-            The game is designed for everyone. Kids enjoy the surprise of finding or matching letters, families can play together, and adults can take it as a quick mental exercise. Its simple rules, colorful theme, and rewarding progress craft it suitable for all ages and skill levels.
+            Really, anyone can play. Kids like the surprise of finding letters. Families can make a game night out of it. Adults might use it as a quick brain break during the day. The rules don’t take long to learn, the colors are fun, and finishing a round is always satisfying.
           </p>
-          <h2 className="letter-step">Next Challenge Awaits</h2>
+
+          <h2 className="letter-step">The Next Step</h2>
           <p className="letter-description">
-            Once you’ve mastered the Letter Puzzle, you can move on to the next challenge, where new puzzles and fresh twists are waiting. Keep flipping, keep matching, and see how far your memory and strategy can take you.
+            After you get used to the basics, new levels keep things interesting. Some are tougher, some add twists, but they all test your memory. Keep flipping, keep matching, and see how far you can go.
           </p>
         </div>
       </div>

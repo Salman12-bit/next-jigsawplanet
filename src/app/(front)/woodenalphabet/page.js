@@ -102,18 +102,18 @@ const Woodenpuzzle = () => {
   const hasMatchedAll = () => matchedCards.length >= cards.length - 1;
 
   return (
-    <div className='text-container' style={{ padding: "20px" }}>
-      <div className='planet-container'>
-        <div className='row'>
-          <div className="upper-container" style={containerStyle1}>
-            <div className="game-container">
+    <div className='alphatext-container' style={{ padding: "20px" }}>
+      <div className='alphaplanet-container'>
+        <div className='alpharow'>
+          <div className="alphaupper-container" style={containerStyle1}>
+            <div className="alphagame-container">
               {!mode && (
-                <div className="mode-select text-center p-6">
+                <div className="alphamode-select text-center p-6">
                   <h2 className="mb-4">Choose Your Wooden Alphabet Puzzle Mode</h2>
-                  <button className="button m-2" onClick={() => setMode("kid")}>
+                  <button className="alphabutton m-2" onClick={() => setMode("kid")}>
                     👶 Kid Mode (Phonics + Wooden Puzzle)
                   </button>
-                  <button className="button m-2" onClick={() => setMode("young")}>
+                  <button className="alphabutton m-2" onClick={() => setMode("young")}>
                     🧑 Young Learner Mode (Wooden Puzzle)
                   </button>
                 </div>
@@ -121,10 +121,10 @@ const Woodenpuzzle = () => {
 
               {mode && (
                 <>
-                  <h3 className='level-color'>
+                  <h3 className='alphalevel-color'>
                     Wooden Alphabet Puzzle – {mode === "kid" ? "Kid Mode" : "Young Mode"}
                   </h3>
-                  <Board className='game-board'>
+                  <Board className='alphagame-board'>
                     {cards.map(card => (
                       <Card
                         key={card.id}
@@ -138,16 +138,16 @@ const Woodenpuzzle = () => {
                       />
                     ))}
                   </Board>
-                  <div className="message">{message}</div>
-                  <div className="stats">Attempts: {attempts}</div>
-                  <button className="button" onClick={initializeGame}>Restart Puzzle</button>
-                  <button className="button ms-2" onClick={() => setMode(null)}>🔙 Back to Modes</button>
+                  <div className="alphamessage">{message}</div>
+                  <div className="alphastats">Attempts: {attempts}</div>
+                  <button className="alphabutton" onClick={initializeGame}>Restart Puzzle</button>
+                  <button className="alphabutton ms-2" onClick={() => setMode(null)}>🔙 Back to Modes</button>
 
                   {hasMatchedAll() && (
                     <div className="mt-3">
                       <p>🎉 You solved the Wooden Alphabet Puzzle! 🎉</p>
                       <Link href="/wooden-puzzle">
-                        <button className="button ms-2">Next Puzzle</button>
+                        <button className="alphabutton ms-2">Next Puzzle</button>
                       </Link>
                     </div>
                   )}
@@ -157,34 +157,43 @@ const Woodenpuzzle = () => {
           </div>
         </div>
       </div>
-      <article className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">Wooden Alphabet Puzzle – Learn While You Play</h1>
-            <p className="instructions-description">
-              The Wooden Alphabet Puzzle brings the charm of old-school wooden toys into a fun digital game. Kids get to flip, match, and explore letters like F, G, H, I, and J in two different modes. Kid Mode adds a playful phonics twist with words, sounds, and even emojis, while Young Learner Mode is all about testing memory and matching skills. It’s simple, fun, and sneaks in a bit of learning along the way.
-            </p>
+      <article className="alphagame-instructions-container">
+        <div className="alphagame-instructions">
+          <h1 className="alphainstructions-title">Wooden Alphabet Puzzle – Learn and Play</h1>
+          <p className="alphainstructions-description">
+            The Wooden Alphabet Puzzle has a clean, modern wooden style that feels fresh on screen.
+            It works like a digital alphabet matching game—you’ll see letters like F, G, H, I, and J mixed up across the board.
+            Flip the tiles, match the pairs, and clear the set.
+            In Kid Mode, each match comes with sounds, words, and fun emojis, while Young Learner Mode turns it into more of a memory puzzle.
+          </p>
 
-            <h2 className="instruction-step">How to Play</h2>
-            <p className="instructions-description">
-              Getting started is easy. First, choose your mode. In Kid Mode, every match shows the letter with a word and sound—for example, G is for Grapes 🍇. It feels like a mini phonics lesson without the boring part. In Young Learner Mode, the challenge is remembering where the letters are and matching them all before the board is cleared. Just flip, remember, and match until every letter has a home.
-            </p>
+          <h2 className="alphainstruction-step">How to Play</h2>
+          <p className="alphainstructions-description">
+            Choose a mode and begin. In Kid Mode, every match shows the letter with a word and sound—for example, “G is for Grapes 🍇.”
+            In Young Learner Mode, the cards stay face down—flip two, see if they match, and remember their spots for later.
+            Clear the board to complete the round in this simple but clever letter learning puzzle.
+          </p>
 
-            <h2 className="instruction-step">Benefits of Playing</h2>
-            <p className="instructions-description">
-              What makes this puzzle so good is that kids don’t even realize they’re learning while they play. They’re flipping tiles, laughing, and having fun—but at the same time, they’re picking up letters and sounds without it feeling like homework. The matching part sneaks in memory and focus practice, and moving the tiles around is great for coordination too. Parents love it because it feels like pure playtime for the kids, but underneath it all, there’s a lot of real learning going on.
-            </p>
+          <h2 className="alphainstruction-step">Why It’s Fun</h2>
+          <p className="alphainstructions-description">
+            The fun of this alphabet matching game comes from the flips—you never know what’s under a tile until you try.
+            Kids enjoy the surprise and start picking up letters without even noticing.
+            For older players, the memory challenge keeps things engaging and makes it feel like more than just practice.
+          </p>
 
-            <h2 className="instruction-step">Who Can Enjoy It?</h2>
-            <p className="instructions-description">
-              The Wooden Alphabet Puzzle works for pretty much anyone. Young children love the surprise of flipping and finding letters, older kids enjoy the challenge of remembering card positions, and families can turn it into a group game. Even adults sometimes use it as a light brain exercise—something quick to keep the mind sharp without feeling like “work.”
-            </p>
+          <h2 className="alphainstruction-step">Who Can Play</h2>
+          <p className="alphainstructions-description">
+            It’s made for everyone. Kids love the sounds and matches, families can play together,
+            and adults sometimes use it as a short brain exercise to reset their minds.
+            The wooden design gives it a warm, classic feel that makes this letter puzzle stand out from regular apps.
+          </p>
 
-            <h2 className="instruction-step">Next Challenge Awaits</h2>
-            <p className="instructions-description">
-              The fun doesn’t stop once you finish the first round. As you move forward, the puzzle introduces new twists, bigger layouts, and trickier patterns. Each level feels a little tougher but also more rewarding. With every stage, players keep improving memory, logic, and alphabet skills—while still having a good time.
-            </p>
-          </div>
+          <h2 className="alphainstruction-step">The Next Step</h2>
+          <p className="alphainstructions-description">
+            After the first few rounds, the puzzles don’t stop there.
+            You’ll see bigger layouts, more letters, and matches that take a little more thought.
+            Each level feels fresh, so whether you’re learning or just playing for a break, there’s always something new to try.
+          </p>
         </div>
       </article>
     </div>

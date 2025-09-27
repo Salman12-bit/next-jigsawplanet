@@ -124,43 +124,27 @@ const ABCPuzzle = () => {
         <div className="info-content">
           <h1 className="info-title">ABC Puzzle – Arrange, Learn, and Play</h1>
           <p className="info-text">
-            The ABC Puzzle is an engaging drag-and-drop puzzle that helps players
-            practice sequencing letters in the ABC order. By organizing tiles marked
-            A, B, and C into the correct pattern, learners strengthen memory, logic,
-            and letter recognition in a fun way.
+            ABC Puzzle is easy to pick up and doesn’t take long to get into. The board shows tiles with A, B, and C, but they’re all mixed up. Your job is to drag them into place and set the right order. It’s simple, but it gets your memory and logic working while still feeling playful.
           </p>
 
           <h2 className="info-heading">How to Play</h2>
           <p className="info-text">
-            At the start of the game, the letters are shuffled across the board.
-            Your job is to drag and drop each letter into its proper position to
-            form the repeating ABC sequence. Setting up the letters until the order
-            is correct, and once completed, the puzzle rewards you with a success
-            message.
+            The letters show up scrambled on the board. Your job is to drag each one into the right spot until the ABC order is set. Keep shifting them around until the line is correct. When you’re done, the puzzle gives you a success message.
           </p>
 
-          <h2 className="info-heading">Why It’s Engaging</h2>
+          <h2 className="info-heading">Why It’s Fun</h2>
           <p className="info-text">
-            This game sequencing puzzle mixes learning with play. The drag-and-drop
-            of letters keeps players actively engaged, testing both recognition and
-            problem-solving skills. It’s a hands-on style to practice patterns and
-            logical thinking while having fun.
+            The fun comes from moving the tiles and figuring out where they go. Every drag feels like progress, even if you need to adjust again. It keeps your brain working without feeling heavy, and lining up the letters gives a nice little win at the end.
           </p>
 
-          <h2 className="info-heading">Who Can Enjoy It?</h2>
+          <h2 className="info-heading">Who Can Play</h2>
           <p className="info-text">
-            This puzzle is designed for all ages. Kids will love organizing the
-            letters in the correct pattern, families can solve it together with love
-            and happiness, and adults can use it as a quick mental break. Its simple
-            rules create it easy to pick up, while completing the pattern still
-            feels rewarding.
+            Anyone can give it a try. Kids enjoy putting the letters in order, families can play a round together, and adults might use it as a brief mental break. The rules are simple, the colors are bright, and finishing the sequence always feels satisfying.
           </p>
 
-          <h2 className="info-heading">Next Challenges Await</h2>
+          <h2 className="info-heading">The Next Step</h2>
           <p className="info-text">
-            After solving the first level, new puzzles introduce fresh twists—more
-            letters, tougher design, and advanced sequencing challenges. Keep
-            arranging and see how far your logic and memory can take you.
+            Once you’ve got the first puzzle done, things get trickier. More letters, harder setups, and tougher sequences keep the game fresh. Keep dragging, keep arranging, and see how far you can go.
           </p>
         </div>
       </div>

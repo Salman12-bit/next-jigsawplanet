@@ -161,26 +161,29 @@ const Alphabetpuzzle = () => {
         <div className="alphagame-instructions">
           <h1 className="alphainstructions-title">Alphabet Puzzle – Fun Learning Through Play</h1>
           <p className="alphainstructions-description">
-            The Alphabet Puzzle isn’t one of those complicated games you need to learn for hours. It’s super simple, but at the same time, it keeps your brain working. Kids use it to explore letters and sounds, and older players sometimes just use it as a quick memory boost. With two modes—Kid Mode and Young Learner Mode—it works for just about anyone, whether you’re playing for fun, learning, or just passing the time.
+            Alphabet Puzzle isn’t hard to get into. You flip a few cards, drag a few tiles, and you’re already playing. Kids use it to explore letters and sounds, while older players sometimes treat it as a quick memory boost. With two modes—Kid Mode and Young Learner Mode—it works for just about anyone.
           </p>
-          <h2 className="alphainstruction-step">How to Play the Alphabet Puzzle</h2>
+
+          <h2 className="alphainstruction-step">How to Play</h2>
           <p className="alphainstructions-description">
-            Here’s how it goes: pick your mode and dive in. In Kid Mode, every time you find a match, the game shows the letter with a word, a sound, or even a little emoji (like A for Apple 🍎). It makes it fun without feeling like schoolwork. Young Learner Mode is a bit tougher—it’s more about testing your memory and planning. The cards all start face down, you flip two, and if they match, great—they stay open. If not, you just have to remember where they were for later. It’s easy to pick up, but you’ll quickly notice your brain working harder than you expect.
+            Start by picking a mode. In Kid Mode, every match shows a little extra—maybe a sound, a word, or even a small emoji (A for Apple 🍎). It feels playful without looking like homework. Young Learner Mode plays more like a memory game. The cards start face down, you flip two, and if they match, they stay open. If not, you just need to remember where they were. It’s simple to pick up, but it makes you think as you go.
           </p>
-          <h2 className="alphainstruction-step">Benefits of Playing</h2>
+
+          <h2 className="alphainstruction-step">Why It’s Helpful</h2>
           <p className="alphainstructions-description">
-            The best part is, it’s not just about fun. Kids learn their letters faster, start recognizing sounds, and build memory skills without even realizing it. Young learners get better at problem-solving and staying focused. Even adults end up using it as a quick brain exercise—something to sharpen focus while giving themselves a short break from work or stress.
+            For kids, it’s a fun way to pick up letters and sounds without sitting through lessons. Young learners get to practice focus and problem-solving while they play. Adults can use it as a short mental break—something quick that sharpens memory without feeling like work.
           </p>
-          <h2 className="alphainstruction-step">Who Can Enjoy It?</h2>
+
+          <h2 className="alphainstruction-step">Who Can Play</h2>
           <p className="alphainstructions-description">
-            Pretty much anyone. Kids get excited about flipping the cards and yelling out the matches. Parents like it because it sneaks in learning while still feeling like playtime. Families can play together for a bit of friendly competition, and adults often just enjoy it as a little mental warm-up. Since it mixes phonics, memory, and strategy, the puzzle doesn’t really have an age limit.
+            Anyone can jump in. Kids love flipping the cards and shouting out the matches. Parents like that it mixes fun with learning. Families can play together for a light challenge, and adults sometimes just use it as a brain warm-up. Since it blends phonics, memory, and strategy, it works for all ages.
           </p>
-          <h2 className="alphainstruction-step">Next Challenges Await</h2>
+
+          <h2 className="alphainstruction-step">What’s Next</h2>
           <p className="alphainstructions-description">
-            Once you get through the first levels, it doesn’t stop there. The game throws in more cards, trickier combinations, and layouts that make you stop and think before flipping. Every round feels a little different, so you don’t just play once and forget about it. Whether you’re just learning your letters or you’re looking for a casual brain workout, there’s always another challenge waiting.
+            The first few levels are easy, but new twists show up fast. Extra cards, harder layouts, and trickier matches keep you thinking. Each round feels a little different, so there’s always something new to try.
           </p>
         </div>
-
       </article>
     </div>
   );
